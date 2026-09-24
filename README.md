@@ -2,7 +2,7 @@
 
 How a Muse instance actually works: the filesystem, the scheduler, the memory pipeline and the agent machinery, mapped from a live runtime.
 
-A language model doesn't remember anything between messages on its own. A personal assistant has to build memory, scheduling and continuity out of files, tools and background jobs. This repo documents how one Muse instance does that: the actual directory layout, the actual background checklists, diagrams of the loops involved. Anything personal has been stripped out.
+Here's the thing nobody tells you about personal AI assistants: between your messages, they aren't thinking. They're off. What looks like memory and continuity is a pile of Markdown files, a cron scheduler and a background checklist that runs every 30 minutes. This repo is that pile, documented from a live Muse instance: the real directory layout, the real checklists, diagrams of the loops involved. Anything personal has been stripped out.
 
 ## The short version
 
