@@ -1,0 +1,6 @@
+{
+  "snapshot_utc": "2026-09-24T14:30:34Z",
+  "repo": "muse-runtime",
+  "kind": "sanitized-observational-snapshot",
+  "notes": "directory names only; personal subtrees pruned; no file contents, no credentials, no personal data"
+}

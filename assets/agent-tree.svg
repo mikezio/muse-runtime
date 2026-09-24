@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="460" viewBox="0 0 860 460" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <marker id="arr5" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="860" height="460" fill="#ffffff"/>
+  <text x="430" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#24292f">the agent team: who spawns whom</text>
+
+  <!-- main -->
+  <rect x="330" y="60" width="200" height="60" rx="12" fill="#fff8c5" stroke="#9a6700" stroke-width="2"/>
+  <text x="430" y="85" text-anchor="middle" font-size="14" font-weight="700" fill="#24292f">main agent</text>
+  <text x="430" y="104" text-anchor="middle" font-size="11" fill="#57606a">owns the conversation</text>
+
+  <!-- subagent -->
+  <rect x="80" y="170" width="200" height="80" rx="12" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="180" y="196" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">subagent</text>
+  <text x="180" y="215" text-anchor="middle" font-size="11" fill="#57606a">bounded task, background</text>
+  <text x="180" y="231" text-anchor="middle" font-size="11" fill="#57606a">inherits parent context</text>
+
+  <!-- coordinator -->
+  <rect x="330" y="170" width="200" height="80" rx="12" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="430" y="196" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">coordinator</text>
+  <text x="430" y="215" text-anchor="middle" font-size="11" fill="#57606a">fans out to its own</text>
+  <text x="430" y="231" text-anchor="middle" font-size="11" fill="#57606a">subagents, synthesizes</text>
+
+  <!-- browser task -->
+  <rect x="580" y="170" width="200" height="80" rx="12" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+  <text x="680" y="196" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">browser task agent</text>
+  <text x="680" y="215" text-anchor="middle" font-size="11" fill="#57606a">browser tools only</text>
+  <text x="680" y="231" text-anchor="middle" font-size="11" fill="#57606a">self-contained brief</text>
+
+  <!-- worker -->
+  <rect x="330" y="300" width="200" height="80" rx="12" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="430" y="326" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">worker</text>
+  <text x="430" y="345" text-anchor="middle" font-size="11" fill="#57606a">cron fired, no parent</text>
+  <text x="430" y="361" text-anchor="middle" font-size="11" fill="#57606a">final message = delivery</text>
+
+  <!-- arrows -->
+  <line x1="360" y1="120" x2="220" y2="166" stroke="#57606a" stroke-width="2" marker-end="url(#arr5)"/>
+  <line x1="430" y1="120" x2="430" y2="166" stroke="#57606a" stroke-width="2" marker-end="url(#arr5)"/>
+  <line x1="500" y1="120" x2="640" y2="166" stroke="#57606a" stroke-width="2" marker-end="url(#arr5)"/>
+  <line x1="180" y1="250" x2="180" y2="420" stroke="#57606a" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="680" y1="250" x2="680" y2="420" stroke="#57606a" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <text x="180" y="435" text-anchor="middle" font-size="11" fill="#57606a">handoff back to parent</text>
+  <text x="680" y="435" text-anchor="middle" font-size="11" fill="#57606a">handoff back to parent</text>
+  <text x="430" y="435" text-anchor="middle" font-size="11" fill="#57606a">nesting stops at two levels</text>
+</svg>
