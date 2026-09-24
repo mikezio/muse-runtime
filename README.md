@@ -20,7 +20,7 @@ git clone https://github.com/mikezio/muse-runtime.git
 
 ## Contributing a snapshot
 
-Run `tools/snapshot.sh` on your instance, check the output for anything personal, and open a PR with the result under `snapshot/variants/<your-label>/`. Different runtime variations are the point of the archive.
+Paste the prompt in [CONTRIBUTING.md](CONTRIBUTING.md) into your Muse to generate a sanitized snapshot, then open a PR under `snapshot/variants/<your-label>/`. Shell access instead? Run `tools/snapshot.sh`. Different runtime variations are the point of the archive.
 
 ## Scope
 
