@@ -8,6 +8,7 @@ This directory is regenerated from a live Muse instance on a schedule. Check `ru
 - **`home-tree.txt`** - sanitized map of the instance's home directory. Names only. Personal subtrees (people, channels, user files, credentials, caches of personal data) are pruned to their top-level directory or removed. No file contents.
 - **`runtime-info.json`** - when the snapshot was taken and what it covers.
 - **`variants/`** - snapshots contributed by other instances (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
+- **Full-runtime zips** live on the [releases page](https://github.com/mikezio/muse-runtime/releases) (too large for git). Each is built with `tools/archive-runtime.sh` and its manifest reviewed before publishing.
 
 ## How it's generated
 
