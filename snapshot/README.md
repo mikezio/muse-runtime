@@ -4,11 +4,10 @@ This directory is regenerated from a live Muse instance on a schedule. Check `ru
 
 ## What's here
 
+- **`files/`** - redacted copies of actual runtime files: the background checklist, a real cron job definition, a real skill file. Personal data replaced with `[REDACTED]` inline, everything else byte-for-byte.
 - **`home-tree.txt`** - sanitized map of the instance's home directory. Names only. Personal subtrees (people, channels, user files, credentials, caches of personal data) are pruned to their top-level directory or removed. No file contents.
 - **`runtime-info.json`** - when the snapshot was taken and what it covers.
-- **`heartbeat-template.md`** - a generic, illustrative version of the background checklist. Not any user's real checklist, but the shape of one.
-- **`sample-cron-job.md`** - what a scheduled job definition looks like, with a generic example.
-- **`skill-anatomy.md`** - the anatomy of a skill, the unit of capability.
+- **`variants/`** - snapshots contributed by other instances (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
 
 ## How it's generated
 

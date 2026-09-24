@@ -9,7 +9,7 @@ Instances vary. If yours looks different from what's archived here, share your s
 ## Contents
 
 - [docs/](docs/) - how the pieces fit together: filesystem, scheduler, memory, skills, browser, agents, toolbox, autonomy, safety
-- [snapshot/](snapshot/) - live file tree, runtime info and sample job/skill definitions, refreshed from the running instance
+- [snapshot/](snapshot/) - live file tree, runtime info and redacted copies of actual runtime files, refreshed from the running instance
 - [assets/](assets/) - architecture diagrams
 - [tools/](tools/) - the snapshot generator
 - [CHANGELOG.md](CHANGELOG.md) - version history
