@@ -2,15 +2,15 @@
 
 How a Muse instance actually works: the filesystem, the scheduler, the memory pipeline and the agent machinery, mapped from a live runtime.
 
-Here's the thing nobody tells you about personal AI assistants: between your messages, they aren't thinking. They're off. What looks like memory and continuity is a pile of Markdown files, a cron scheduler and a background checklist that runs every 30 minutes. This repo is that pile, documented from a live Muse instance: the real directory layout, the real checklists, diagrams of the loops involved. Anything personal has been stripped out.
+This repository documents the runtime architecture of a Muse personal AI assistant instance: the directory layout it operates from, the scheduler that wakes it, the memory pipeline it uses for continuity, the skill and tool systems and the browser and agent infrastructure. All content is drawn from observations of a live instance and sanitized of personal data. Where behavior is inferred rather than directly observed, the docs say so.
 
-## The short version
+## Overview
 
 ![System architecture](assets/architecture.svg)
 
-The instance is a language model plus a persistent Linux home directory, a set of tools (shell, browser, skills, connectors) and a scheduler. Something wakes it up (a message, a timer, a finished background task), it reads its files to get context, does the work through its tools, writes down what happened and stops. Between wake-ups it isn't thinking about anything. The continuity is all bookkeeping.
+The instance combines a language model with a persistent Linux home directory, a tool system (shell, browser, skills, connectors) and a scheduler. It activates on an event (a message, a timer, a completed background task), reads its files for context, acts through its tools, records what happened and goes idle. It does not process anything between activations; continuity is maintained through files written and read across sessions.
 
-## The docs
+## Contents
 
 If you're just curious, start at the top:
 
