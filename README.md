@@ -1,4 +1,6 @@
-# Muse, under the hood
+# Muse runtime
+
+How a Muse instance actually works: the filesystem, the scheduler, the memory pipeline and the agent machinery, mapped from a live runtime.
 
 **Ever wondered what your AI assistant is actually doing when you're not talking to it? This repo shows you - the real filesystem, the real schedules, the real loops, drawn from a live Muse instance.**
 
