@@ -5157,6 +5157,7 @@ home/.hatch-db-change-signals/spaces.catalog.1790285079065.3
 home/.hatch-db-change-signals/spaces.catalog.1790303177152.5
 home/.hatch-db-change-signals/spaces.catalog.1790349969430.3
 home/.hatch-db-change-signals/spaces.catalog.1790357409220.3
+home/.hatch-db-change-signals/spaces.catalog.1790367941167.4
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -9646,6 +9647,7 @@ opt/skills/spaces/ts-runtime/cvm/src/build-cvm-client.ts
 opt/skills/spaces/ts-runtime/cvm/src/css-rewrite.test.ts
 opt/skills/spaces/ts-runtime/cvm/src/css-rewrite.ts
 opt/skills/spaces/ts-runtime/cvm/src/download-links.ts
+opt/skills/spaces/ts-runtime/cvm/src/fragment-links.ts
 opt/skills/spaces/ts-runtime/cvm/src/html-rewrite.test.ts
 opt/skills/spaces/ts-runtime/cvm/src/html-rewrite.ts
 opt/skills/spaces/ts-runtime/cvm/src/prelude.ts
