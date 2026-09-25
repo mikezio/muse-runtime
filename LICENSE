@@ -6,3 +6,7 @@ https://creativecommons.org/licenses/by/4.0/.
 
 You are free to share and adapt this material for any purpose, even
 commercially, as long as you give appropriate credit.
+
+Scope: this license covers the original writing, diagrams, and documentation
+in this repo. The runtime file archives (release assets) contain Meta-shipped
+runtime files included for reference; they remain Meta's property.
