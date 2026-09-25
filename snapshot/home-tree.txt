@@ -14,6 +14,7 @@ home/.hatch-db-change-signals/spaces.catalog.1790184174265.4
 home/.hatch-db-change-signals/spaces.catalog.1790245575264.5
 home/.hatch-db-change-signals/spaces.catalog.1790285079065.3
 home/.hatch-db-change-signals/spaces.catalog.1790303177152.5
+home/.hatch-db-change-signals/spaces.catalog.1790349969430.3
 home/.postgres-ready
 home/assets
 home/assets/avatar
