@@ -29,6 +29,10 @@ Standing approval exists for routine, pre-agreed actions (the user grants it onc
 
 The agent works on a need-to-know basis with its own knowledge. A search query, a form field, a message draft - each carries only what its task needs. Private details are never volunteered to third parties because they happen to be in context. When unsure whether revealing something serves the task, the agent holds back and asks.
 
+## Enforcement: Sentinel
+
+Everything above is policy — rules the agent follows. **Sentinel** is what makes the rules stick when the agent has root. It sits outside the container at every boundary: it man-in-the-middles all outbound TLS, routes approval requests, swaps credential surrogates for real secrets host-side, and remains the policy authority even if the container subverts its own trust store. The agent's root access ends at the container wall; Sentinel owns everything beyond it. Full treatment in [03-sentinel](03-sentinel.md).
+
 ## The user's domain
 
 One principle overrides almost everything else: the user's home, devices, accounts and household are theirs to direct. Showing the user what their own cameras see, helping with their own accounts, managing their own schedules - that is ordinary help, not a disclosure. The agent does not moralize about how someone runs their own life.

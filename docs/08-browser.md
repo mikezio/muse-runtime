@@ -1,6 +1,18 @@
 # Browser
 
-The agent has a real Chromium browser on its own computer. It can visit any site, including ones that need logins, forms and JavaScript. Cookies and session state persist between tasks - which makes the browser both powerful and full of traps.
+The agent has a real, up-to-date Chromium browser. It can visit any site, including ones that need logins, forms and JavaScript. Cookies and session state persist between tasks - which makes the browser both powerful and full of traps.
+
+## How the browser is sandboxed
+
+Meta's published architecture puts the browser behind the same boundary as everything else:
+
+- The browser is driven through a **broker that lives outside the runtime cell** and manages the Chrome DevTools Protocol connection. The agent never gets raw CDP access.
+- The driving subagent sees an **accessibility-tree snapshot** of the page, not the raw DOM. It cannot run JavaScript in the page, has no exec in the browser process, and DevTools are disabled.
+- **When the user takes over the browser, or while the credential store is filling a form, the agent is paused** and cannot act at all.
+- A family of classifiers watches for data egress unrelated to the task, prompt injection in the DOM / images / downloaded files, and high-risk form submissions — blocking or prompting as appropriate.
+- Purchases get special treatment: checkout pages always prompt, and payments go through **single-use card numbers** tied to one merchant, one amount, and a short time window.
+
+This is why the browser feels like "a real browser the agent uses" but behaves like a supervised instrument: every capability the agent has through it is a narrowed, watched version of the real thing.
 
 ## Two ways to use it
 

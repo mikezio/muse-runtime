@@ -3,22 +3,33 @@
 - **Activation** - one wake-up of the agent: a user message, a fired cron job, or a finished background task. Between activations the agent is not thinking.
 - **Artifact** - something the agent builds for the user to open and use: a document, page, deck, spreadsheet, or small web app.
 - **Broad visit** - an exploration session with a wide research scope (see the X-workflow example: research first, participation second, minimum active time).
+- **Cell** - the runtime container itself ("runtime cell"): the systemd-nspawn instance the agent calls its computer. See [01-the-machine](01-the-machine.md).
 - **Connector** - a product-level account link (Google, Spotify, …) with managed OAuth. Gives access; a skill defines what to do with it.
+- **Credential surrogate** - a placeholder token the container-side skill holds instead of a real secret; the egress proxy swaps it for the real credential host-side, en route. The container never holds the real value.
 - **Cron job** - scheduled work managed through the native scheduler: a timetable plus a self-contained instruction body.
 - **Dedupe** - the machinery (observe/attempt/report/resolve) that stops the agent from nagging about the same finding every tick.
 - **Derived state** - recomputed outputs (alignment syntheses, idea lists): safe to delete and regenerate from standing + working state.
 - **Dreams** - nightly journal-style consolidation notes plus the alignment pipeline. The agent's slow learning.
+- **Egress proxy** - the Sentinel-operated TLS-intercepting proxy all container outbound traffic flows through. See [03-sentinel](03-sentinel.md).
 - **Feed** - the user's personal newspaper tab: short editorial posts the agent writes on a schedule.
 - **Goal** - a durable user outcome with its own workspace (`GOAL.md`, user-facing `files/`, internal `hidden_files/`).
 - **Handoff** - the result delivered back to the parent when a background worker, subagent, or browser task finishes.
+- **`hatch-execd`** - the daemon inside the cell that executes the agent's shell commands. Tool calls arrive as messages; execd runs them.
 - **Heartbeat** - the ~30-minute background tick that works through `HEARTBEAT.md`: checks, repairs, quiet improvements, one report.
 - **Hook** - event-driven automation: fires when something arrives, not on a clock.
+- **JARVIS** - the internal codename for the Muse runtime/agent system, visible in environment variables (`JARVIS_TIER`, `JARVIS_FQDN`) and tooling (`spawnd` describes itself as the "Jarvis runtime installer engine").
 - **Lineage** - a browser task's identity across steers. One lineage holds one login session; all logged-in work steers the same lineage.
 - **Memory** - the file-backed system (`MEMORY.md`, daily logs, people/groups, dreams) that gives the agent continuity.
+- **Namespaced root** - the container's uid 0: full root inside the container, mapped to an unprivileged host UID (131072 in this image) via user namespaces. See [01-the-machine](01-the-machine.md).
+- **PrivateUsers** - the systemd-nspawn user-namespace mapping that makes container root unprivileged on the host.
+- **Privsep (privilege separation)** - the pattern where container-side skill CLIs talk to host-side services over Unix sockets (`/run/hatch/privsep/*.sock`), and the trusted side performs the privileged work. The container holds no real power over the services.
 - **Prove-it rule** - never claim an automation works until one full successful run has been observed end to end.
+- **Runtime** - the host-side machinery around the model: spawnd, the hatch daemon, the scheduler, Sentinel. Executes tools, runs cron jobs, enforces policy.
 - **Secure Vault** - where credentials live. The agent can ask the runtime to use them, never read them.
+- **Sentinel** - the host-side policy authority: MITMs all container egress, routes approvals, swaps credential surrogates, enforces restrictions regardless of the container's cooperation. See [03-sentinel](03-sentinel.md).
 - **Side chat** - a separate persistent conversation thread alongside the main chat.
 - **Skill** - a reproducible playbook (`SKILL.md` + scripts) for a product, service, or task.
+- **`spawnd`** - the host-side runtime installer and lifecycle engine: builds the stage, boots the cell, records lifecycle events.
 - **Staleness guard** - a check at the top of a job body: if the scheduled time and actual time differ too much, no-op instead of firing late.
 - **Standing state** - deliberately maintained files (identity, memory, preferences, skill docs). Changes rarely.
 - **Subagent** - a child agent delegated a bounded piece of work, running in the background.

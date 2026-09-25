@@ -14,7 +14,7 @@ These are plain Markdown files the agent reads every session. They are the close
 | `MEMORY.md` | Curated long-term memory: durable facts, preferences, commitments, corrections. Tight by design; daily detail lives elsewhere. |
 | `AGENTS.md` | Operating manual: conventions, tool quirks and hard rules learned the painful way. Written by the agent, for the agent. |
 | `TOOLS.md` | Local notes that make tools reliable: device nicknames, API quirks, parsing gotchas. |
-| `HEARTBEAT.md` | The standing checklist the background worker runs every ~30 minutes. (More in [Scheduler](02-scheduler.md).) |
+| `HEARTBEAT.md` | The standing checklist the background worker runs every ~30 minutes. (More in [Scheduler](05-scheduler.md).) |
 | `PROACTIVE_PREFERENCES.md` | What the user wants to hear about proactively and when. The user edits this; the agent honors it. |
 
 A few principles worth noticing:
@@ -47,4 +47,4 @@ The workspace is where the agent has the most freedom, so conventions matter:
 
 ## What is deliberately absent
 
-Credentials never live in these files. Passwords, API keys and tokens go to the Secure Vault (see [Safety](07-safety.md)); the agent records *that a credential exists and where*, never the value. Payment details live with the wallet provider, not in files.
+Credentials never live in these files. Passwords, API keys and tokens go to the Secure Vault (see [Safety](10-safety.md)); the agent records *that a credential exists and where*, never the value. Payment details live with the wallet provider, not in files.
