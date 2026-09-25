@@ -25,7 +25,7 @@ Nesting stops at two levels: a coordinator's subagents cannot spawn their own su
 
 ## How browser tasks fit in
 
-Browser work is *not* done by generic subagents - it has its own route, because it needs the shared Chromium profile and the login lineage (see [Browser](08-browser.md)):
+Browser work is *not* done by generic subagents - it has its own route, because it needs the shared Chromium profile and the login lineage (see [Browser](06-browser.md)):
 
 - **New work** → `browser.spawn_task` with a complete, self-contained brief. The task agent cannot see the conversation, so everything it needs goes in the brief.
 - **Continuations** → `browser.steer_task` on the existing task id. Follow-ups, corrections, approvals, next steps.

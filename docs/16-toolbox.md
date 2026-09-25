@@ -6,9 +6,9 @@ Skills give the agent *knowledge*. Tools give it *hands*. A tool is a function t
 
 **Shell & files** - execute commands, read/write/edit files, list directories. The computer the agent lives on is a real Linux VM with a persistent filesystem, so this is where scripts run, logs land and builds happen.
 
-**Browser** - text search, page fetching and the live-browser task system (`spawn_task` for new work, `steer_task` for continuations). Reading and doing are separate tools with separate rules. See [Browser](08-browser.md).
+**Browser** - text search, page fetching and the live-browser task system (`spawn_task` for new work, `steer_task` for continuations). Reading and doing are separate tools with separate rules. See [Browser](06-browser.md).
 
-**Subagents** - delegate bounded work to child agents: spawn, list, send follow-up input, close. The tree is managed, not fire-and-forget. See [Agents](11-agents.md).
+**Subagents** - delegate bounded work to child agents: spawn, list, send follow-up input, close. The tree is managed, not fire-and-forget. See [Agents](15-agents.md).
 
 **Scheduler** - create, update, list, inspect and remove cron jobs; run one immediately; read run history. Hooks get the same treatment for event-driven automations.
 
@@ -22,7 +22,7 @@ Skills give the agent *knowledge*. Tools give it *hands*. A tool is a function t
 
 ## Trust & money tools
 
-**Credentials (Secure Vault)** - request a login capture or API-key setup, list saved logins (metadata only). The agent gets a link to a secure page; the secret itself never passes through chat or files. See [Safety](10-safety.md).
+**Credentials (Secure Vault)** - request a login capture or API-key setup, list saved logins (metadata only). The agent gets a link to a secure page; the secret itself never passes through chat or files. See [Credentials](07-credentials.md).
 
 **Wallet** - list payment providers, connect one, view saved methods and addresses. Card details are never visible to the agent. Spending requires the user's approval through a native card, following a strict purchase flow.
 

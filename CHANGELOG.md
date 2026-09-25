@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-09-25 - The book rebuild
+
+Mike's call: the repo was a mess — information scattered, and the further-reading page just pointed at Meta's articles instead of using them. Rebuilt as a coherent book in two parts.
+
+Part I — How Meta built it — now absorbs Meta's publications into real chapters instead of linking out:
+
+- 04 — The model: Muse Spark (Spark 1.1 announcement + the safety writeup's Spark 1.3 mention), what it was trained for, why it still isn't trusted alone
+- 05 — Prompt injection: the lethal trifecta and the five defensive layers, plus the bug bounty (up to $300,000; up to $130,000 for single-user prompt injection)
+- 06 — The browser: Meta's browser architecture (accessibility tree, no JS, CDP broker, credential injection, classifier family, malicious-site blocklist) plus observed session behavior
+- 07 — Credentials: the Vault, `authd`, surrogate flow, privsep's three authorities, least-privilege grants, the email connector's OTP filtering
+- 08 — Paying for things: Stripe Link single-use cards, checkout detection, human approval on every payment
+- 09 — Data and privacy: VM as system of record, trajectory sanitizing + training opt-out, no ad sharing, the Confidential VM roadmap
+
+The old further-reading link farm is gone, replaced by a short [sources](docs/sources.md) page. Part II (the observed machinery: filesystem, scheduler, memory, skills, autonomy, agents, toolbox, transparency) renumbered 10–17 with all cross-references fixed. README rewritten around the new structure; the "nothing Meta doesn't want seen" overclaim removed from the README and qualified in the transparency chapter.
+
 ## 2026-09-24 - The architecture deep-dive
 
 The rewrite Mike asked for: the repo now explains the system the way it actually works, verified against a live runtime and Meta's own published architecture.

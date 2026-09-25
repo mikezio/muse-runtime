@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="380" viewBox="0 0 640 380" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <style>
+      .box { fill: #1a1d24; stroke: #4a5568; stroke-width: 1.5; rx: 8; }
+      .title { fill: #e2e8f0; font-size: 14px; font-weight: 600; }
+      .sub { fill: #94a3b8; font-size: 11px; }
+      .line { stroke: #4a5568; stroke-width: 1.5; fill: none; }
+      .note { fill: #64748b; font-size: 11px; font-style: italic; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="640" height="380" fill="#0f1115"/>
+  <!-- main agent -->
+  <rect x="245" y="18" width="150" height="52" rx="8" class="box"/>
+  <text x="320" y="40" text-anchor="middle" class="title">Main agent</text>
+  <text x="320" y="58" text-anchor="middle" class="sub">owns the conversation</text>
+  <!-- level 1 -->
+  <path d="M320 70 V100 H120 V126 M320 70 V100 H320 V126 M320 70 V100 H520 V126" class="line"/>
+  <rect x="30" y="126" width="180" height="52" rx="8" class="box"/>
+  <text x="120" y="148" text-anchor="middle" class="title">Subagent</text>
+  <text x="120" y="166" text-anchor="middle" class="sub">bounded delegated task</text>
+  <rect x="230" y="126" width="180" height="52" rx="8" class="box"/>
+  <text x="320" y="148" text-anchor="middle" class="title">Worker</text>
+  <text x="320" y="166" text-anchor="middle" class="sub">one cron run, no parent</text>
+  <rect x="430" y="126" width="180" height="52" rx="8" class="box"/>
+  <text x="520" y="148" text-anchor="middle" class="title">Browser task agent</text>
+  <text x="520" y="166" text-anchor="middle" class="sub">browser tools only</text>
+  <!-- level 2: coordinator -->
+  <path d="M120 178 V208 H120 V234" class="line"/>
+  <rect x="30" y="234" width="180" height="52" rx="8" class="box"/>
+  <text x="120" y="256" text-anchor="middle" class="title">Coordinator</text>
+  <text x="120" y="274" text-anchor="middle" class="sub">fans out, synthesizes</text>
+  <path d="M120 286 V312" class="line"/>
+  <text x="120" y="330" text-anchor="middle" class="note">nesting stops here: a coordinator's</text>
+  <text x="120" y="346" text-anchor="middle" class="note">subagents cannot spawn further</text>
+  <!-- side notes -->
+  <text x="430" y="230" class="note">results arrive as handoffs;</text>
+  <text x="430" y="246" class="note">the parent never polls</text>
+  <text x="430" y="272" class="note">a parked browser task resumes</text>
+  <text x="430" y="288" class="note">via steer, never respawn</text>
+</svg>

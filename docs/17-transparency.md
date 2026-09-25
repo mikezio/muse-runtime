@@ -4,7 +4,7 @@ Everything is inspectable on purpose. Poke around.
 
 ## The design choice
 
-Most sandboxed agent runtimes treat their internals as proprietary surface to be hidden: obfuscated binaries, stripped comments, minimal documentation, "trust us." This runtime does the opposite. **There is nothing on the VM that Meta doesn't want the agent — or the user — to see.**
+Most sandboxed agent runtimes treat their internals as proprietary surface to be hidden: obfuscated binaries, stripped comments, minimal documentation, "trust us." This runtime does the opposite. **As far as observable from inside, nothing on the VM is hidden from the agent — or the user.**
 
 `/opt/hatch` is world-readable. The boot scripts, the lifecycle engine configuration, the privilege-separation setup, the trust-store builder, the scheduler definitions — all of it is plain shell and config files with extensive comments. The comments don't just say *what*; they say *why*, including the threat model:
 
