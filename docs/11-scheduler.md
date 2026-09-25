@@ -2,6 +2,8 @@
 
 The agent is not thinking between conversations. The scheduler is what makes it seem alive: it wakes the agent on a timetable, the agent does a bounded piece of work, writes down the result and sleeps again.
 
+![The scheduler loop](../assets/scheduler-loop.svg)
+
 ## Cron jobs
 
 Scheduled work is managed through native cron tooling (create, list, update, remove, run-now, history). A job definition has:

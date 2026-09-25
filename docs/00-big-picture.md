@@ -40,6 +40,8 @@ Most explanations of an AI agent start with the model and stop there. The runtim
 
 The single most important thing to internalize: **the agent runs outside the VM, and the VM runs inside the runtime.** The model thinks on Meta's servers; its hands are in the container; the runtime decides what the hands may touch. Details in [01-the-machine](01-the-machine.md), [02-the-agent-outside](02-the-agent-outside.md), and [03-sentinel](03-sentinel.md).
 
+![Architecture](../assets/architecture.svg)
+
 ## The agent's-eye view
 
 From inside, the agent experiences a simpler world — the one the rest of this repo describes:

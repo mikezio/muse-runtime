@@ -50,6 +50,8 @@ Buying things is one of the most popular browser uses, and mistakes cost real mo
 
 Full treatment in [08-paying-for-things](08-paying-for-things.md).
 
+![Browser sessions: spawn vs steer](../assets/browser-lineage.svg)
+
 ## The session problem
 
 One honest operational wrinkle, observed from inside: the browser holds its logins in a persistent profile tied to a long-lived browser-task lineage. A fresh task starts with a blank cookie jar — sessions don't transfer. This is why X/Twitter work, for example, runs through one persistent lineage rather than fresh tasks. It's a usability consequence of the isolation: the thing that keeps sessions safe (they live in the broker's profile, not somewhere the agent can copy) also makes them non-portable.

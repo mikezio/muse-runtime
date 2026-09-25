@@ -2,7 +2,7 @@
 
 One "Muse" is actually a small team of agents that spin up and shut down constantly. This page maps who does what and how they talk to each other.
 
-![Agent tree](assets/agent-tree.svg)
+![Agent tree](../assets/agent-tree.svg)
 
 ## The cast
 

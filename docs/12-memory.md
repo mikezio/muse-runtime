@@ -2,6 +2,8 @@
 
 A Muse instance has no built-in memory of you. Everything it "remembers" is files it wrote and re-reads. The memory system is a pipeline with three stages: capture, consolidate, derive.
 
+![The memory pipeline](../assets/memory-pipeline.svg)
+
 ## Capture (during the session)
 
 As the conversation happens, the agent writes durable facts to `MEMORY.md` immediately - before responding, not after. What counts as durable: facts, preferences, commitments, actions taken, decisions made together, corrections, people who matter. What does not: transcript chatter, one-off details, anything sensitive like credentials or ID numbers.
