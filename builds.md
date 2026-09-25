@@ -30,3 +30,4 @@ exclusion list ships next to every zip.
 | `bfea4bc4abe` | 2026-09-25T15:35:26Z | 2026-09-25 EDT | see release `build-bfea4bc4abe` |
 | `3da4b728da3` | 2026-09-25T17:18:23Z | 2026-09-25 EDT | see release `build-3da4b728da3` |
 | `a01af45e4b9` | 2026-09-25T18:57:22Z | 2026-09-25 EDT | see release `build-a01af45e4b9` |
+| `679b103d9f6` | 2026-09-25T20:47:25Z | 2026-09-25 EDT | see release `build-679b103d9f6` |
