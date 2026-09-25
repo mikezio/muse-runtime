@@ -24,3 +24,4 @@ What changed per build is recorded in the release notes and in the
 tool-watch changelog. The archiver is `tools/archive-runtime.sh`; its
 exclusion list ships next to every zip.
 | `f43d26fc581` | 2026-09-25T01:57:05Z | 2026-09-25 | see release `build-f43d26fc581` |
+| `938bf351786` | 2026-09-25T04:53:39Z | 2026-09-25 EDT | see release `build-938bf351786` |

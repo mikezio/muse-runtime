@@ -4160,6 +4160,7 @@ opt/skills/magic-moment/cmm/overlay.py
 opt/skills/magic-moment/cmm/run_contract.py
 opt/skills/magic-moment/cmm/script.py
 opt/skills/magic-moment/cmm/templates.py
+opt/skills/magic-moment/cmm/transcription.py
 opt/skills/magic-moment/cmm/vendor_path.py
 opt/skills/magic-moment/guide
 opt/skills/magic-moment/guide/conversation_shape.md
