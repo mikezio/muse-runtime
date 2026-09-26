@@ -9527,10 +9527,6 @@ opt/skills/muse-early-access
 opt/skills/muse-early-access/SKILL.md
 opt/skills/muse-feedback
 opt/skills/muse-feedback/SKILL.md
-opt/skills/muse-mail
-opt/skills/muse-mail/SKILL.md
-opt/skills/muse-mail/references
-opt/skills/muse-mail/references/advanced.md
 opt/skills/muse_db
 opt/skills/muse_db/SKILL.md
 opt/skills/muse_db/references
