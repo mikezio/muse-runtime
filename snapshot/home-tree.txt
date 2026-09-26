@@ -7513,6 +7513,7 @@ opt/bin/etsy-cli
 opt/bin/expedia
 opt/bin/facebook-cli
 opt/bin/feature-request
+opt/bin/figma
 opt/bin/flightaware
 opt/bin/function-health
 opt/bin/genui-display-render
@@ -7569,6 +7570,7 @@ opt/bin/shopify-ucp-cli
 opt/bin/shopping
 opt/bin/spawnd
 opt/bin/spotify-api
+opt/bin/stripe
 opt/bin/stripe-link
 opt/bin/subscription-status
 opt/bin/tailscale
