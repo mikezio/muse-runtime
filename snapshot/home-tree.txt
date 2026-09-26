@@ -5158,6 +5158,7 @@ home/.hatch-db-change-signals/spaces.catalog.1790303177152.5
 home/.hatch-db-change-signals/spaces.catalog.1790349969430.3
 home/.hatch-db-change-signals/spaces.catalog.1790357409220.3
 home/.hatch-db-change-signals/spaces.catalog.1790367941167.4
+home/.hatch-db-change-signals/spaces.catalog.1790378847356.4
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -7633,6 +7634,7 @@ opt/skills/artifacts/references/maps.md
 opt/skills/artifacts/references/markdown.md
 opt/skills/artifacts/references/prose.md
 opt/skills/artifacts/references/social-embeds.md
+opt/skills/artifacts/references/spoken-audio.md
 opt/skills/artifacts/scripts
 opt/skills/artifacts/scripts/assemble_deck.mjs
 opt/skills/artifacts/scripts/browser_audit_runtime.mjs
@@ -7647,6 +7649,7 @@ opt/skills/artifacts/scripts/recalc_xlsx.py
 opt/skills/artifacts/scripts/render_audit.mjs
 opt/skills/artifacts/scripts/validate_pdf.sh
 opt/skills/artifacts/scripts/validate_xlsx.py
+opt/skills/artifacts/scripts/xlsx_formula_cache.py
 opt/skills/artifacts/spreadsheet
 opt/skills/artifacts/spreadsheet/SKILL.md
 opt/skills/artifacts/spreadsheet/references

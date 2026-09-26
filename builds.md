@@ -31,3 +31,6 @@ exclusion list ships next to every zip.
 | `3da4b728da3` | 2026-09-25T17:18:23Z | 2026-09-25 EDT | see release `build-3da4b728da3` |
 | `a01af45e4b9` | 2026-09-25T18:57:22Z | 2026-09-25 EDT | see release `build-a01af45e4b9` |
 | `679b103d9f6` | 2026-09-25T20:47:25Z | 2026-09-25 EDT | see release `build-679b103d9f6` |
+
+- 2026-09-25 ~21:07 EDT: release `build-679b103d9f6` repaired — the 1.2 GB zip could not be uploaded whole (4 attempts, `gh` and `curl`, all severed mid-transfer with "unexpected EOF" after 2.5–45 min through the egress proxy; 100 MB probe to a neutral endpoint sustained ~2 MB/s, so the drop is specific to the long-lived uploads.github.com connection). Workaround: zip uploaded as 6 split parts (`runtime-archive-679b103d9f6-20260925.zip.part-00`..`part-05`, 5x200 MB + 154,398,495 B); part sizes sum to exactly 1,202,974,495 B = local zip size. Reassemble with `cat part-0* > runtime-archive-679b103d9f6-20260925.zip` and verify against the manifest sha256.
+| `934f5cdf557` | 2026-09-25T23:22:36Z | 2026-09-25 EDT | see release `build-934f5cdf557` |
