@@ -1,10 +1,10 @@
 {
-  "snapshot_utc": "2026-09-26T14:23:40Z",
+  "snapshot_utc": "2026-09-26T15:24:24Z",
   "repo": "muse-runtime",
   "kind": "sanitized-observational-snapshot",
-  "archive_tag": "51db0eaf-20260926",
-  "build_commit": "51db0eafcef",
-  "build_built_at": "2026-09-26T11:25:52Z",
+  "archive_tag": "cc5957e62fe-20260926",
+  "build_commit": "cc5957e62fe",
+  "build_built_at": "2026-09-26T13:02:36Z",
   "files": 17202,
   "notes": "file list of the sanitized per-build archive; personal subtrees pruned; no file contents in this listing; filenames scanned for personal/secret names before release"
 }
