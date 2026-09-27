@@ -5171,6 +5171,7 @@ home/.hatch-db-change-signals/spaces.catalog.1790490231614.4
 home/.hatch-db-change-signals/spaces.catalog.1790497400682.4
 home/.hatch-db-change-signals/spaces.catalog.1790508232187.4
 home/.hatch-db-change-signals/spaces.catalog.1790514793798.4
+home/.hatch-db-change-signals/spaces.catalog.1790529934578.4
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -7520,7 +7521,6 @@ opt/bin/device-data
 opt/bin/duffel
 opt/bin/edits
 opt/bin/etsy-cli
-opt/bin/expedia
 opt/bin/facebook-cli
 opt/bin/feature-request
 opt/bin/flightaware
