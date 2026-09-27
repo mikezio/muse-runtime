@@ -6409,6 +6409,7 @@ home/config
 home/config/filesystem_watch_hashes.initialized
 home/config/filesystem_watch_hashes.json
 home/config/home.yaml
+home/config/home.yaml.before-reasoning-max-20260927T0038Z
 home/config/skills.yaml
 home/config/workspace-state.json
 home/config/workspace-state.lock
