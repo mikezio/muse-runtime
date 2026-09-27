@@ -38,6 +38,7 @@ exclusion list ships next to every zip.
 | `b6a533c6775` | 2026-09-26T04:07:17Z | 2026-09-26 EDT | see release `build-b6a533c6775` |
 | `3afcf8b9998` | 2026-09-26T07:37:50Z | 2026-09-26 EDT | see release `build-3afcf8b9998` |
 | `4c594beb933` | 2026-09-26T09:18:38Z | 2026-09-26 EDT | see release `build-4c594beb933` |
+| `3449240a34c` | 2026-09-27T03:01:01Z | 2026-09-27 EDT | see release `build-3449240a34c` |
 | `51db0eafcef` | 2026-09-26T11:25:52Z | 2026-09-26 EDT | see release `build-51db0eafcef` |
 | `cc5957e62fe` | 2026-09-26T13:02:36Z | 2026-09-26 EDT | see release `build-cc5957e62fe` |
 | `cbf4585c898` | 2026-09-26T15:11:39Z | 2026-09-26 EDT | see release `build-cbf4585c898` |
@@ -57,3 +58,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94` and `8d0554d8f
 - `d96cc26a11d` zip sha256: `8af693e7c5dd1e3ecb48dcc32f8544366b71d914c9cb87c921efadbeb8527658`
 - `0decec9a6b1` zip sha256: `dd46b489331e1dc25e0e17564f63f83e09a00ebf3aef1a8f81232ed936d70a0f`
 - `8d5fea02416` zip sha256: `7ac510fd31be9fe5f4788618a7b9f45ef20fcdb65eabbeb66ca3957d7eee620f` (monolithic 1.2 GB upload succeeded; no split parts)
+- `3449240a34c` zip sha256: `03311a209710ceaedb1a57b9691aa37c3b16426d231520be0fdbbea126d7ae5e` (monolithic 1.2 GB upload succeeded; no split parts)
