@@ -5169,6 +5169,7 @@ home/.hatch-db-change-signals/spaces.catalog.1790477528273.7
 home/.hatch-db-change-signals/spaces.catalog.1790479419578.4
 home/.hatch-db-change-signals/spaces.catalog.1790490231614.4
 home/.hatch-db-change-signals/spaces.catalog.1790497400682.4
+home/.hatch-db-change-signals/spaces.catalog.1790508232187.4
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -6414,7 +6415,6 @@ home/config
 home/config/filesystem_watch_hashes.initialized
 home/config/filesystem_watch_hashes.json
 home/config/home.yaml
-home/config/home.yaml.before-reasoning-max-20260927T0038Z
 home/config/skills.yaml
 home/config/workspace-state.json
 home/config/workspace-state.lock

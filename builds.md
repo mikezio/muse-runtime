@@ -51,9 +51,10 @@ exclusion list ships next to every zip.
 | `8d5fea02416` | 2026-09-27T02:35:10Z | 2026-09-27 EDT | see release `build-8d5fea02416` |
 | `9bbc62e15ff` | 2026-09-27T05:41:39Z | 2026-09-27 EDT | see release `build-9bbc62e15ff` |
 | `49d7dfcc81f` | 2026-09-27T07:37:04Z | 2026-09-27 EDT | see release `build-49d7dfcc81f` |
+| `f24b087f6e6` | 2026-09-27T11:10:27Z | 2026-09-27 EDT | see release `build-f24b087f6e6` |
 
 ## Split-part archives
-Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e` and `49d7dfcc81f` ship their 1.2 GB zip as six ~200 MB parts (`runtime-archive-<commit>-20260926.zip.part-00` through `-05`; earlier builds used `-aa` through `-af`) because monolithic uploads kept failing with EOF on this network. Reassemble with: `cat runtime-archive-<commit>-20260926.zip.part-* > runtime-archive-<commit>-20260926.zip` then verify against the sha256 in the release manifest.
+Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`, `49d7dfcc81f` and `f24b087f6e6` ship their 1.2 GB zip as six ~200 MB parts (`runtime-archive-<commit>-20260926.zip.part-00` through `-05`; earlier builds used `-aa` through `-af`) because monolithic uploads kept failing with EOF on this network. Reassemble with: `cat runtime-archive-<commit>-20260926.zip.part-* > runtime-archive-<commit>-20260926.zip` then verify against the sha256 in the release manifest.
 - `8d0554d8f9e` zip sha256: `81037c2817c76772ea112c8905a00607bb63b8289a0c108add28a4dc018849d2`
 - `61c470cfc94` zip sha256: `819a5e85072d570951b3a973258312124561e7c663fa891c88e0d72c5e48d0b5`
 - `cbf4585c898` zip sha256: `07e14b137c5474c6be74422a25ed5ca29c1c33f500b474c361155a69d520868a`
@@ -62,3 +63,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `8d5fea02416` zip sha256: `7ac510fd31be9fe5f4788618a7b9f45ef20fcdb65eabbeb66ca3957d7eee620f` (monolithic 1.2 GB upload succeeded; no split parts)
 - `3449240a34c` zip sha256: `03311a209710ceaedb1a57b9691aa37c3b16426d231520be0fdbbea126d7ae5e` (monolithic 1.2 GB upload succeeded; no split parts)
 - `49d7dfcc81f` zip sha256: `e52234733db9625726f1b2365312c9d51183f4ec3513f71944030cfb0b7e698f` (monolithic 1.2 GB upload failed with EOF; six ~200 MB parts instead)
+- `f24b087f6e6` zip sha256: `ba54838583e35761f01577bcd5d32185912867337e305ca8c295b6c27230b806` (monolithic 1.2 GB upload failed with EOF; six ~200 MB parts instead; part sizes sum to exactly the local zip size)
