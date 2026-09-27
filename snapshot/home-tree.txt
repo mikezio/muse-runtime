@@ -5167,6 +5167,8 @@ home/.hatch-db-change-signals/spaces.catalog.1790461472607.4
 home/.hatch-db-change-signals/spaces.catalog.1790477107329.4
 home/.hatch-db-change-signals/spaces.catalog.1790477528273.7
 home/.hatch-db-change-signals/spaces.catalog.1790479419578.4
+home/.hatch-db-change-signals/spaces.catalog.1790490231614.4
+home/.hatch-db-change-signals/spaces.catalog.1790497400682.4
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -7507,6 +7509,7 @@ opt/assets/ideas/icons/zip-hoodie.webp
 opt/assets/ideas/new-user
 opt/assets/ideas/new-user/catalog.json
 opt/bin
+opt/bin/aftership
 opt/bin/authdc
 opt/bin/browser-broker
 opt/bin/browser-service

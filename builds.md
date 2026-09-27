@@ -49,6 +49,7 @@ exclusion list ships next to every zip.
 | `8d0554d8f9e` | 2026-09-26T22:42:31Z | 2026-09-26 EDT | see release `build-8d0554d8f9e` |
 | `8dfd7f19e85` | 2026-09-27T01:00:10Z | 2026-09-26 EDT | see release `build-8dfd7f19e85` |
 | `8d5fea02416` | 2026-09-27T02:35:10Z | 2026-09-27 EDT | see release `build-8d5fea02416` |
+| `9bbc62e15ff` | 2026-09-27T05:41:39Z | 2026-09-27 EDT | see release `build-9bbc62e15ff` |
 
 ## Split-part archives
 Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94` and `8d0554d8f9e` ship their 1.2 GB zip as six ~200 MB parts (`runtime-archive-<commit>-20260926.zip.part-00` through `-05`; earlier builds used `-aa` through `-af`) because monolithic uploads kept failing with EOF on this network. Reassemble with: `cat runtime-archive-<commit>-20260926.zip.part-* > runtime-archive-<commit>-20260926.zip` then verify against the sha256 in the release manifest.
