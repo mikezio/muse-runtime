@@ -44,9 +44,11 @@ exclusion list ships next to every zip.
 | `d96cc26a11d` | 2026-09-26T16:51:40Z | 2026-09-26 EDT | see release `build-d96cc26a11d` |
 | `0decec9a6b1` | 2026-09-26T17:31:17Z | 2026-09-26 EDT | see release `build-0decec9a6b1` |
 | `572213748ab` | 2026-09-26T19:38:48Z | 2026-09-26 EDT | see release `build-572213748ab` |
+| `61c470cfc94` | 2026-09-26T21:27:09Z | 2026-09-26 EDT | see release `build-61c470cfc94` |
 
 ## Split-part archives
-Builds `cbf4585c898`, `d96cc26a11d` and `0decec9a6b1` ship their 1.2 GB zip as six ~200 MB parts (`runtime-archive-<commit>-20260926.zip.part-aa` through `-af`) because monolithic uploads kept failing with EOF on this network. Reassemble with: `cat runtime-archive-<commit>-20260926.zip.part-* > runtime-archive-<commit>-20260926.zip` then verify against the sha256 in the release manifest.
+Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1` and `61c470cfc94` ship their 1.2 GB zip as six ~200 MB parts (`runtime-archive-<commit>-20260926.zip.part-00` through `-05`; earlier builds used `-aa` through `-af`) because monolithic uploads kept failing with EOF on this network. Reassemble with: `cat runtime-archive-<commit>-20260926.zip.part-* > runtime-archive-<commit>-20260926.zip` then verify against the sha256 in the release manifest.
+- `61c470cfc94` zip sha256: `819a5e85072d570951b3a973258312124561e7c663fa891c88e0d72c5e48d0b5`
 - `cbf4585c898` zip sha256: `07e14b137c5474c6be74422a25ed5ca29c1c33f500b474c361155a69d520868a`
 - `d96cc26a11d` zip sha256: `8af693e7c5dd1e3ecb48dcc32f8544366b71d914c9cb87c921efadbeb8527658`
 - `0decec9a6b1` zip sha256: `dd46b489331e1dc25e0e17564f63f83e09a00ebf3aef1a8f81232ed936d70a0f`
