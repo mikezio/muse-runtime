@@ -5172,6 +5172,10 @@ home/.hatch-db-change-signals/spaces.catalog.1790497400682.4
 home/.hatch-db-change-signals/spaces.catalog.1790508232187.4
 home/.hatch-db-change-signals/spaces.catalog.1790514793798.4
 home/.hatch-db-change-signals/spaces.catalog.1790529934578.4
+home/.hatch-db-change-signals/spaces.catalog.1790545114836.3
+home/.hatch-db-change-signals/spaces.catalog.1790546402384.8
+home/.hatch-db-change-signals/spaces.catalog.1790546661704.13
+home/.hatch-db-change-signals/spaces.catalog.1790547435098.4
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -9465,6 +9469,7 @@ opt/skills/instagram/SKILL.md
 opt/skills/instagram/connector_auth_config.yaml
 opt/skills/instagram/manifest.yaml
 opt/skills/instagram/references
+opt/skills/instagram/references/account-insights-metrics.md
 opt/skills/instagram/references/content-questions.md
 opt/skills/magic-moment
 opt/skills/magic-moment/.gitignore
