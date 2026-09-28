@@ -1,86 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1250" viewBox="0 0 1120 1250" role="img" aria-labelledby="title desc">
-<title id="title">Authority follows the interface, not the shell UID</title>
-<desc id="desc">Published launch design: the harness runs inside the cell; protected services share its VM.</desc>
-<metadata>Published deployment source: https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse/ Checked 2026-09-28. Build details can vary.</metadata>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA3B0"/></marker></defs>
-<style>text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .title{font-size:30px;font-weight:700;fill:#172B3A}.sub{font-size:17px;fill:#4E6271}.label{font-size:20px;font-weight:650;fill:#172B3A}.body{font-size:17px;fill:#4E6271}.small{font-size:15px;fill:#4E6271}.over{font-size:14px;font-weight:700;letter-spacing:1.2px;fill:#4E6271}</style>
-<rect width="1120" height="1250" fill="#F7F9FB"/>
-<text x="40" y="51" class="title">Authority follows the interface, not the shell UID</text>
-<text x="40" y="83" class="sub">Published launch design: the harness runs inside the cell; protected services share its VM.</text>
-<rect x="40" y="122" width="480" height="114" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="40" y="138" width="4" height="82" rx="2" fill="#7149A6"/>
-<text x="62" y="160" class="label">Remote inference</text>
-<text x="62" y="192" class="body">Produces model responses outside the personal VM.</text>
-<text x="62" y="217" class="body">Model serving is separate from cell execution.</text>
-<rect x="560" y="122" width="520" height="114" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="560" y="138" width="4" height="82" rx="2" fill="#225EC4"/>
-<text x="582" y="160" class="label">User approval / account permissions</text>
-<text x="582" y="192" class="body">Decisions can scope what an interface permits.</text>
-<text x="582" y="217" class="body">Cell root does not create an account-level grant.</text>
-<rect x="40" y="284" width="1040" height="654" rx="14" fill="#EDF3FE" stroke="#225EC4" stroke-width="1.5"/>
-<text x="62" y="316" class="over">PERSONAL CLOUD VM</text>
-<rect x="62" y="338" width="476" height="558" rx="14" fill="white" stroke="#087C78" stroke-width="1.5" stroke-dasharray="7 5"/>
-<text x="84" y="369" class="over">EXECUTION CELL / USER NAMESPACE</text>
-<rect x="84" y="394" width="432" height="110" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="84" y="410" width="4" height="78" rx="2" fill="#225EC4"/>
-<circle cx="113" cy="425" r="15" fill="#225EC4"/>
-<text x="113" y="430" class="small" style="fill:white" text-anchor="middle">1</text>
-<text x="138" y="432" class="label">hatch: agent harness</text>
-<text x="106" y="464" class="body">Runs the agent loop and coordinates tools.</text>
-<text x="106" y="489" class="body">Requests inference and acts on model replies.</text>
-<path d="M 40 166 H 20 V 446 H 78" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 84 484 H 8 V 208 H 34" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 300 504 V 533" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="84" y="544" width="432" height="180" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="84" y="560" width="4" height="148" rx="2" fill="#087C78"/>
-<circle cx="113" cy="575" r="15" fill="#087C78"/>
-<text x="113" y="580" class="small" style="fill:white" text-anchor="middle">2</text>
-<text x="138" y="582" class="label">Shell + accessible resources</text>
-<text x="106" y="614" class="body">Observed UID 0 is scoped by cell boundaries.</text>
-<text x="106" y="639" class="body">/home/hatch: home and workspace files</text>
-<text x="106" y="664" class="body">/opt/hatch: observed read-only runtime</text>
-<text x="106" y="689" class="body">Protected process state may be unreadable.</text>
-<text x="106" y="714" class="body">Local edits can damage accessible data.</text>
-<text x="84" y="780" class="label">Cell root does not grant host root.</text>
-<text x="84" y="810" class="small">Namespaces, capabilities and mounts constrain access.</text>
-<text x="84" y="839" class="small">Installing tools does not expand account permissions.</text>
-<rect x="560" y="338" width="498" height="558" rx="14" fill="white" stroke="#9A5C12" stroke-width="1.5" stroke-dasharray="7 5"/>
-<text x="582" y="369" class="over">PROTECTED SERVICES / OUTSIDE CELL</text>
-<rect x="582" y="394" width="454" height="142" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="582" y="410" width="4" height="110" rx="2" fill="#9A5C12"/>
-<circle cx="611" cy="425" r="15" fill="#9A5C12"/>
-<text x="611" y="430" class="small" style="fill:white" text-anchor="middle">3</text>
-<text x="636" y="432" class="label">Sentinel / policy checks</text>
-<text x="604" y="464" class="body">Documented controls can allow, deny or ask.</text>
-<text x="604" y="489" class="body">Permission enforcement is separate from</text>
-<text x="604" y="514" class="body">model instructions and the cell’s shell UID.</text>
-<path d="M 516 455 H 576" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 950 236 V 262 H 1098 V 454 H 1042" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 809 536 V 565" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="582" y="576" width="454" height="128" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="582" y="592" width="4" height="96" rx="2" fill="#9A5C12"/>
-<circle cx="611" cy="607" r="15" fill="#9A5C12"/>
-<text x="611" y="612" class="small" style="fill:white" text-anchor="middle">4</text>
-<text x="636" y="614" class="label">Mediated interfaces</text>
-<text x="604" y="646" class="body">Browser, connectors and device service paths</text>
-<text x="604" y="671" class="body">use the relevant permissions and credentials.</text>
-<text x="604" y="696" class="body">Availability depends on the interface / account.</text>
-<rect x="582" y="748" width="454" height="106" rx="14" fill="#F7F9FB" stroke="#D7E1E7" stroke-width="1.5"/>
-<text x="602" y="780" class="label">Protected platform state</text>
-<text x="602" y="810" class="small">Host-side services, secrets and Postgres records</text>
-<text x="602" y="834" class="small">are outside the cell shell’s ordinary authority.</text>
-<path d="M 809 704 H 1098 V 952 H 996 V 966" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 300 896 V 966" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="317" y="957" class="small">local effects</text>
-<rect x="40" y="974" width="1040" height="126" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="40" y="990" width="4" height="94" rx="2" fill="#7149A6"/>
-<circle cx="69" cy="1005" r="15" fill="#7149A6"/>
-<text x="69" y="1010" class="small" style="fill:white" text-anchor="middle">5</text>
-<text x="94" y="1012" class="label">Permitted actions can have real effects</text>
-<text x="62" y="1044" class="body">Writing a file, changing account data or controlling a device can matter even when isolation works.</text>
-<text x="62" y="1069" class="body">Evaluate the resource, operation, granted scope and observed outcome—not just the process UID.</text>
-<rect x="40" y="1134" width="1040" height="86" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
-<text x="60" y="1163" class="label">Isolation and policy are defenses, not a proof of harmlessness.</text>
-<text x="60" y="1189" class="small">Published deployment checked 2026-09-28; build details can vary. Boundaries shown are not a complete security audit.</text>
-<text x="60" y="1211" class="small">Solid box = VM. Dashed boxes = access domains. Different interfaces can follow different enforcement paths.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="725" viewBox="0 0 960 725" role="img" aria-labelledby="title desc">
+<title id="title">Example: authorizing an outbound request</title><desc id="desc">A cell process submits an outbound request to the egress proxy and Sentinel. The permission decision can allow, deny or ask the user through the client. An authorized credential-bearing request uses authd for credential insertion before reaching the service. Other tool paths differ.</desc>
+<metadata>https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse; schematic of the published egress path, not every tool or service. See docs/03-sentinel.md.</metadata>
+<defs><marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#222;font-size:18px}.title{font-size:26px;font-weight:400}.group{font-size:19px;font-weight:700}.small{font-size:16px;fill:#555}.mono{font-family:Consolas,'Liberation Mono',monospace;font-size:16px}.head{font-size:18px;font-weight:700}</style>
+<rect width="960" height="725" fill="white"/>
+<text x="30" y="42" class="title" text-anchor="start">Example: authorizing an outbound request</text>
+<path d="M30 64H930" fill="none" stroke="#bbb" stroke-width="1.3"/>
+<text x="30" y="112" class="group" text-anchor="start">Request</text>
+<text x="332" y="112" class="group" text-anchor="start">Authorization</text>
+<text x="730" y="112" class="group" text-anchor="start">Other interfaces</text>
+<rect x="30" y="162" width="205" height="70" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="132.5" y="189" class="head" text-anchor="middle">Cell process</text>
+<text x="132.5" y="213" class="small" text-anchor="middle">outbound request</text>
+<rect x="335" y="162" width="275" height="70" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="472.5" y="189" class="head" text-anchor="middle">Egress proxy / Sentinel</text>
+<text x="472.5" y="213" class="small" text-anchor="middle">evaluate action and scope</text>
+<path d="M235 197H335" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<rect x="730" y="162" width="200" height="70" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="830.0" y="189" class="head" text-anchor="middle">Muse client</text>
+<text x="830.0" y="213" class="small" text-anchor="middle">user approval</text>
+<path d="M610 181H730" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<text x="670" y="166" class="small" text-anchor="middle">ask</text>
+<path d="M730 213H610" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)" stroke-dasharray="5 4"/>
+<text x="670" y="246" class="small" text-anchor="middle">decision</text>
+<rect x="335" y="327" width="275" height="70" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="472.5" y="354" class="head" text-anchor="middle">Authorized request</text>
+<text x="472.5" y="378" class="small" text-anchor="middle">replace surrogates if needed</text>
+<path d="M472 232L472 327" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<text x="488" y="286" class="small" text-anchor="start">allow</text>
+<rect x="30" y="327" width="205" height="70" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="132.5" y="368.0" class="" text-anchor="middle">Blocked / error</text>
+<path d="M335 217H306V362H235" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<text x="263" y="296" class="small" text-anchor="start">deny</text>
+<rect x="730" y="327" width="200" height="70" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="830.0" y="354" class="head" text-anchor="middle">authd</text>
+<text x="830.0" y="378" class="small" text-anchor="middle">credential service</text>
+<path d="M610 350H730" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M730 378H610" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)" stroke-dasharray="5 4"/>
+<text x="666" y="427" class="small" text-anchor="middle">credential lookup / return</text>
+<text x="666" y="449" class="small" text-anchor="middle">when required</text>
+<rect x="335" y="512" width="275" height="66" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="472.5" y="551.0" class="" text-anchor="middle">External service</text>
+<path d="M472 397L472 512" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<text x="488" y="479" class="small" text-anchor="start">forward</text>
+<text x="30" y="610" class="small" text-anchor="start">Response path omitted. This is an authorization flow, not a deployment diagram.</text>
+<text x="30" y="657" class="small" text-anchor="start">Cell UID 0 does not grant host authority. Authorized actions can still have consequences.</text>
+<text x="30" y="683" class="small" text-anchor="start">This example does not describe the distinct browser, privileged-worker or device paths.</text>
 </svg>

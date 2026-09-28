@@ -35,6 +35,7 @@ Start with [How Muse fits together](00-big-picture.md). This reference is for re
 
 - Security: [Sentinel](03-sentinel.md), [prompt injection](05-prompt-injection.md), [credentials](07-credentials.md), [payments](08-paying-for-things.md), [data/privacy](09-data-and-privacy.md).
 - Agent behavior: [published model background](04-the-model.md), [scheduler](11-scheduler.md), [skills](13-skills.md), [autonomy](14-autonomy.md), [toolbox](16-toolbox.md).
+- Diagrams: [notation, sources and rebuilding](diagrams.md).
 - Research: [inspection boundaries](17-transparency.md), [sources](sources.md), [build index](../builds.md).
 
 The original security/model chapters summarize published material. Operational reference pages record dated instance observations. Neither is a guarantee about every account or future build.

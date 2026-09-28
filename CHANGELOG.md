@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-28 - Technical diagram redraw
+
+- Replaced the eight diagram layouts with monochrome deployment, sequence, ownership, lifecycle and comparison figures.
+- Corrected proxy routing, separate background activation, scheduler fan-in, browser resumption and the memory representation links.
+- Separated Sentinel action permissions from inference safety checks; authorization now illustrates one named path rather than a universal pipeline.
+- Added reproducible SVG source and a per-figure evidence/notation reference.
+
 ## 2026-09-28 - Runtime field guide
 
 - Rebuilt the entry point around reader questions, with architecture, request flow, component, configuration, model-route, API, capability and feature-flag references.

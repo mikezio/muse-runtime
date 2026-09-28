@@ -34,12 +34,14 @@ The broader agent spans these components. An archive of the cell's files is usef
 
 - [System architecture](assets/architecture.svg) — responsibilities and connections.
 - [Request lifecycle](assets/request-lifecycle.svg) — message, context, inference, tools and delivery.
-- [Trust boundaries](assets/trust-boundaries.svg) — cell privileges, mediated access and remaining consequences.
+- [Outbound authorization](assets/trust-boundaries.svg) — a concrete allow/deny/approval flow.
 - [Configuration layers](assets/configuration-layers.svg) — files, reasoning, routing, client flags and platform policy.
 - [Agent roles](assets/agent-tree.svg) — ownership, delegation and independent model policies.
 - [Browser lifecycle](assets/browser-lineage.svg) — task ownership, session state and continuations.
 - [Memory system](assets/memory-pipeline.svg) — files, structured records, retrieval and provenance.
 - [Background work](assets/scheduler-loop.svg) — triggers, dispatch, execution and verified delivery.
+
+[Diagram notation, evidence and editable source](docs/diagrams.md).
 
 ## Archives you can investigate
 

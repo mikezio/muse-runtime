@@ -35,7 +35,7 @@ One observed recycle removed an added systemd unit under `/etc/systemd/system` w
 
 Meta's [published launch architecture](https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse) places the Hatch daemon/harness **inside** the runtime cell. Sentinel, safety services, credential handling, privileged connector workers, application Postgres and proxies sit **outside** that cell. The browser broker is also outside it. This corrects the older version of this chapter, which placed the daemon on the host side.
 
-![Execution cell and protected service boundaries](../assets/trust-boundaries.svg)
+![Execution cell and protected service placement](../assets/architecture.svg)
 
 Use the current build's launch scripts when investigating implementation details. A filename or binary string alone does not prove where a service currently runs.
 

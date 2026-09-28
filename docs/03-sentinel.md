@@ -2,7 +2,9 @@
 
 Root inside the execution cell is one kind of authority. Permission to act on a connected account, use a credential or contact a destination is another.
 
-![Cell privileges, protected services and permitted external effects](../assets/trust-boundaries.svg)
+![Example outbound request: allow, deny, approval and conditional credential insertion](../assets/trust-boundaries.svg)
+
+This figure shows one authorization example, not the path of every tool call. See [diagram notation and scope](diagrams.md).
 
 ## Different controls answer different questions
 

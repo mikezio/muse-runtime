@@ -1,72 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="950" viewBox="0 0 1120 950" role="img" aria-labelledby="title desc">
-<title id="title">Background work has a lifecycle</title>
-<desc id="desc">A definition, a dispatch, a completed run and a delivered result are four different facts.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA3B0"/></marker></defs>
-<style>text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .title{font-size:30px;font-weight:700;fill:#172B3A}.sub{font-size:17px;fill:#4E6271}.label{font-size:20px;font-weight:650;fill:#172B3A}.body{font-size:17px;fill:#4E6271}.small{font-size:15px;fill:#4E6271}.over{font-size:14px;font-weight:700;letter-spacing:1.2px;fill:#4E6271}</style>
-<rect width="1120" height="950" fill="#F7F9FB"/>
-<text x="40" y="51" class="title">Background work has a lifecycle</text>
-<text x="40" y="83" class="sub">A definition, a dispatch, a completed run and a delivered result are four different facts.</text>
-<rect x="40" y="120" width="312" height="124" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="40" y="136" width="4" height="92" rx="2" fill="#225EC4"/>
-<text x="62" y="158" class="label">Clock / schedule</text>
-<text x="62" y="190" class="body">Recurring, interval or one-shot</text>
-<text x="62" y="215" class="body">when configured and enabled.</text>
-<rect x="404" y="120" width="312" height="124" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="404" y="136" width="4" height="92" rx="2" fill="#087C78"/>
-<text x="426" y="158" class="label">Event / hook</text>
-<text x="426" y="190" class="body">A supported event triggers work.</text>
-<text x="426" y="215" class="body">Availability depends on integration.</text>
-<rect x="768" y="120" width="312" height="124" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="768" y="136" width="4" height="92" rx="2" fill="#7149A6"/>
-<text x="790" y="158" class="label">Queued request</text>
-<text x="790" y="190" class="body">A task is delegated or enqueued.</text>
-<text x="790" y="215" class="body">Ownership stays attached.</text>
-<path d="M 196 244 V 275 H 560" fill="none" stroke="#8FA3B0" stroke-width="2"/>
-<path d="M 560 244 V 311" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 924 244 V 275 H 560" fill="none" stroke="#8FA3B0" stroke-width="2"/>
-<rect x="350" y="322" width="420" height="120" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="350" y="338" width="4" height="88" rx="2" fill="#225EC4"/>
-<circle cx="379" cy="353" r="15" fill="#225EC4"/>
-<text x="379" y="358" class="small" style="fill:white" text-anchor="middle">1</text>
-<text x="404" y="360" class="label">Eligibility + dispatch</text>
-<text x="372" y="392" class="body">Resolve timing, ownership and runnable state.</text>
-<text x="372" y="417" class="body">A dispatch record proves a handoff was attempted.</text>
-<rect x="40" y="488" width="312" height="162" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="40" y="504" width="4" height="130" rx="2" fill="#087C78"/>
-<circle cx="69" cy="519" r="15" fill="#087C78"/>
-<text x="69" y="524" class="small" style="fill:white" text-anchor="middle">2</text>
-<text x="94" y="526" class="label">Worker execution</text>
-<text x="62" y="558" class="body">Load the job brief and context.</text>
-<text x="62" y="583" class="body">Run tools within current policy.</text>
-<text x="62" y="608" class="body">Wait, succeed or fail.</text>
-<text x="62" y="633" class="body">A worker is not always active.</text>
-<rect x="404" y="488" width="312" height="162" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="404" y="504" width="4" height="130" rx="2" fill="#7149A6"/>
-<circle cx="433" cy="519" r="15" fill="#7149A6"/>
-<text x="433" y="524" class="small" style="fill:white" text-anchor="middle">3</text>
-<text x="458" y="526" class="label">Persist the outcome</text>
-<text x="426" y="558" class="body">Record run state and results.</text>
-<text x="426" y="583" class="body">Capture failures / interruptions.</text>
-<text x="426" y="608" class="body">Compare intended vs actual effect.</text>
-<text x="426" y="633" class="body">Keep the record linked to its job.</text>
-<rect x="768" y="488" width="312" height="162" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="768" y="504" width="4" height="130" rx="2" fill="#9A5C12"/>
-<circle cx="797" cy="519" r="15" fill="#9A5C12"/>
-<text x="797" y="524" class="small" style="fill:white" text-anchor="middle">4</text>
-<text x="822" y="526" class="label">Delivery / follow-up</text>
-<text x="790" y="558" class="body">Send the configured result.</text>
-<text x="790" y="583" class="body">Queue later work if appropriate.</text>
-<text x="790" y="608" class="body">Wait for the next eligible trigger.</text>
-<text x="790" y="633" class="body">Do not equate silence with success.</text>
-<path d="M 350 402 H 196 V 481" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 352 568 H 399" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 716 568 H 763" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="40" y="692" width="1040" height="112" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
-<text x="62" y="726" class="over">OPERATIONAL CHECKS</text>
-<text x="62" y="758" class="body">Was it due? → Was it dispatched? → Did it finish? → Was its effect verified? → Was the result delivered?</text>
-<text x="62" y="784" class="small">After interruptions, check stale timing and existing effects before repeating consequential work.</text>
-<rect x="40" y="834" width="1040" height="86" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
-<text x="60" y="863" class="label">Verify the cadence for the specific installation.</text>
-<text x="60" y="889" class="small">Schedules and standing checklists can be configured per installation; examples are not product guarantees.</text>
-<text x="60" y="911" class="small">Retries, deduplication and interruption recovery should be verified for the particular job or service.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+<title id="title">From trigger to delivery</title><desc id="desc">Schedules, events and queued work each feed eligibility and dispatch. A dispatched worker produces a run outcome. The runtime records it, then follows the configured delivery path. Waiting and interruptions require status checks rather than assumed success.</desc>
+<metadata>Conceptual flow based on native scheduling/task guidance; see docs/11-scheduler.md.</metadata>
+<defs><marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#222;font-size:18px}.title{font-size:26px;font-weight:400}.group{font-size:19px;font-weight:700}.small{font-size:16px;fill:#555}.mono{font-family:Consolas,'Liberation Mono',monospace;font-size:16px}.head{font-size:18px;font-weight:700}</style>
+<rect width="960" height="600" fill="white"/>
+<text x="30" y="42" class="title" text-anchor="start">From trigger to delivery</text>
+<path d="M30 64H930" fill="none" stroke="#bbb" stroke-width="1.3"/>
+<rect x="55" y="121" width="230" height="54" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="170.0" y="154.0" class="" text-anchor="middle">Schedule due</text>
+<rect x="365" y="121" width="230" height="54" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="480.0" y="154.0" class="" text-anchor="middle">Event</text>
+<rect x="675" y="121" width="230" height="54" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="790.0" y="154.0" class="" text-anchor="middle">Queued work</text>
+<path d="M170 175L170 220" fill="none" stroke="#333" stroke-width="1.3"/>
+<path d="M480 175L480 220" fill="none" stroke="#333" stroke-width="1.3"/>
+<path d="M790 175L790 220" fill="none" stroke="#333" stroke-width="1.3"/>
+<path d="M170 220H790" fill="none" stroke="#333" stroke-width="1.3"/>
+<path d="M480 220L480 262" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<rect x="355" y="262" width="250" height="58" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="480.0" y="297.0" class="" text-anchor="middle">Eligibility / dispatch</text>
+<rect x="355" y="369" width="250" height="58" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="480.0" y="404.0" class="" text-anchor="middle">Worker run</text>
+<path d="M480 320L480 369" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<rect x="35" y="369" width="245" height="58" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="157.5" y="404.0" class="" text-anchor="middle">Waiting / interrupted</text>
+<path d="M355 398H280" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<text x="37" y="463" class="small" text-anchor="start">Inspect current state.</text>
+<text x="37" y="487" class="small" text-anchor="start">Resume or retry only as appropriate.</text>
+<rect x="685" y="369" width="245" height="58" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="807.5" y="404.0" class="" text-anchor="middle">Record run outcome</text>
+<path d="M605 398H685" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<text x="617" y="383" class="small" text-anchor="start">ends</text>
+<rect x="685" y="478" width="245" height="58" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="807.5" y="513.0" class="" text-anchor="middle">Configured delivery</text>
+<path d="M807 427L807 478" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<text x="823" y="458" class="small" text-anchor="start">if applicable</text>
+<text x="30" y="577" class="small" text-anchor="start">A job being defined, dispatched, completed and delivered are four different facts. No fixed cadence is implied.</text>
 </svg>

@@ -1,77 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="930" viewBox="0 0 1120 930" role="img" aria-labelledby="title desc">
-<title id="title">Memory is a set of stores and processes</title>
-<desc id="desc">Persistent files are one surface; structured records, indexes and provenance also matter.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA3B0"/></marker></defs>
-<style>text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .title{font-size:30px;font-weight:700;fill:#172B3A}.sub{font-size:17px;fill:#4E6271}.label{font-size:20px;font-weight:650;fill:#172B3A}.body{font-size:17px;fill:#4E6271}.small{font-size:15px;fill:#4E6271}.over{font-size:14px;font-weight:700;letter-spacing:1.2px;fill:#4E6271}</style>
-<rect width="1120" height="930" fill="#F7F9FB"/>
-<text x="40" y="51" class="title">Memory is a set of stores and processes</text>
-<text x="40" y="83" class="sub">Persistent files are one surface; structured records, indexes and provenance also matter.</text>
-<rect x="40" y="122" width="312" height="164" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="40" y="138" width="4" height="132" rx="2" fill="#225EC4"/>
-<circle cx="69" cy="153" r="15" fill="#225EC4"/>
-<text x="69" y="158" class="small" style="fill:white" text-anchor="middle">1</text>
-<text x="94" y="160" class="label">Inputs</text>
-<text x="62" y="192" class="body">Conversation and task results</text>
-<text x="62" y="217" class="body">Connected-source information</text>
-<text x="62" y="242" class="body">Explicit user edits and corrections</text>
-<text x="62" y="267" class="body">Only where enabled / permitted</text>
-<rect x="404" y="122" width="312" height="164" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="404" y="138" width="4" height="132" rx="2" fill="#087C78"/>
-<circle cx="433" cy="153" r="15" fill="#087C78"/>
-<text x="433" y="158" class="small" style="fill:white" text-anchor="middle">2</text>
-<text x="458" y="160" class="label">Memory processing</text>
-<text x="426" y="192" class="body">Select and organize information.</text>
-<text x="426" y="217" class="body">Reconcile existing knowledge.</text>
-<text x="426" y="242" class="body">Maintain retrieval references.</text>
-<text x="426" y="267" class="body">Runs depend on runtime policy.</text>
-<rect x="768" y="122" width="312" height="164" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="768" y="138" width="4" height="132" rx="2" fill="#7149A6"/>
-<circle cx="797" cy="153" r="15" fill="#7149A6"/>
-<text x="797" y="158" class="small" style="fill:white" text-anchor="middle">4</text>
-<text x="822" y="160" class="label">Later use</text>
-<text x="790" y="192" class="body">Retrieve relevant information.</text>
-<text x="790" y="217" class="body">Assemble the next task context.</text>
-<text x="790" y="242" class="body">Apply identity and preferences.</text>
-<text x="790" y="267" class="body">Produce a grounded response.</text>
-<path d="M 352 204 H 399" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 202 606 V 630 H 1100 V 204 H 1084" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 560 606 V 630" fill="none" stroke="#8FA3B0" stroke-width="2"/>
-<path d="M 918 606 V 630" fill="none" stroke="#8FA3B0" stroke-width="2"/>
-<text x="938" y="622" class="small">retrieval</text>
-<path d="M 560 286 V 332" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<circle cx="62" cy="363" r="15" fill="#087C78"/>
-<text x="62" y="368" class="small" style="fill:white" text-anchor="middle">3</text>
-<text x="87" y="369" class="over">PERSISTENT STATE — MULTIPLE REPRESENTATIONS</text>
-<path d="M 560 379 V 398 H 202 V 422" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 560 398 V 422" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<path d="M 560 398 H 918 V 422" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="40" y="432" width="324" height="174" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="40" y="448" width="4" height="142" rx="2" fill="#225EC4"/>
-<text x="62" y="470" class="label">Editable files</text>
-<text x="62" y="502" class="body">Identity / behavior preferences</text>
-<text x="62" y="527" class="body">Standing memory and notes</text>
-<text x="62" y="552" class="body">Workspace documents</text>
-<text x="62" y="577" class="body">Useful, but not the whole system</text>
-<rect x="398" y="432" width="324" height="174" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="398" y="448" width="4" height="142" rx="2" fill="#087C78"/>
-<text x="420" y="470" class="label">Database + indexes</text>
-<text x="420" y="502" class="body">Structured memory records</text>
-<text x="420" y="527" class="body">Search / embedding indexes</text>
-<text x="420" y="552" class="body">Source references and status</text>
-<text x="420" y="577" class="body">Read via supported tools</text>
-<rect x="756" y="432" width="324" height="174" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
-<rect x="756" y="448" width="4" height="142" rx="2" fill="#7149A6"/>
-<text x="778" y="470" class="label">History + provenance</text>
-<text x="778" y="502" class="body">Sessions, events and task records</text>
-<text x="778" y="527" class="body">Evidence behind a stored claim</text>
-<text x="778" y="552" class="body">Corrections / superseded claims</text>
-<text x="778" y="577" class="body">Coverage depends on the record</text>
-<rect x="40" y="650" width="1040" height="116" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
-<text x="62" y="684" class="over">CORRECTING OR FORGETTING INFORMATION</text>
-<text x="62" y="717" class="body">Update the source of truth and check linked records, summaries and copies through supported workflows.</text>
-<text x="62" y="746" class="small">Editing one Markdown file does not establish that every derived representation changed.</text>
-<rect x="40" y="814" width="1040" height="86" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
-<text x="60" y="843" class="label">Memory upkeep follows runtime policy.</text>
-<text x="60" y="869" class="small">Documentation describes background maintenance, but actual schedules, features and source coverage vary.</text>
-<text x="60" y="891" class="small">Use provenance where available; separate a retrieved claim from independently verified current state.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+<title id="title">Memory and later use</title><desc id="desc">Editable files, structured memory and indexes, and history/provenance are different representations. Relevant information is retrieved from supported surfaces and assembled into later context. Background upkeep and correction workflows vary by policy.</desc>
+<metadata>Conceptual map of installed memory guidance and native schema/tool observations; see docs/12-memory.md.</metadata>
+<defs><marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L8 4L0 8" fill="#222"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#222;font-size:18px}.title{font-size:26px;font-weight:400}.group{font-size:19px;font-weight:700}.small{font-size:16px;fill:#555}.mono{font-family:Consolas,'Liberation Mono',monospace;font-size:16px}.head{font-size:18px;font-weight:700}</style>
+<rect width="960" height="520" fill="white"/>
+<text x="30" y="42" class="title" text-anchor="start">Memory and later use</text>
+<path d="M30 64H930" fill="none" stroke="#bbb" stroke-width="1.3"/>
+<text x="30" y="108" class="group" text-anchor="start">Persistent representations</text>
+<rect x="30" y="132" width="370" height="270" fill="white" stroke="#333" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="52" y="169" class="head" text-anchor="start">Editable files</text>
+<text x="52" y="197" class="small" text-anchor="start">Standing notes and preferences</text>
+<path d="M52 214H377" fill="none" stroke="#bbb" stroke-width="1.3"/>
+<text x="52" y="247" class="head" text-anchor="start">Structured memory and indexes</text>
+<text x="52" y="275" class="small" text-anchor="start">Claims, source links and retrieval data</text>
+<path d="M52 292H377" fill="none" stroke="#bbb" stroke-width="1.3"/>
+<text x="52" y="325" class="head" text-anchor="start">History and provenance</text>
+<text x="52" y="353" class="small" text-anchor="start">Conversation, task and correction records</text>
+<rect x="489" y="222" width="190" height="86" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="584.0" y="249" class="head" text-anchor="middle">Retrieve</text>
+<text x="584.0" y="273" class="small" text-anchor="middle">relevant information</text>
+<rect x="759" y="222" width="171" height="86" fill="white" stroke="#333" stroke-width="1.3"/>
+<text x="844.5" y="249" class="head" text-anchor="middle">Context</text>
+<text x="844.5" y="273" class="small" text-anchor="middle">for later inference</text>
+<path d="M400 265H489" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<path d="M679 265H759" fill="none" stroke="#333" stroke-width="1.3" marker-end="url(#a)"/>
+<text x="432" y="251" class="small" text-anchor="start">read</text>
+<text x="696" y="251" class="small" text-anchor="start">select</text>
+<text x="30" y="448" class="head" text-anchor="start">Correction and upkeep</text>
+<text x="260" y="448" class="small" text-anchor="start">Use the relevant stores and workflows; one file edit may be insufficient.</text>
+<text x="30" y="497" class="small" text-anchor="start">Conceptual map, not a verified processing pipeline. Sources, indexes and maintenance vary by runtime policy.</text>
 </svg>
