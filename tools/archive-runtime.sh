@@ -53,7 +53,24 @@ done
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 SNAP_DIR="$REPO_DIR/snapshot"
 OUT_DIR="$(cd "$OUT_DIR" && pwd)"   # absolute: subshell cd's later must not break it
-STAGE="$OUT_DIR/.stage-runtime-$TAG"
+
+# --- concurrency guard (added 2026-09-28) ---
+# Only one archive pipeline may run at a time. On 2026-09-28 two overlapping
+# pipelines wiped each other's staging area: the script does rm -rf on its
+# stage dir at start and on EXIT, so a second pipeline for the same tag
+# deleted the first one's files mid-zip -> "zip I/O error", exit 15.
+LOCK_FILE="$OUT_DIR/.archive-runtime.lock"
+exec 9>"$LOCK_FILE"
+if ! flock -n 9; then
+  echo "archive pipeline already running (lock $LOCK_FILE held); skipping. Next hourly run will retry." >&2
+  exit 3
+fi
+# sweep staging dirs left behind by crashed runs (older than 24h)
+find "$OUT_DIR" -maxdepth 1 -name '.stage-runtime-*' -mmin +1440 -exec rm -rf {} + 2>/dev/null || true
+
+# per-run staging dir (PID-suffixed): even if the lock were ever bypassed,
+# runs can no longer rm -rf each other's stage area.
+STAGE="$OUT_DIR/.stage-runtime-$TAG-$$"
 rm -rf "$STAGE"
 trap 'rm -rf "$STAGE"' EXIT
 mkdir -p "$STAGE/runtime/home" "$STAGE/runtime/opt"
