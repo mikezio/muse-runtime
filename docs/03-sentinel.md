@@ -1,97 +1,51 @@
-# Sentinel
+# Sentinel and the other trust boundaries
 
-The overlord. What enforces the rules when the agent technically has root.
+Root inside the execution cell is one kind of authority. Permission to act on a connected account, use a credential or contact a destination is another.
 
-## The problem Sentinel solves
+![Cell privileges, protected services and permitted external effects](../assets/trust-boundaries.svg)
 
-Give an agent root inside a container and a natural question follows: what stops it from doing something it shouldn't? The container boundary stops it from reaching the host. But *within* its own world — network access, credentials, side effects on the user's accounts — something has to say no. That something is **Sentinel**.
+## Different controls answer different questions
 
-Sentinel is the host-side policy authority for the runtime. It is not a process the agent can see (it doesn't appear in the container's process table), not a file the agent can edit, and not a control the agent can influence. It sits at every boundary the container has with the outside world and enforces policy there — which is exactly why the agent's root access doesn't matter to it. Root is *inside*; Sentinel is *outside*, at the door.
+| Control | Question it addresses |
+|---|---|
+| Namespaces and the cell boundary | Which host resources and identities can this process access? |
+| Filesystem/process restrictions | Which local files or process state can it read or change? |
+| Privileged connector workers | Where does credential-capable integration code execute? |
+| Credential service | Which caller may use which credential material? |
+| Sentinel | May this connector action or network request proceed? |
+| Human approval | Has the user authorized this action and scope? |
+| Safety classifiers and model defenses | Does the input/output or requested behavior present a recognized threat? |
 
-Meta's framing is blunt: *"Muse proposes actions, but only Sentinel can grant permission."* Sentinel is the sole permission authority for connector actions and network egress — not an advisor, not a filter the agent can route around, the decider.
+These layers have different jobs. A prompt is not a kernel boundary, and a namespace is not an authorization decision for an email action.
 
-## Egress: all network traffic goes through Sentinel
+## What the published design describes
 
-The container does not have direct internet access in the way a normal machine does. Outbound traffic is **routed through Sentinel**, which terminates TLS, inspects, and re-encrypts it — a man-in-the-middle the runtime deliberately installs.
+Meta's launch design separates the cell harness from protected services. Sentinel evaluates connector actions and egress; privileged workers and the credential service mediate integration access. Scoped approvals travel through the client. The design also describes credential surrogates and kernel-tracked data sensitivity for egress decisions. See [Meta's architecture writeup](https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse).
 
-How it works, mechanically:
+The repository's [credentials](07-credentials.md) and [prompt-injection](05-prompt-injection.md) chapters explain the source-described mechanisms in more detail. Their descriptions should be read as architecture claims, not an independent proof that every production control always succeeds.
 
-- Sentinel publishes a certificate authority (`hatch-egress-ca.pem`) into the container's trust anchors. Every TLS connection the container makes is intercepted by the egress proxy, which presents a certificate for the destination signed by this CA.
-- The proxy holds the real upstream connection. It can see plaintext, apply policy (allow, deny, require approval), log, and swap credentials (more below) before forwarding.
-- The container's trust store is built by the host at boot and the NSS databases are mounted read-only — because, as the runtime's own scripts note, a container-writable trust database would be a code-execution primitive against anything that opens it.
+## Why cell root is not the same as host compromise
 
-The telling detail: the runtime scripts explicitly acknowledge that the container *can* subvert its own PEM trust store — install its own CA, pin certificates, try to blind the proxy. They describe this as **self-harm, not escape**: Sentinel still intercepts at the network layer regardless of what the container believes about certificates, and no host process reads the container's trust tree anyway. You can lie to yourself about who you're talking to; you can't stop Sentinel from being in the middle.
+A shell process can have UID 0 in the cell while its host identity is unprivileged. Reading a shipped script does not grant authority over the service it describes. Editing user-controlled files does not replace a protected service's policy state.
 
-This is the core of the "overlord" dynamic. The enforcement doesn't depend on the container cooperating. It operates one layer below anything root can touch.
+For a concrete investigation, ask what the process can actually access. A denied protected-process read, a read-only mount and a denied connector action are separate boundaries with separate evidence.
 
-## Approvals: the human in the loop
+## Why isolation does not mean “nothing bad can happen”
 
-Some actions require the user's explicit approval — a native approval card the user accepts or declines. The approval flow is enforced by the runtime *outside* the container:
+Accessible files can still be overwritten. An authorized integration can make consequential changes. An external action may disclose information within its permitted scope. Bugs and classification mistakes remain possible.
 
-- The agent cannot approve on its own behalf, cannot see the outcome in advance, and cannot bypass the prompt by rephrasing the request.
-- When Sentinel's decision is "ask," execution stops and the request goes **directly to the Muse client** — not through the conversation with the model. The dialog describes the exact action; the user's answer routes directly back to Sentinel. The model never touches the decision.
-- A confirmation covers exactly the action named. If details change afterward, the new version goes back for approval.
-- Grants are **strict capabilities**, not conversational suggestions: bound to a specific connector, destination, and use case, in one-time, session-scoped, task-scoped, time-bounded, or perpetual flavors. Sentinel checks that later invocations match the granted scope exactly.
-- Standing approvals (granted once, in the user's own words) cover routine, reversible, pre-agreed actions — never new spending, new credentials, or irreversible destruction.
+A useful evaluation therefore identifies:
 
-The point, per Meta, is not to ask about everything — read-only, previously allowed, or demonstrably low-risk actions flow through — but to put friction exactly where consent matters.
+1. The resource or action at risk.
+2. The actor and its granted authority.
+3. The interface used to cross a boundary.
+4. The check or approval that applies.
+5. The observed outcome and remaining uncertainty.
 
-## Tainted egress: kernel-level data-flow tracking
+Cell root alone is not evidence that the host boundary has failed. The existence of Sentinel alone is not evidence that every harmful outcome is impossible.
 
-The cleverest part of the design is how Sentinel decides what needs approval without pestering the user constantly. Meta calls it **"tainted egress"**:
+## How to read the diagrams
 
-- Every tool-execution process starts in a *clean* state. The moment it reads user data, it becomes *tainted*.
-- Clean network requests that fit a narrowly bounded auto-allow policy pass without prompting. Tainted or unverifiable processes lose auto-allow and fall back to the approval flow.
-- The implementation is eBPF programs attached to cgroups (for network interception and attributing traffic to processes) plus eBPF programs on Linux Security Module hooks (for propagating taint when a process reads sensitive data).
+The architecture diagram shows the **published placement** of the harness and protected services. The request diagram shows a **logical workflow**. Neither is a packet trace or a security assessment of a particular deployment.
 
-This is enforcement at the kernel level, under the container — yet another layer the container's root cannot reach or disable. A prompt-injected agent trying to exfiltrate data it just read would find its egress tainted and its request routed to the user for approval (or denied), regardless of what the model was tricked into "deciding."
-
-## What Sentinel evaluates
-
-For every concrete network request, Sentinel can inspect the destination at both layer 4 and layer 7: hostname, resolved and final IP, port, protocol, HTTP method, path, and the decoded request itself. SSRF restrictions prevent the classic trick of a public-looking hostname resolving to private infrastructure after DNS lookup. This is the "overlord" in full: not just a yes/no gate, but a per-request inspection of *what*, *where*, and *with whose data*.
-
-## Privilege separation: skills don't hold power
-
-The container ships with over a hundred CLI tools for third-party services (Spotify, Gmail, Tesla, banking...). None of them run with the service's real credentials inside the container. Instead, each skill talks to a **Unix socket** (`/run/hatch/privsep/<service>.sock`), and the trusted host-side service on the other end performs the privileged operation.
-
-The credential model is surrogate-based:
-
-1. The container-side skill receives a *surrogate* credential — a placeholder token that is useless outside the runtime.
-2. When the skill makes its outbound request through the egress proxy, the proxy recognizes the surrogate and **swaps in the real credential** on the host side, en route.
-3. The real secret never enters the container. It can't be dumped from memory, read from a file, or exfiltrated — because it was never there.
-
-This is why the Secure Vault works the way it does: the user enters secrets on a hosted page, the agent only ever sees a link, and the runtime *uses* credentials without *revealing* them. The design assumes the container is a curious adversary — even fully compromised, fully root, reading everything — and still keeps secrets out of its reach.
-
-## What Sentinel does not do
-
-Sentinel is not a nanny for the agent's thoughts. It doesn't review reasoning, doesn't censor what the agent says in chat, and doesn't stop the agent from making mistakes inside its own workspace. Its job is the boundary: network egress, credential use, privileged operations, approvals. Within the container, the agent is genuinely autonomous — free to build, break, experiment, and inspect. The overlord guards the doors, not the furniture.
-
-## The relationship in one diagram
-
-```
-  ┌──────────────────── container ────────────────────┐
-  │                                                    │
-  │   agent (root) ──► files, processes, packages      │
-  │        │                                           │
-  │        │ tool calls / network                      │
-  │        ▼                                           │
-  │   ┌────────────┐     ┌──────────────────┐           │
-  │   │ privsep    │     │ egress proxy     │           │
-  │   │ sockets    │     │ (TLS MITM)       │           │
-  │   └─────┬──────┘     └────────┬─────────┘           │
-  └─────────┼─────────────────────┼─────────────────────┘
-            │                     │
-     ┌──────▼─────────────────────▼──────┐
-     │            SENTINEL               │
-     │  policy · approvals · credential  │
-     │  swap · audit                     │
-     └───────────────────────────────────┘
-            │                     │
-     host services          internet
-```
-
-Everything the container wants from the outside world passes through the bottom of that diagram. Root ends at the container wall.
-
-## The one-line version
-
-Root is the king of the container; Sentinel owns everything the container touches.
+See [the machine](01-the-machine.md), [API surfaces](runtime-api.md) and [evidence](evidence.md) for operational details.

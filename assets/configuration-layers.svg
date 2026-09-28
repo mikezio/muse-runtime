@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1030" viewBox="0 0 1120 1030" role="img" aria-labelledby="title desc">
+<title id="title">Settings live at different layers</title>
+<desc id="desc">Changing one surface does not imply the model provider, feature gate or host service changed.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA3B0"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .title{font-size:30px;font-weight:700;fill:#172B3A}.sub{font-size:17px;fill:#4E6271}.label{font-size:20px;font-weight:650;fill:#172B3A}.body{font-size:17px;fill:#4E6271}.small{font-size:15px;fill:#4E6271}.over{font-size:14px;font-weight:700;letter-spacing:1.2px;fill:#4E6271}</style>
+<rect width="1120" height="1030" fill="#F7F9FB"/>
+<text x="40" y="51" class="title">Settings live at different layers</text>
+<text x="40" y="83" class="sub">Changing one surface does not imply the model provider, feature gate or host service changed.</text>
+<text x="62" y="131" class="over">SURFACE</text>
+<text x="405" y="131" class="over">WHAT IT INFLUENCES</text>
+<text x="780" y="131" class="over">WHAT TO VERIFY</text>
+<rect x="40" y="154" width="1040" height="102" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="154" width="8" height="102" rx="3" fill="#225EC4"/>
+<circle cx="73" cy="185" r="15" fill="#225EC4"/>
+<text x="73" y="190" class="small" style="fill:white" text-anchor="middle">1</text>
+<text x="100" y="192" class="label">User-editable files</text>
+<text x="405" y="189" class="body">Identity, preferences, memory,</text>
+<text x="405" y="216" class="body">workspace and skill content.</text>
+<text x="780" y="189" class="small">Which consumer reads the file?</text>
+<text x="780" y="213" class="small">Did the relevant behavior change?</text>
+<rect x="40" y="272" width="1040" height="102" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="272" width="8" height="102" rx="3" fill="#7149A6"/>
+<circle cx="73" cy="303" r="15" fill="#7149A6"/>
+<text x="73" y="308" class="small" style="fill:white" text-anchor="middle">2</text>
+<text x="100" y="310" class="label">Reasoning settings</text>
+<text x="405" y="307" class="body">Root / subagent effort preferences</text>
+<text x="405" y="334" class="body">in home.yaml / the config API.</text>
+<text x="780" y="307" class="small">Accepted and effective values;</text>
+<text x="780" y="331" class="small">provider handling can be hidden.</text>
+<rect x="40" y="390" width="1040" height="102" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="390" width="8" height="102" rx="3" fill="#7149A6"/>
+<circle cx="73" cy="421" r="15" fill="#7149A6"/>
+<text x="73" y="426" class="small" style="fill:white" text-anchor="middle">3</text>
+<text x="100" y="428" class="label">Model routing</text>
+<text x="405" y="425" class="body">model.get / model.set, aliases,</text>
+<text x="405" y="452" class="body">role-specific defaults and policy.</text>
+<text x="780" y="425" class="small">Resolved route where exposed;</text>
+<text x="780" y="449" class="small">labels are not per-turn proof.</text>
+<rect x="40" y="508" width="1040" height="102" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="508" width="8" height="102" rx="3" fill="#9A5C12"/>
+<circle cx="73" cy="539" r="15" fill="#9A5C12"/>
+<text x="73" y="544" class="small" style="fill:white" text-anchor="middle">4</text>
+<text x="100" y="546" class="label">Client feature flags</text>
+<text x="405" y="543" class="body">What the web or app surfaces show;</text>
+<text x="405" y="570" class="body">account / rollout values can vary.</text>
+<text x="780" y="543" class="small">Current client flag values;</text>
+<text x="780" y="567" class="small">UI and backend can differ.</text>
+<rect x="40" y="626" width="1040" height="102" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="626" width="8" height="102" rx="3" fill="#087C78"/>
+<circle cx="73" cy="657" r="15" fill="#087C78"/>
+<text x="73" y="662" class="small" style="fill:white" text-anchor="middle">5</text>
+<text x="100" y="664" class="label">Backend gates</text>
+<text x="405" y="661" class="body">Availability of tools, services,</text>
+<text x="405" y="688" class="body">account features and permissions.</text>
+<text x="780" y="661" class="small">Supported capability responses;</text>
+<text x="780" y="685" class="small">compiled name ≠ enabled feature.</text>
+<rect x="40" y="744" width="1040" height="102" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="744" width="8" height="102" rx="3" fill="#225EC4"/>
+<circle cx="73" cy="775" r="15" fill="#225EC4"/>
+<text x="73" y="780" class="small" style="fill:white" text-anchor="middle">6</text>
+<text x="100" y="782" class="label">Host / launch settings</text>
+<text x="405" y="779" class="body">Service environment and protected</text>
+<text x="405" y="806" class="body">infrastructure configuration.</text>
+<text x="780" y="779" class="small">Operator-level effective state;</text>
+<text x="780" y="803" class="small">guest files may not control it.</text>
+<rect x="40" y="914" width="1040" height="86" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="60" y="943" class="label">Each configuration layer has its own scope.</text>
+<text x="60" y="969" class="small">Availability in source or a binary ≠ enabled for this account. Accepted input ≠ effective provider behavior.</text>
+<text x="60" y="991" class="small">Model changes may reset conversation context. Capture the baseline and verify restoration during tests.</text>
+</svg>

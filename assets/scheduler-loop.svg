@@ -1,42 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="460" viewBox="0 0 860 460" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
-  <defs>
-    <marker id="arr2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#57606a"/>
-    </marker>
-  </defs>
-  <rect x="0" y="0" width="860" height="460" fill="#ffffff"/>
-  <text x="430" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#24292f">the scheduler loop</text>
-
-  <!-- cycle boxes -->
-  <rect x="40" y="70" width="160" height="70" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
-  <text x="120" y="97" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">cron fires</text>
-  <text x="120" y="116" text-anchor="middle" font-size="11" fill="#57606a">clock · event · runonce</text>
-
-  <rect x="250" y="70" width="160" height="70" rx="10" fill="#fff8c5" stroke="#9a6700" stroke-width="2"/>
-  <text x="330" y="97" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">worker wakes</text>
-  <text x="330" y="116" text-anchor="middle" font-size="11" fill="#57606a">reads files = remembers</text>
-
-  <rect x="460" y="70" width="160" height="70" rx="10" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
-  <text x="540" y="97" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">does the work</text>
-  <text x="540" y="116" text-anchor="middle" font-size="11" fill="#57606a">tools · skills · browser</text>
-
-  <rect x="670" y="70" width="150" height="70" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="2"/>
-  <text x="745" y="97" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">writes + reports</text>
-  <text x="745" y="116" text-anchor="middle" font-size="11" fill="#57606a">then sleeps</text>
-
-  <line x1="200" y1="105" x2="246" y2="105" stroke="#57606a" stroke-width="2" marker-end="url(#arr2)"/>
-  <line x1="410" y1="105" x2="456" y2="105" stroke="#57606a" stroke-width="2" marker-end="url(#arr2)"/>
-  <line x1="620" y1="105" x2="666" y2="105" stroke="#57606a" stroke-width="2" marker-end="url(#arr2)"/>
-  <!-- wrap arrow back -->
-  <path d="M745,140 C745,190 120,190 120,140" fill="none" stroke="#57606a" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arr2)"/>
-
-  <!-- heartbeat box -->
-  <rect x="40" y="220" width="780" height="200" rx="12" fill="#f6f8fa" stroke="#0969da" stroke-width="1.5"/>
-  <text x="430" y="248" text-anchor="middle" font-size="14" font-weight="700" fill="#24292f">the heartbeat - every ~30 minutes</text>
-  <text x="70" y="278" font-size="12" fill="#24292f">1. read the user's proactive preferences <tspan fill="#57606a">(standing prefs never override a live instruction)</tspan></text>
-  <text x="70" y="302" font-size="12" fill="#24292f">2. check recent cron runs for failures → <tspan fill="#57606a">diagnose, fix, or file a repair proposal with evidence</tspan></text>
-  <text x="70" y="326" font-size="12" fill="#24292f">3. look one hour ahead → <tspan fill="#57606a">prep anything time-sensitive now</tspan></text>
-  <text x="70" y="350" font-size="12" fill="#24292f">4. session health → <tspan fill="#57606a">surface only what needs the user (login code, approval, decision)</tspan></text>
-  <text x="70" y="374" font-size="12" fill="#24292f">5. work the improvement queue → <tspan fill="#57606a">one real fix, verified, recorded</tspan></text>
-  <text x="70" y="398" font-size="12" fill="#24292f">6. end with a report → <tspan fill="#57606a">checked / no_findings / skipped / blocked - a quiet tick is a fine tick</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="950" viewBox="0 0 1120 950" role="img" aria-labelledby="title desc">
+<title id="title">Background work has a lifecycle</title>
+<desc id="desc">A definition, a dispatch, a completed run and a delivered result are four different facts.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA3B0"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .title{font-size:30px;font-weight:700;fill:#172B3A}.sub{font-size:17px;fill:#4E6271}.label{font-size:20px;font-weight:650;fill:#172B3A}.body{font-size:17px;fill:#4E6271}.small{font-size:15px;fill:#4E6271}.over{font-size:14px;font-weight:700;letter-spacing:1.2px;fill:#4E6271}</style>
+<rect width="1120" height="950" fill="#F7F9FB"/>
+<text x="40" y="51" class="title">Background work has a lifecycle</text>
+<text x="40" y="83" class="sub">A definition, a dispatch, a completed run and a delivered result are four different facts.</text>
+<rect x="40" y="120" width="312" height="124" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="136" width="4" height="92" rx="2" fill="#225EC4"/>
+<text x="62" y="158" class="label">Clock / schedule</text>
+<text x="62" y="190" class="body">Recurring, interval or one-shot</text>
+<text x="62" y="215" class="body">when configured and enabled.</text>
+<rect x="404" y="120" width="312" height="124" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="404" y="136" width="4" height="92" rx="2" fill="#087C78"/>
+<text x="426" y="158" class="label">Event / hook</text>
+<text x="426" y="190" class="body">A supported event triggers work.</text>
+<text x="426" y="215" class="body">Availability depends on integration.</text>
+<rect x="768" y="120" width="312" height="124" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="768" y="136" width="4" height="92" rx="2" fill="#7149A6"/>
+<text x="790" y="158" class="label">Queued request</text>
+<text x="790" y="190" class="body">A task is delegated or enqueued.</text>
+<text x="790" y="215" class="body">Ownership stays attached.</text>
+<path d="M 196 244 V 275 H 560" fill="none" stroke="#8FA3B0" stroke-width="2"/>
+<path d="M 560 244 V 311" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 924 244 V 275 H 560" fill="none" stroke="#8FA3B0" stroke-width="2"/>
+<rect x="350" y="322" width="420" height="120" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="350" y="338" width="4" height="88" rx="2" fill="#225EC4"/>
+<circle cx="379" cy="353" r="15" fill="#225EC4"/>
+<text x="379" y="358" class="small" style="fill:white" text-anchor="middle">1</text>
+<text x="404" y="360" class="label">Eligibility + dispatch</text>
+<text x="372" y="392" class="body">Resolve timing, ownership and runnable state.</text>
+<text x="372" y="417" class="body">A dispatch record proves a handoff was attempted.</text>
+<rect x="40" y="488" width="312" height="162" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="504" width="4" height="130" rx="2" fill="#087C78"/>
+<circle cx="69" cy="519" r="15" fill="#087C78"/>
+<text x="69" y="524" class="small" style="fill:white" text-anchor="middle">2</text>
+<text x="94" y="526" class="label">Worker execution</text>
+<text x="62" y="558" class="body">Load the job brief and context.</text>
+<text x="62" y="583" class="body">Run tools within current policy.</text>
+<text x="62" y="608" class="body">Wait, succeed or fail.</text>
+<text x="62" y="633" class="body">A worker is not always active.</text>
+<rect x="404" y="488" width="312" height="162" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="404" y="504" width="4" height="130" rx="2" fill="#7149A6"/>
+<circle cx="433" cy="519" r="15" fill="#7149A6"/>
+<text x="433" y="524" class="small" style="fill:white" text-anchor="middle">3</text>
+<text x="458" y="526" class="label">Persist the outcome</text>
+<text x="426" y="558" class="body">Record run state and results.</text>
+<text x="426" y="583" class="body">Capture failures / interruptions.</text>
+<text x="426" y="608" class="body">Compare intended vs actual effect.</text>
+<text x="426" y="633" class="body">Keep the record linked to its job.</text>
+<rect x="768" y="488" width="312" height="162" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="768" y="504" width="4" height="130" rx="2" fill="#9A5C12"/>
+<circle cx="797" cy="519" r="15" fill="#9A5C12"/>
+<text x="797" y="524" class="small" style="fill:white" text-anchor="middle">4</text>
+<text x="822" y="526" class="label">Delivery / follow-up</text>
+<text x="790" y="558" class="body">Send the configured result.</text>
+<text x="790" y="583" class="body">Queue later work if appropriate.</text>
+<text x="790" y="608" class="body">Wait for the next eligible trigger.</text>
+<text x="790" y="633" class="body">Do not equate silence with success.</text>
+<path d="M 350 402 H 196 V 481" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 352 568 H 399" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 716 568 H 763" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="692" width="1040" height="112" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="62" y="726" class="over">OPERATIONAL CHECKS</text>
+<text x="62" y="758" class="body">Was it due? → Was it dispatched? → Did it finish? → Was its effect verified? → Was the result delivered?</text>
+<text x="62" y="784" class="small">After interruptions, check stale timing and existing effects before repeating consequential work.</text>
+<rect x="40" y="834" width="1040" height="86" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="60" y="863" class="label">Verify the cadence for the specific installation.</text>
+<text x="60" y="889" class="small">Schedules and standing checklists can be configured per installation; examples are not product guarantees.</text>
+<text x="60" y="911" class="small">Retries, deduplication and interruption recovery should be verified for the particular job or service.</text>
 </svg>

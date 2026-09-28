@@ -1,38 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="420" viewBox="0 0 860 420" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
-  <defs>
-    <marker id="arr4" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#57606a"/>
-    </marker>
-  </defs>
-  <rect x="0" y="0" width="860" height="420" fill="#ffffff"/>
-  <text x="430" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#24292f">browser sessions: spawn vs steer</text>
-
-  <!-- spawn path -->
-  <rect x="40" y="70" width="370" height="270" rx="12" fill="#ffebe9" stroke="#cf222e" stroke-width="1.5"/>
-  <text x="225" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#24292f">fresh spawn_task</text>
-  <text x="70" y="135" font-size="12" fill="#24292f">new task, blank cookie jar</text>
-  <text x="70" y="157" font-size="12" fill="#24292f">site sees: logged OUT</text>
-  <text x="70" y="179" font-size="12" fill="#24292f">even if another task is signed in</text>
-  <text x="70" y="201" font-size="12" fill="#24292f">right now</text>
-  <text x="70" y="235" font-size="12" font-weight="600" fill="#cf222e">use for: brand-new work,</text>
-  <text x="70" y="253" font-size="12" font-weight="600" fill="#cf222e">separate sites, recovery</text>
-  <text x="70" y="287" font-size="12" fill="#57606a">proven by experiment: two tasks,</text>
-  <text x="70" y="305" font-size="12" fill="#57606a">same site, seconds apart -</text>
-  <text x="70" y="323" font-size="12" fill="#57606a">one in, one out</text>
-
-  <!-- steer path -->
-  <rect x="450" y="70" width="370" height="270" rx="12" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
-  <text x="635" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#24292f">steer_task on the lineage</text>
-  <text x="480" y="135" font-size="12" fill="#24292f">same task id, session kept</text>
-  <text x="480" y="157" font-size="12" fill="#24292f">site sees: still logged IN</text>
-  <text x="480" y="179" font-size="12" fill="#24292f">even across days and jobs</text>
-  <text x="480" y="201" font-size="12" fill="#24292f">closed task? steering builds a</text>
-  <text x="480" y="219" font-size="12" fill="#24292f">successor from history - cookies</text>
-  <text x="480" y="237" font-size="12" fill="#24292f">survive</text>
-  <text x="480" y="271" font-size="12" font-weight="600" fill="#1a7f37">use for: all logged-in work,</text>
-  <text x="480" y="289" font-size="12" font-weight="600" fill="#1a7f37">every recurring job</text>
-  <text x="480" y="323" font-size="12" fill="#57606a">the lineage id is precious state:</text>
-  <text x="480" y="341" font-size="12" fill="#57606a">lose it and you log in again</text>
-
-  <text x="430" y="380" text-anchor="middle" font-size="12" fill="#57606a">one shared Chromium profile underneath it all - parallel tasks must not fight over it</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="990" viewBox="0 0 1120 990" role="img" aria-labelledby="title desc">
+<title id="title">Browser work has both a task and a session</title>
+<desc id="desc">Track the brief, owner, task ID and browser state separately when investigating a browser run.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA3B0"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .title{font-size:30px;font-weight:700;fill:#172B3A}.sub{font-size:17px;fill:#4E6271}.label{font-size:20px;font-weight:650;fill:#172B3A}.body{font-size:17px;fill:#4E6271}.small{font-size:15px;fill:#4E6271}.over{font-size:14px;font-weight:700;letter-spacing:1.2px;fill:#4E6271}</style>
+<rect width="1120" height="990" fill="#F7F9FB"/>
+<text x="40" y="51" class="title">Browser work has both a task and a session</text>
+<text x="40" y="83" class="sub">Track the brief, owner, task ID and browser state separately when investigating a browser run.</text>
+<rect x="40" y="120" width="312" height="146" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="136" width="4" height="114" rx="2" fill="#225EC4"/>
+<circle cx="69" cy="151" r="15" fill="#225EC4"/>
+<text x="69" y="156" class="small" style="fill:white" text-anchor="middle">1</text>
+<text x="94" y="158" class="label">Owning agent</text>
+<text x="62" y="190" class="body">browser.spawn_task starts work.</text>
+<text x="62" y="215" class="body">Brief includes goal + constraints.</text>
+<text x="62" y="240" class="body">Owner retains the task ID.</text>
+<rect x="404" y="120" width="312" height="146" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="404" y="136" width="4" height="114" rx="2" fill="#9A5C12"/>
+<circle cx="433" cy="151" r="15" fill="#9A5C12"/>
+<text x="433" y="156" class="small" style="fill:white" text-anchor="middle">2</text>
+<text x="458" y="158" class="label">Browser task</text>
+<text x="426" y="190" class="body">Receives a self-contained brief.</text>
+<text x="426" y="215" class="body">Works asynchronously.</text>
+<text x="426" y="240" class="body">Produces status and handoffs.</text>
+<rect x="768" y="120" width="312" height="146" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="768" y="136" width="4" height="114" rx="2" fill="#087C78"/>
+<circle cx="797" cy="151" r="15" fill="#087C78"/>
+<text x="797" y="156" class="small" style="fill:white" text-anchor="middle">3</text>
+<text x="822" y="158" class="label">Browser service</text>
+<text x="790" y="190" class="body">Provides the browser tool surface.</text>
+<text x="790" y="215" class="body">Mediates the browser session</text>
+<text x="790" y="240" class="body">and permitted operations.</text>
+<path d="M 352 192 H 399" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 716 192 H 763" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 560 266 V 327" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="577" y="301" class="small">task accepted</text>
+<rect x="40" y="338" width="676" height="218" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="62" y="372" class="over">CONTINUE THE EXISTING TASK</text>
+<rect x="62" y="394" width="300" height="136" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="62" y="410" width="4" height="104" rx="2" fill="#225EC4"/>
+<text x="84" y="432" class="label">Steer / resume</text>
+<text x="84" y="464" class="body">Use browser.steer_task for</text>
+<text x="84" y="489" class="body">corrections or the next step.</text>
+<text x="84" y="514" class="body">Keep ownership traceable.</text>
+<rect x="384" y="394" width="310" height="136" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="384" y="410" width="4" height="104" rx="2" fill="#9A5C12"/>
+<text x="406" y="432" class="label">Wait for the result</text>
+<text x="406" y="464" class="body">A handoff reports the outcome.</text>
+<text x="406" y="489" class="body">An approval or login wait is</text>
+<text x="406" y="514" class="body">a state, not a finished result.</text>
+<path d="M 362 462 H 379" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="768" y="338" width="312" height="218" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="790" y="372" class="over">AUTH + SHARED STATE</text>
+<text x="790" y="408" class="body">Profiles and login state belong</text>
+<text x="790" y="435" class="body">to the browser service context.</text>
+<text x="790" y="473" class="body">Permissions and credential</text>
+<text x="790" y="500" class="body">handling follow their own path.</text>
+<path d="M 924 266 V 331" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 560 556 V 608 H 198 V 650" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 560 608 H 566 V 650" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 560 608 H 934 V 650" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="660" width="316" height="130" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="676" width="4" height="98" rx="2" fill="#087C78"/>
+<text x="62" y="698" class="label">Completed</text>
+<text x="62" y="730" class="body">Return the result to the owner.</text>
+<text x="62" y="755" class="body">Verify the requested effect.</text>
+<rect x="406" y="660" width="316" height="130" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="406" y="676" width="4" height="98" rx="2" fill="#9A5C12"/>
+<text x="428" y="698" class="label">Waiting / interrupted</text>
+<text x="428" y="730" class="body">Check status before restarting.</text>
+<text x="428" y="755" class="body">Resume when appropriate.</text>
+<rect x="772" y="660" width="308" height="130" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="772" y="676" width="4" height="98" rx="2" fill="#7149A6"/>
+<text x="794" y="698" class="label">Failed / unknown</text>
+<text x="794" y="730" class="body">Inspect the last known outcome.</text>
+<text x="794" y="755" class="body">Avoid duplicating an action.</text>
+<rect x="40" y="874" width="1040" height="86" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="60" y="903" class="label">Task identity and authenticated state have separate lifetimes.</text>
+<text x="60" y="929" class="small">Observed browser access can share authenticated state. Exact isolation and lifetime depend on the service.</text>
+<text x="60" y="951" class="small">Do not assume a new task transfers every login, or that every operation needs credentials.</text>
 </svg>

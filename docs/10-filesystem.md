@@ -1,10 +1,10 @@
 # Filesystem
 
-The agent's home directory (`~`) is its entire world. Everything it knows that it did not learn in the current conversation is a file here.
+The home directory exposes editable notes, configuration and workspace files. It is one part of the runtime's state: sessions, structured memory, indexes and service-managed data also exist. See [memory](12-memory.md) and [components](components.md).
 
 ## The self files
 
-These are plain Markdown files the agent reads every session. They are the closest thing it has to a self.
+Installed guidance uses these Markdown files for standing context and preferences. Their presence does not prove every file is loaded on every turn.
 
 | File | What it is |
 |---|---|
@@ -19,7 +19,7 @@ These are plain Markdown files the agent reads every session. They are the close
 
 A few principles worth noticing:
 
-- **Everything is Markdown.** No database needed for the agent's sense of self. Files are diffable, hand-editable and survive anything.
+- **These surfaces are Markdown.** They are diffable and hand-editable; persistence depends on the filesystem and lifecycle. Other state lives in application records and managed services.
 - **The user can edit them.** These are not hidden config; they are shared documents. When the user corrects the agent, the fix often lands here.
 - **Freshness wins.** When a standing file disagrees with recent evidence, recent evidence is treated as newer. Stale files get reconciled, not obeyed blindly.
 
@@ -47,4 +47,4 @@ The workspace is where the agent has the most freedom, so conventions matter:
 
 ## What is deliberately absent
 
-Credentials never live in these files. Passwords, API keys and tokens go to the Secure Vault (see [Credentials](07-credentials.md)); the agent records *that a credential exists and where*, never the value. Payment details live with the wallet provider, not in files.
+The documented workflow uses the Secure Vault for credentials and metadata references in ordinary notes (see [Credentials](07-credentials.md)). This is an intended handling rule, not proof that every file in a user-modifiable workspace is free of secrets. Review contents before sharing archives.

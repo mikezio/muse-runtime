@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1020" viewBox="0 0 1120 1020" role="img" aria-labelledby="title desc">
+<title id="title">Follow one user request through the runtime</title>
+<desc id="desc">A conceptual path for a tool-using turn. Optional branches and implementation details can vary.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA3B0"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .title{font-size:30px;font-weight:700;fill:#172B3A}.sub{font-size:17px;fill:#4E6271}.label{font-size:20px;font-weight:650;fill:#172B3A}.body{font-size:17px;fill:#4E6271}.small{font-size:15px;fill:#4E6271}.over{font-size:14px;font-weight:700;letter-spacing:1.2px;fill:#4E6271}</style>
+<rect width="1120" height="1020" fill="#F7F9FB"/>
+<text x="40" y="51" class="title">Follow one user request through the runtime</text>
+<text x="40" y="83" class="sub">A conceptual path for a tool-using turn. Optional branches and implementation details can vary.</text>
+<rect x="40" y="126" width="666" height="126" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="142" width="4" height="94" rx="2" fill="#225EC4"/>
+<circle cx="69" cy="157" r="15" fill="#225EC4"/>
+<text x="69" y="162" class="small" style="fill:white" text-anchor="middle">1</text>
+<text x="94" y="164" class="label">Accept the request</text>
+<text x="62" y="196" class="body">Client or channel submits a message.</text>
+<text x="62" y="221" class="body">Session identity and request context are attached.</text>
+<path d="M 373 252 V 285" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="294" width="666" height="126" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="310" width="4" height="94" rx="2" fill="#7149A6"/>
+<circle cx="69" cy="325" r="15" fill="#7149A6"/>
+<text x="69" y="330" class="small" style="fill:white" text-anchor="middle">2</text>
+<text x="94" y="332" class="label">Assemble context + policy</text>
+<text x="62" y="364" class="body">Load relevant conversation, memory and instructions.</text>
+<text x="62" y="389" class="body">Resolve model route, reasoning configuration and tools.</text>
+<path d="M 373 420 V 453" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="462" width="666" height="126" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="478" width="4" height="94" rx="2" fill="#087C78"/>
+<circle cx="69" cy="493" r="15" fill="#087C78"/>
+<text x="69" y="498" class="small" style="fill:white" text-anchor="middle">3</text>
+<text x="94" y="500" class="label">Run the inference / tool loop</text>
+<text x="62" y="532" class="body">Inference returns text or requests an action.</text>
+<text x="62" y="557" class="body">Authorized tools execute; their results can feed another model call.</text>
+<path d="M 373 588 V 621" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="630" width="666" height="126" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="646" width="4" height="94" rx="2" fill="#225EC4"/>
+<circle cx="69" cy="661" r="15" fill="#225EC4"/>
+<text x="69" y="666" class="small" style="fill:white" text-anchor="middle">4</text>
+<text x="94" y="668" class="label">Persist + deliver</text>
+<text x="62" y="700" class="body">Record the turn and task state; send the visible response.</text>
+<text x="62" y="725" class="body">Delegated work can continue and return a later handoff.</text>
+<rect x="766" y="126" width="314" height="126" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="766" y="142" width="4" height="94" rx="2" fill="#9A5C12"/>
+<text x="788" y="164" class="label">Entry is not completion</text>
+<text x="788" y="196" class="body">A request can be accepted</text>
+<text x="788" y="221" class="body">before work has finished.</text>
+<rect x="766" y="294" width="314" height="126" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="766" y="310" width="4" height="94" rx="2" fill="#7149A6"/>
+<text x="788" y="332" class="label">Model route evidence</text>
+<text x="788" y="364" class="body">A display name or stored agent</text>
+<text x="788" y="389" class="body">model is incomplete evidence.</text>
+<rect x="766" y="462" width="314" height="126" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="766" y="478" width="4" height="94" rx="2" fill="#087C78"/>
+<text x="788" y="500" class="label">Action boundaries</text>
+<text x="788" y="532" class="body">Local files, browser, connectors</text>
+<text x="788" y="557" class="body">and devices have different paths.</text>
+<rect x="766" y="630" width="314" height="126" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="766" y="646" width="4" height="94" rx="2" fill="#9A5C12"/>
+<text x="788" y="668" class="label">Check actual outcome</text>
+<text x="788" y="700" class="body">A response can finish while a</text>
+<text x="788" y="725" class="body">background task is still running.</text>
+<path d="M 706 189 H 758" fill="none" stroke="#8FA3B0" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M 706 357 H 758" fill="none" stroke="#8FA3B0" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M 706 525 H 758" fill="none" stroke="#8FA3B0" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M 706 693 H 758" fill="none" stroke="#8FA3B0" stroke-width="2" stroke-dasharray="6 5"/>
+<rect x="40" y="798" width="1040" height="84" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="62" y="831" class="over">WHERE TO LOOK</text>
+<text x="62" y="860" class="body">Request / session → agent and task ownership → tool result → completion / delivery record</text>
+<rect x="40" y="904" width="1040" height="86" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="60" y="933" class="label">The most useful debugging question: which step has evidence?</text>
+<text x="60" y="959" class="small">Configuration acceptance proves configuration acceptance. A successful turn proves that some route completed.</text>
+<text x="60" y="981" class="small">Exact per-turn model and effort require request-level evidence when the runtime exposes it.</text>
+</svg>

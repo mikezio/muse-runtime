@@ -1,48 +1,43 @@
-# Agents: subagents, task agents and workers
+# Agents, browser tasks and background workers
 
-One "Muse" is actually a small team of agents that spin up and shut down constantly. This page maps who does what and how they talk to each other.
+A single conversation can coordinate several managed tasks and contexts. Roles describe ownership and purpose; they do not guarantee identical models, tools or permissions.
 
-![Agent tree](../assets/agent-tree.svg)
+![Agent roles and ownership](../assets/agent-tree.svg)
 
-## The cast
+## The roles
 
-| Agent | What it is | Lifetime |
+| Role | Responsibility | Context/tool distinction |
 |---|---|---|
-| **Main agent** | The one you talk to. Owns the conversation, the memory, the standing files. | The whole session |
-| **Subagent** | A child the main agent delegates a bounded task to. Inherits the parent's context, works in the background. | Minutes to hours |
-| **Worker** | A background activation doing scheduled or delegated work (a cron job firing, a queued task). Its final message *is* its delivery. | One job run |
-| **Browser task agent** | A dedicated agent whose only tools are browser tools. It cannot see the conversation - it gets a self-contained brief. | One browsing assignment |
-| **Coordinator** | A subagent whose job is to fan out to its own subagents and synthesize. Used when one task decomposes into several. | One complex task |
+| Root/conversation agent | Owns the user-facing turn and coordinates work | Has the conversation and its available runtime tools |
+| General subagent | Performs a bounded delegated task | Context transfer and tools depend on the spawn interface/policy |
+| Browser task agent | Performs a browsing assignment | Receives a self-contained brief; uses the browser task surface |
+| Background worker | Executes scheduled, queued or event-driven work | Own request/owner and delivery path; not necessarily a child of the active chat |
+| Coordinator | Delegates a larger task and combines results | A role within an allowed delegation tree |
 
-## How delegation works
+An inspected child header reported depth 1 of 2 and permission to spawn. That is evidence for the observed configuration, not a universal nesting limit.
 
-1. **Spawn.** The parent calls `subagent.spawn` with a brief: the task, the outcome wanted, constraints and the facts the child needs. The child inherits the parent's full transcript, so briefs stay short.
-2. **Work.** The child runs tools independently. The parent stays responsive in the conversation.
-3. **Handoff.** When the child finishes, the runtime delivers its result into the parent's context automatically. The parent never polls in a loop.
-4. **Manage.** The parent can check status, send follow-up input, or close a child that is no longer needed. Closing a browser-task owner ends its whole browser task.
+## Follow ownership, not just the display name
 
-Nesting stops at two levels: a coordinator's subagents cannot spawn their own subagents. This bounds the complexity of the tree.
+For a task, identify its owner, agent ID, request/task ID, state and result. A successful spawn means accepted work. Completion requires a finished outcome, and delivery requires that the intended recipient received it.
 
-## How browser tasks fit in
+General delegation tools support spawning and follow-up/status management. Browser work has its own `browser.spawn_task` / `browser.steer_task` lifecycle. Continue the existing task when it is waiting for user input; creating another task can lose continuity or duplicate work.
 
-Browser work is *not* done by generic subagents - it has its own route, because it needs the shared Chromium profile and the login lineage (see [Browser](06-browser.md)):
+Context inheritance should be checked against the actual tool contract. Do not assume every child receives the whole transcript or every worker sees the active chat's browser tasks.
 
-- **New work** → `browser.spawn_task` with a complete, self-contained brief. The task agent cannot see the conversation, so everything it needs goes in the brief.
-- **Continuations** → `browser.steer_task` on the existing task id. Follow-ups, corrections, approvals, next steps.
-- **Async by design.** The call returns an acceptance receipt, not a result. Results arrive as handoffs. "Accepted" is not "done."
+## Models and tools can differ
 
-A task parked waiting on the user (a login code, an approval) is resumed with `steer_task`, never closed and respawned - closing loses the session.
+In the observed tests, a root agent record and its child record could contain different model routes. Native `muse.session_status` was available to the root but unavailable to the tested subagent.
 
-## How workers fit in
+A child that lacks a metadata tool cannot confirm that the underlying metadata fields are absent. Likewise, an agent row's stored model does not establish the provider used for every turn. See [model routing](model-routes.md).
 
-A cron job firing creates a worker: a fresh activation with the job body as its instructions. Workers differ from subagents in one big way - **they have no parent watching**. Their run's final message is the only delivery mechanism. A worker that ends with "the main agent must deliver this" instead of the message itself has failed at its one job.
+**Model selection was global in the tested runtime/account and cleared working context in existing chats.** A side chat did not isolate that effect.
 
-Workers also cannot see the main session's browser tasks (different root session), which is why logged-in browser work is always steered from the main agent, never from a worker.
+## Operational checks
 
-## The rules that keep the tree sane
+- Give delegated work an outcome and enough context to act.
+- Separate independent work from operations that share mutable browser/app state.
+- Distinguish accepted, running, waiting, completed and failed states.
+- After an interruption, inspect the outcome before repeating a consequential action.
+- Follow the runtime's handoff/delivery contract; do not assume a finished background task has already reached the user.
 
-- **One browser session at a time** for logged-in work. Parallel browser tasks must be independent and conflict-free through shared state.
-- **Never duplicate a pending visit.** Before starting delegated work, atomically claim it; if someone else claimed it first, stop.
-- **Irreversible actions are never retried blindly.** If a handoff reports an unknown outcome, investigate before repeating - a failed report does not prove nothing happened.
-- **Results are delivered, not fetched.** No polling loops. The runtime pushes handoffs; the parent reacts.
-- **A task's id is internal.** Users never need to see task ids; the agent names the work, not the machinery.
+Related: [request flow](02-the-agent-outside.md), [browser lifecycle](06-browser.md), [background work](11-scheduler.md).

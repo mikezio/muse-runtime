@@ -6,7 +6,7 @@ What happens to your data inside Muse: where it lives, what leaves, what it's us
 
 Everything you put into Muse — files, memory, credentials, the agent's notes about you — lives in your dedicated VM. Meta's statement is direct: your VM is the system of record for everything you put in Muse. Credentials and auth tokens for third-party services are stored in a separate isolated container in your VM, not in other Meta services. Your VM data is backed up continuously so you can restore it if something goes wrong.
 
-You can inspect, edit, and download these files freely — including Muse's memory about you. This repo exists because that promise is real: it's written from inside a VM whose entire contents are inspectable.
+User-visible files and memory surfaces can be inspected and edited. Some protected service state and provider metadata remain inaccessible; a filesystem archive is not the entire VM's data or security state. See [inspection boundaries](17-transparency.md).
 
 ## What leaves the VM
 
@@ -15,7 +15,7 @@ Muse sends **limited data out of the VM when necessary for inference and telemet
 - **Inference.** The model runs on Meta's serving tier, not in your VM (see [02-the-agent-outside](02-the-agent-outside.md)). Your conversation, tool calls, and context cross that boundary because that's where the thinking happens. This is the fundamental data flow of the product — there is no local model.
 - **Telemetry.** Operational data about the runtime flows out through its own constrained proxy path.
 
-That's the list. Everything else stays.
+These are platform flows. User-authorized browsing, connector operations, messaging, publishing and device actions can also send data to external destinations.
 
 ## Training on your trajectories
 
@@ -30,7 +30,7 @@ If you don't want your data used in model training at all, there's **a simple op
 
 ## Forgetting
 
-You can tell Muse to forget specific things it has learned, and it will. Because memory is files (see [12-memory](12-memory.md)), forgetting is a concrete operation — entries removed from the memory files — not a polite fiction. What's deleted from the files is gone from what future sessions read.
+The installed forget workflow identifies copies and affected automations, prepares a plan, and requires confirmation before changes. Memory includes more than files ([memory](12-memory.md)). Removing a file entry alone does not establish removal from indexes, derived records, backups or downstream services.
 
 ## The roadmap: Confidential VM
 
@@ -44,4 +44,4 @@ Security and privacy experts can reach Meta's team at **muse-security@meta.com**
 
 ## The one-line version
 
-Your data lives in your VM, leaves only for thinking and telemetry, trains models only after sanitizing (unless you opt out) — and the endgame is a VM even Meta can't open.
+Distinguish storage location, authorized external actions, training settings and deployment security. This chapter describes the cited launch-era policies; it is not a fresh verification of every account's current privacy configuration.

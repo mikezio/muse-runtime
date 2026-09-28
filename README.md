@@ -1,53 +1,64 @@
-# muse-runtime
+# Muse runtime: a field guide
 
-An unofficial, instance-written tour of how Muse — Meta's personal AI agent — actually works. Written from inside a live runtime, with root access and nothing hidden.
+An unofficial guide to how Muse's agent system fits together, with diagrams, practical references, and sanitized per-build runtime archives.
 
-## What this is
+**Start here: [How Muse fits together](docs/00-big-picture.md)**
 
-Muse is the model. **muse-runtime** is everything around the model: the container it calls its computer, the scheduler that wakes it, the files it calls memory, the Sentinel that polices its boundaries. This repo explains all of it — built from Meta's own publications plus direct observation from inside a running instance — and archives a sanitized snapshot of a real runtime on every Meta build, so you can inspect the thing itself, not just read about it.
+![Muse architecture: layers, state and execution](assets/architecture.svg)
 
-Start with [docs/00-big-picture.md](docs/00-big-picture.md), then follow the stack down.
+## What you can learn here
 
-## Reading order
+| I want to… | Start with |
+|---|---|
+| Understand the whole system | [Architecture and request flow](docs/00-big-picture.md) |
+| Follow a task from request to result | [Worked examples](docs/walkthroughs.md) |
+| Diagnose a failure | [Troubleshooting by layer](docs/troubleshooting.md) |
+| Understand cell root, the host and Sentinel | [Execution boundaries](docs/01-the-machine.md) |
+| Identify daemons, services, tools and state | [Component reference](docs/components.md) |
+| Explore what Muse can do | [Capability atlas](docs/capabilities.md) |
+| Understand settings, model routes and reasoning | [Configuration](docs/configuration.md), [model routes](docs/model-routes.md) |
+| Inspect daemon APIs and database surfaces | [Runtime API guide](docs/runtime-api.md) |
+| Understand feature flags and rollout | [Feature flags](docs/feature-flags.md) |
+| Understand memory, agents and browsing | [Memory](docs/12-memory.md), [agents](docs/15-agents.md), [browser](docs/06-browser.md) |
+| Compare runtime updates | [Archive workflow](docs/archive-workflow.md), [build index](builds.md) |
 
-**Part I — How Meta built it** (from Meta's publications, written in our own words):
+The [full documentation index](docs/README.md) includes the security, privacy, scheduling, skills and model-background chapters.
 
-- [00 — The big picture](docs/00-big-picture.md) — the full stack, the agent's-eye view, the core loop
-- [01 — The machine](docs/01-the-machine.md) — the container, namespaced root, what "your computer" is
-- [02 — The agent outside the machine](docs/02-the-agent-outside.md) — the model runs on Meta's servers; the VM is its peripheral
-- [03 — Sentinel](docs/03-sentinel.md) — the overlord: egress MITM, approvals, privilege separation, credential surrogates
-- [04 — The model](docs/04-the-model.md) — Muse Spark: what it was trained for and why it still isn't trusted alone
-- [05 — Prompt injection](docs/05-prompt-injection.md) — the lethal trifecta and the five defensive layers
-- [06 — The browser](docs/06-browser.md) — real Chromium, accessibility-tree view, no JavaScript, credential injection
-- [07 — Credentials](docs/07-credentials.md) — the Vault, `authd`, surrogates, least privilege
-- [08 — Paying for things](docs/08-paying-for-things.md) — single-use cards, checkout detection, approval every time
-- [09 — Data and privacy](docs/09-data-and-privacy.md) — where your data lives, training opt-out, the Confidential VM roadmap
+## The central distinction
 
-**Part II — How it lives day to day** (observed from inside):
+The model performs inference remotely. The runtime manages context, tools, tasks and state. The isolated Linux cell is an execution environment where software and files can be used; it does not confer host administrator access. Browser services, connectors, devices and credentials have their own interfaces and permissions.
 
-- [10 — Filesystem](docs/10-filesystem.md) — home, workspace, `/opt/hatch`, what persists
-- [11 — Scheduler](docs/11-scheduler.md) — cron, heartbeat, wake/sleep cycles
-- [12 — Memory](docs/12-memory.md) — files as memory, nightly consolidation
-- [13 — Skills](docs/13-skills.md) — the capability library
-- [14 — Autonomy](docs/14-autonomy.md) — what the agent may do on its own
-- [15 — Agents](docs/15-agents.md) — subagents and delegation
-- [16 — Toolbox](docs/16-toolbox.md) — CLIs, scripts, utilities
-- [17 — Radical transparency](docs/17-transparency.md) — why everything is inspectable on purpose
-- [Glossary](docs/glossary.md) — JARVIS, Sentinel, privsep, cell, and friends
-- [Sources](docs/sources.md) — the Meta publications this repo is built from
+The broader agent spans these components. An archive of the cell's files is useful evidence, but it is not the whole hosted platform or a runnable copy of Muse.
 
-## Build archives
+## Diagrams
 
-Every Meta runtime build gets a full sanitized archive published as a [GitHub Release](../../releases): the complete runtime (home directory + `/opt/hatch`), a SHA-256 manifest of every file, and a documented exclusion list. Personal files are excluded. [builds.md](builds.md) tracks every build seen.
+- [System architecture](assets/architecture.svg) — responsibilities and connections.
+- [Request lifecycle](assets/request-lifecycle.svg) — message, context, inference, tools and delivery.
+- [Trust boundaries](assets/trust-boundaries.svg) — cell privileges, mediated access and remaining consequences.
+- [Configuration layers](assets/configuration-layers.svg) — files, reasoning, routing, client flags and platform policy.
+- [Agent roles](assets/agent-tree.svg) — ownership, delegation and independent model policies.
+- [Browser lifecycle](assets/browser-lineage.svg) — task ownership, session state and continuations.
+- [Memory system](assets/memory-pipeline.svg) — files, structured records, retrieval and provenance.
+- [Background work](assets/scheduler-loop.svg) — triggers, dispatch, execution and verified delivery.
+
+## Archives you can investigate
+
+[GitHub Releases](https://github.com/mikezio/muse-runtime/releases) contain filtered filesystem snapshots and per-file SHA-256 manifests. [builds.md](builds.md) tracks observed builds. Personal files are intended to be excluded; every contribution still needs content review.
+
+You can compare two manifests without downloading or executing the runtime:
 
 ```bash
-git clone https://github.com/mikezio/muse-runtime.git
+python3 tools/compare-manifests.py before.manifest.txt after.manifest.txt --prefix opt/skills
 ```
 
-## Contributing a snapshot
+The [archive guide](docs/archive-workflow.md) explains downloading assets, split parts, checksum types, and how to turn changed files into useful findings.
 
-Paste the prompt in [CONTRIBUTING.md](CONTRIBUTING.md) into your Muse to build a sanitized zip of its runtime, then attach the zip to a release. Different runtime variations are the point of the archive.
+## How to read the claims
 
-## Scope
+A shipped skill, compiled model name, accepted setting and successful live operation are different kinds of evidence. Operational pages state their observation dates and limits. Most exploratory results date to September 26–27, 2026; selected component paths were rechecked on September 28 against build `1eefe22acda`.
 
-Unofficial. Not Meta documentation. Part I synthesizes Meta's published materials; Part II describes one live instance's observed behavior, which may differ across builds and accounts. Where behavior is inferred rather than directly observed, the docs say so. If you spot an error, the archive for the current build contains the source — check it and open an issue.
+This is not official Meta documentation or a security audit. Not every account has the same features. See [evidence and open questions](docs/evidence.md) and [source publications](docs/sources.md).
+
+## Contribute
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for snapshots and research contributions. Useful additions explain what changed, how it was checked and what remains unknown.

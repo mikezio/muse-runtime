@@ -38,6 +38,10 @@ From experience maintaining a dozen of them:
 
 Connectors are the product-level account links (Google, Spotify, etc.) with managed OAuth. Skills are the agent-level playbooks that *use* those connections - or build their own via CLIs and APIs. A connector gets you access; a skill tells the agent what to do with it.
 
+## Availability is separate from installation
+
+A shipped skill or schema does not establish account entitlement, a connected service, a reachable device or successful execution. For example, Muse email guidance was installed while its mailbox endpoint reported unavailable. See the [capability atlas](capabilities.md) for evidence levels and prerequisites.
+
 ## The built-in catalog
 
 Shipped with the product, living outside the workspace. Grouped by domain (names as observed on a live instance; the catalog grows over time):
@@ -55,4 +59,4 @@ Shipped with the product, living outside the workspace. Grouped by domain (names
 Two deserve a closer look:
 
 - **`skill-creator`** - the skill that teaches the agent to write new skills. This is the recursion point: the agent extending its own capabilities using a documented process.
-- **`forget`** - the skill that removes a fact from memory and stops existing copies and automations from bringing it back. Memory has a delete key and it is a first-class workflow, not an afterthought.
+- **`forget`** - a workflow to identify copies and affected automations, prepare a plan and confirm changes. Verify the outcome across relevant stores; a skill description alone does not prove complete erasure.

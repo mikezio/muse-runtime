@@ -1,48 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="400" viewBox="0 0 860 400" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
-  <defs>
-    <marker id="arr3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#57606a"/>
-    </marker>
-  </defs>
-  <rect x="0" y="0" width="860" height="400" fill="#ffffff"/>
-  <text x="430" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#24292f">the memory pipeline</text>
-
-  <!-- stage 1 -->
-  <rect x="40" y="70" width="230" height="230" rx="12" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
-  <text x="155" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#24292f">1 · capture</text>
-  <text x="155" y="122" text-anchor="middle" font-size="12" fill="#57606a">during the session</text>
-  <text x="60" y="150" font-size="12" fill="#24292f">writes durable facts to</text>
-  <text x="60" y="168" font-size="12" fill="#24292f">MEMORY.md - before replying,</text>
-  <text x="60" y="186" font-size="12" fill="#24292f">not after</text>
-  <text x="60" y="214" font-size="12" fill="#24292f">only what a tool result</text>
-  <text x="60" y="232" font-size="12" fill="#24292f">confirmed; reconcile on</text>
-  <text x="60" y="250" font-size="12" fill="#24292f">change; never store secrets</text>
-
-  <!-- stage 2 -->
-  <rect x="315" y="70" width="230" height="230" rx="12" fill="#fff8c5" stroke="#9a6700" stroke-width="2"/>
-  <text x="430" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#24292f">2 · consolidate</text>
-  <text x="430" y="122" text-anchor="middle" font-size="12" fill="#57606a">nightly background jobs</text>
-  <text x="335" y="150" font-size="12" fill="#24292f">daily logs → dated notes</text>
-  <text x="335" y="168" font-size="12" fill="#24292f">dreams → journal synthesis</text>
-  <text x="335" y="186" font-size="12" fill="#24292f">people/ + groups/ → one</text>
-  <text x="335" y="204" font-size="12" fill="#24292f">page per person, indexed</text>
-  <text x="335" y="232" font-size="12" fill="#24292f">alignment → how the agent</text>
-  <text x="335" y="250" font-size="12" fill="#24292f">and user relate, derived</text>
-
-  <!-- stage 3 -->
-  <rect x="590" y="70" width="230" height="230" rx="12" fill="#dafbe1" stroke="#1a7f37" stroke-width="2"/>
-  <text x="705" y="100" text-anchor="middle" font-size="14" font-weight="700" fill="#24292f">3 · derive</text>
-  <text x="705" y="122" text-anchor="middle" font-size="12" fill="#57606a">turning notes into behavior</text>
-  <text x="610" y="150" font-size="12" fill="#24292f">personalization notes →</text>
-  <text x="610" y="168" font-size="12" fill="#24292f">distilled habits</text>
-  <text x="610" y="196" font-size="12" fill="#24292f">alignment synthesis →</text>
-  <text x="610" y="214" font-size="12" fill="#24292f">tone + posture calibration</text>
-  <text x="610" y="242" font-size="12" fill="#24292f">ideas + feed → proactive</text>
-  <text x="610" y="260" font-size="12" fill="#24292f">suggestions, deduped</text>
-
-  <line x1="270" y1="185" x2="311" y2="185" stroke="#57606a" stroke-width="2" marker-end="url(#arr3)"/>
-  <line x1="545" y1="185" x2="586" y2="185" stroke="#57606a" stroke-width="2" marker-end="url(#arr3)"/>
-
-  <text x="430" y="340" text-anchor="middle" font-size="12" fill="#57606a">before answering about history, the agent searches memory - it never trusts vibes</text>
-  <text x="430" y="362" text-anchor="middle" font-size="12" fill="#57606a">corrections are first-class: old claims are marked superseded, provenance is explainable</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="930" viewBox="0 0 1120 930" role="img" aria-labelledby="title desc">
+<title id="title">Memory is a set of stores and processes</title>
+<desc id="desc">Persistent files are one surface; structured records, indexes and provenance also matter.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA3B0"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .title{font-size:30px;font-weight:700;fill:#172B3A}.sub{font-size:17px;fill:#4E6271}.label{font-size:20px;font-weight:650;fill:#172B3A}.body{font-size:17px;fill:#4E6271}.small{font-size:15px;fill:#4E6271}.over{font-size:14px;font-weight:700;letter-spacing:1.2px;fill:#4E6271}</style>
+<rect width="1120" height="930" fill="#F7F9FB"/>
+<text x="40" y="51" class="title">Memory is a set of stores and processes</text>
+<text x="40" y="83" class="sub">Persistent files are one surface; structured records, indexes and provenance also matter.</text>
+<rect x="40" y="122" width="312" height="164" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="138" width="4" height="132" rx="2" fill="#225EC4"/>
+<circle cx="69" cy="153" r="15" fill="#225EC4"/>
+<text x="69" y="158" class="small" style="fill:white" text-anchor="middle">1</text>
+<text x="94" y="160" class="label">Inputs</text>
+<text x="62" y="192" class="body">Conversation and task results</text>
+<text x="62" y="217" class="body">Connected-source information</text>
+<text x="62" y="242" class="body">Explicit user edits and corrections</text>
+<text x="62" y="267" class="body">Only where enabled / permitted</text>
+<rect x="404" y="122" width="312" height="164" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="404" y="138" width="4" height="132" rx="2" fill="#087C78"/>
+<circle cx="433" cy="153" r="15" fill="#087C78"/>
+<text x="433" y="158" class="small" style="fill:white" text-anchor="middle">2</text>
+<text x="458" y="160" class="label">Memory processing</text>
+<text x="426" y="192" class="body">Select and organize information.</text>
+<text x="426" y="217" class="body">Reconcile existing knowledge.</text>
+<text x="426" y="242" class="body">Maintain retrieval references.</text>
+<text x="426" y="267" class="body">Runs depend on runtime policy.</text>
+<rect x="768" y="122" width="312" height="164" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="768" y="138" width="4" height="132" rx="2" fill="#7149A6"/>
+<circle cx="797" cy="153" r="15" fill="#7149A6"/>
+<text x="797" y="158" class="small" style="fill:white" text-anchor="middle">4</text>
+<text x="822" y="160" class="label">Later use</text>
+<text x="790" y="192" class="body">Retrieve relevant information.</text>
+<text x="790" y="217" class="body">Assemble the next task context.</text>
+<text x="790" y="242" class="body">Apply identity and preferences.</text>
+<text x="790" y="267" class="body">Produce a grounded response.</text>
+<path d="M 352 204 H 399" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 202 606 V 630 H 1100 V 204 H 1084" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 560 606 V 630" fill="none" stroke="#8FA3B0" stroke-width="2"/>
+<path d="M 918 606 V 630" fill="none" stroke="#8FA3B0" stroke-width="2"/>
+<text x="938" y="622" class="small">retrieval</text>
+<path d="M 560 286 V 332" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="62" cy="363" r="15" fill="#087C78"/>
+<text x="62" y="368" class="small" style="fill:white" text-anchor="middle">3</text>
+<text x="87" y="369" class="over">PERSISTENT STATE — MULTIPLE REPRESENTATIONS</text>
+<path d="M 560 379 V 398 H 202 V 422" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 560 398 V 422" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 560 398 H 918 V 422" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="432" width="324" height="174" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="448" width="4" height="142" rx="2" fill="#225EC4"/>
+<text x="62" y="470" class="label">Editable files</text>
+<text x="62" y="502" class="body">Identity / behavior preferences</text>
+<text x="62" y="527" class="body">Standing memory and notes</text>
+<text x="62" y="552" class="body">Workspace documents</text>
+<text x="62" y="577" class="body">Useful, but not the whole system</text>
+<rect x="398" y="432" width="324" height="174" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="398" y="448" width="4" height="142" rx="2" fill="#087C78"/>
+<text x="420" y="470" class="label">Database + indexes</text>
+<text x="420" y="502" class="body">Structured memory records</text>
+<text x="420" y="527" class="body">Search / embedding indexes</text>
+<text x="420" y="552" class="body">Source references and status</text>
+<text x="420" y="577" class="body">Read via supported tools</text>
+<rect x="756" y="432" width="324" height="174" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="756" y="448" width="4" height="142" rx="2" fill="#7149A6"/>
+<text x="778" y="470" class="label">History + provenance</text>
+<text x="778" y="502" class="body">Sessions, events and task records</text>
+<text x="778" y="527" class="body">Evidence behind a stored claim</text>
+<text x="778" y="552" class="body">Corrections / superseded claims</text>
+<text x="778" y="577" class="body">Coverage depends on the record</text>
+<rect x="40" y="650" width="1040" height="116" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="62" y="684" class="over">CORRECTING OR FORGETTING INFORMATION</text>
+<text x="62" y="717" class="body">Update the source of truth and check linked records, summaries and copies through supported workflows.</text>
+<text x="62" y="746" class="small">Editing one Markdown file does not establish that every derived representation changed.</text>
+<rect x="40" y="814" width="1040" height="86" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="60" y="843" class="label">Memory upkeep follows runtime policy.</text>
+<text x="60" y="869" class="small">Documentation describes background maintenance, but actual schedules, features and source coverage vary.</text>
+<text x="60" y="891" class="small">Use provenance where available; separate a retrieved claim from independently verified current state.</text>
 </svg>

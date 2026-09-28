@@ -1,54 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="520" viewBox="0 0 860 520" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
-  <defs>
-    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#57606a"/>
-    </marker>
-  </defs>
-  <rect x="0" y="0" width="860" height="520" fill="#ffffff"/>
-
-  <!-- user -->
-  <rect x="330" y="20" width="200" height="64" rx="12" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
-  <text x="430" y="47" text-anchor="middle" font-size="15" font-weight="600" fill="#24292f">the user</text>
-  <text x="430" y="66" text-anchor="middle" font-size="12" fill="#57606a">chat · voice · whatsapp</text>
-
-  <!-- agent -->
-  <rect x="300" y="124" width="260" height="72" rx="12" fill="#fff8c5" stroke="#9a6700" stroke-width="2"/>
-  <text x="430" y="151" text-anchor="middle" font-size="15" font-weight="600" fill="#24292f">the agent</text>
-  <text x="430" y="170" text-anchor="middle" font-size="12" fill="#57606a">model + tools + files</text>
-
-  <!-- three pillars -->
-  <rect x="60" y="236" width="220" height="96" rx="12" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
-  <text x="170" y="263" text-anchor="middle" font-size="14" font-weight="600" fill="#24292f">scheduler</text>
-  <text x="170" y="283" text-anchor="middle" font-size="12" fill="#57606a">cron jobs</text>
-  <text x="170" y="300" text-anchor="middle" font-size="12" fill="#57606a">heartbeat loop</text>
-  <text x="170" y="317" text-anchor="middle" font-size="12" fill="#57606a">hooks</text>
-
-  <rect x="320" y="236" width="220" height="96" rx="12" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
-  <text x="430" y="263" text-anchor="middle" font-size="14" font-weight="600" fill="#24292f">memory</text>
-  <text x="430" y="283" text-anchor="middle" font-size="12" fill="#57606a">MEMORY.md · daily logs</text>
-  <text x="430" y="300" text-anchor="middle" font-size="12" fill="#57606a">people · dreams</text>
-  <text x="430" y="317" text-anchor="middle" font-size="12" fill="#57606a">alignment synthesis</text>
-
-  <rect x="580" y="236" width="220" height="96" rx="12" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
-  <text x="690" y="263" text-anchor="middle" font-size="14" font-weight="600" fill="#24292f">capabilities</text>
-  <text x="690" y="283" text-anchor="middle" font-size="12" fill="#57606a">skills · toolbox</text>
-  <text x="690" y="300" text-anchor="middle" font-size="12" fill="#57606a">browser · connectors</text>
-  <text x="690" y="317" text-anchor="middle" font-size="12" fill="#57606a">subagents</text>
-
-  <!-- workers -->
-  <rect x="300" y="372" width="260" height="88" rx="12" fill="#dafbe1" stroke="#1a7f37" stroke-width="2"/>
-  <text x="430" y="399" text-anchor="middle" font-size="14" font-weight="600" fill="#24292f">background workers</text>
-  <text x="430" y="419" text-anchor="middle" font-size="12" fill="#57606a">wake → read → act → write → report → sleep</text>
-  <text x="430" y="436" text-anchor="middle" font-size="12" fill="#57606a">between wake-ups: not thinking</text>
-
-  <!-- arrows -->
-  <line x1="430" y1="84" x2="430" y2="120" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
-  <line x1="360" y1="196" x2="200" y2="232" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
-  <line x1="430" y1="196" x2="430" y2="232" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
-  <line x1="500" y1="196" x2="660" y2="232" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
-  <line x1="170" y1="332" x2="360" y2="372" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
-  <line x1="430" y1="332" x2="430" y2="368" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
-  <line x1="690" y1="332" x2="500" y2="372" stroke="#57606a" stroke-width="2" marker-end="url(#arr)"/>
-
-  <text x="430" y="500" text-anchor="middle" font-size="12" fill="#57606a">continuity is bookkeeping: files in, files out, on a schedule</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1230" viewBox="0 0 1120 1230" role="img" aria-labelledby="title desc">
+<title id="title">Where the Muse runtime runs</title>
+<desc id="desc">Published launch design; build details can vary. Primary-source placement checked 2026-09-28.</desc>
+<metadata>Published deployment source: https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse/ Checked 2026-09-28. Build details can vary.</metadata>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA3B0"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .title{font-size:30px;font-weight:700;fill:#172B3A}.sub{font-size:17px;fill:#4E6271}.label{font-size:20px;font-weight:650;fill:#172B3A}.body{font-size:17px;fill:#4E6271}.small{font-size:15px;fill:#4E6271}.over{font-size:14px;font-weight:700;letter-spacing:1.2px;fill:#4E6271}</style>
+<rect width="1120" height="1230" fill="#F7F9FB"/>
+<text x="40" y="51" class="title">Where the Muse runtime runs</text>
+<text x="40" y="83" class="sub">Published launch design; build details can vary. Primary-source placement checked 2026-09-28.</text>
+<rect x="40" y="122" width="1040" height="100" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="138" width="4" height="68" rx="2" fill="#225EC4"/>
+<text x="62" y="160" class="label">User-facing clients and channels</text>
+<text x="62" y="192" class="body">Chat, voice and connected channels submit requests and receive responses outside the cloud VM.</text>
+<text x="610" y="263" class="small">requests / events</text>
+<rect x="40" y="280" width="744" height="692" rx="14" fill="#EDF3FE" stroke="#225EC4" stroke-width="1.5"/>
+<text x="62" y="311" class="over">PERSONAL CLOUD VM</text>
+<rect x="62" y="336" width="700" height="328" rx="14" fill="white" stroke="#087C78" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="82" y="367" class="over">RUNTIME CELL · systemd-nspawn</text>
+<rect x="82" y="388" width="660" height="110" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="82" y="404" width="4" height="78" rx="2" fill="#225EC4"/>
+<circle cx="111" cy="419" r="15" fill="#225EC4"/>
+<text x="111" y="424" class="small" style="fill:white" text-anchor="middle">1</text>
+<text x="136" y="426" class="label">hatch: core agent harness</text>
+<text x="104" y="458" class="body">Session and agent loops, task orchestration and tool coordination.</text>
+<text x="104" y="483" class="body">The model produces responses remotely; the harness runs here.</text>
+<rect x="82" y="532" width="320" height="106" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="82" y="548" width="4" height="74" rx="2" fill="#087C78"/>
+<circle cx="111" cy="563" r="15" fill="#087C78"/>
+<text x="111" y="568" class="small" style="fill:white" text-anchor="middle">2</text>
+<text x="136" y="570" class="label">Tools + shell</text>
+<text x="104" y="602" class="body">Shell, local programs and CLIs</text>
+<text x="104" y="627" class="body">Tools run with cell-scoped access.</text>
+<rect x="422" y="532" width="320" height="106" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="422" y="548" width="4" height="74" rx="2" fill="#087C78"/>
+<circle cx="451" cy="563" r="15" fill="#087C78"/>
+<text x="451" y="568" class="small" style="fill:white" text-anchor="middle">3</text>
+<text x="476" y="570" class="label">Home + runtime</text>
+<text x="444" y="602" class="body">/home/hatch: home / workspace</text>
+<text x="444" y="627" class="body">/opt/hatch: shipped runtime</text>
+<rect x="62" y="700" width="700" height="244" rx="14" fill="white" stroke="#9A5C12" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="82" y="732" class="over">PROTECTED SERVICES · OUTSIDE THE CELL, ON THE VM</text>
+<rect x="82" y="756" width="202" height="156" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="82" y="772" width="4" height="124" rx="2" fill="#9A5C12"/>
+<text x="104" y="794" class="label">Policy</text>
+<text x="104" y="826" class="body">Sentinel</text>
+<text x="104" y="851" class="body">hatch-safety</text>
+<text x="104" y="876" class="body">Permissions and</text>
+<text x="104" y="901" class="body">approval decisions</text>
+<rect x="310" y="756" width="204" height="156" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="310" y="772" width="4" height="124" rx="2" fill="#9A5C12"/>
+<text x="332" y="794" class="label">Access</text>
+<text x="332" y="826" class="body">authd / privsep</text>
+<text x="332" y="851" class="body">Service proxies</text>
+<text x="332" y="876" class="body">Credentials and</text>
+<text x="332" y="901" class="body">mediated actions</text>
+<rect x="540" y="756" width="202" height="156" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="540" y="772" width="4" height="124" rx="2" fill="#9A5C12"/>
+<text x="562" y="794" class="label">Storage</text>
+<text x="562" y="826" class="body">Postgres</text>
+<text x="562" y="851" class="body">Service-owned</text>
+<text x="562" y="876" class="body">records and state</text>
+<text x="562" y="901" class="body">outside cell files</text>
+<path d="M 412 664 V 693" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="826" y="368" width="254" height="190" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="826" y="384" width="4" height="158" rx="2" fill="#7149A6"/>
+<text x="848" y="406" class="label">Remote inference</text>
+<text x="848" y="438" class="body">Model serving runs</text>
+<text x="848" y="463" class="body">outside the personal VM.</text>
+<text x="848" y="488" class="body">Selected route and</text>
+<text x="848" y="513" class="body">provider policy affect</text>
+<text x="848" y="538" class="body">the model response.</text>
+<path d="M 742 424 H 820" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 826 468 H 748" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="826" y="700" width="254" height="244" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="826" y="716" width="4" height="212" rx="2" fill="#7149A6"/>
+<text x="848" y="738" class="label">External systems</text>
+<text x="848" y="770" class="body">Websites and APIs</text>
+<text x="848" y="795" class="body">Connected accounts</text>
+<text x="848" y="820" class="body">Phones and Macs</text>
+<text x="848" y="845" class="body">Home accessories</text>
+<text x="848" y="870" class="body">Supported actions use</text>
+<text x="848" y="895" class="body">the relevant interface</text>
+<text x="848" y="920" class="body">and permissions.</text>
+<path d="M 762 820 H 820" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 592 222 V 380" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="1012" width="1040" height="76" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="62" y="1043" class="over">FOLLOW BOTH EXECUTION AND AUTHORITY</text>
+<text x="62" y="1070" class="body">The harness lives in the cell; privileged services are outside it. Remote model inference is another boundary.</text>
+<rect x="40" y="1114" width="1040" height="86" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="60" y="1143" class="label">Cell root and host authority are different scopes.</text>
+<text x="60" y="1169" class="small">The namespace-scoped shell cannot treat protected VM services as its own files or processes.</text>
+<text x="60" y="1191" class="small">Solid outer box = personal VM. Dashed inner boxes = runtime cell and protected service grouping.</text>
 </svg>

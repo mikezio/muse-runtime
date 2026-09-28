@@ -1,49 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="460" viewBox="0 0 860 460" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
-  <defs>
-    <marker id="arr5" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#57606a"/>
-    </marker>
-  </defs>
-  <rect x="0" y="0" width="860" height="460" fill="#ffffff"/>
-  <text x="430" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#24292f">the agent team: who spawns whom</text>
-
-  <!-- main -->
-  <rect x="330" y="60" width="200" height="60" rx="12" fill="#fff8c5" stroke="#9a6700" stroke-width="2"/>
-  <text x="430" y="85" text-anchor="middle" font-size="14" font-weight="700" fill="#24292f">main agent</text>
-  <text x="430" y="104" text-anchor="middle" font-size="11" fill="#57606a">owns the conversation</text>
-
-  <!-- subagent -->
-  <rect x="80" y="170" width="200" height="80" rx="12" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
-  <text x="180" y="196" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">subagent</text>
-  <text x="180" y="215" text-anchor="middle" font-size="11" fill="#57606a">bounded task, background</text>
-  <text x="180" y="231" text-anchor="middle" font-size="11" fill="#57606a">inherits parent context</text>
-
-  <!-- coordinator -->
-  <rect x="330" y="170" width="200" height="80" rx="12" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
-  <text x="430" y="196" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">coordinator</text>
-  <text x="430" y="215" text-anchor="middle" font-size="11" fill="#57606a">fans out to its own</text>
-  <text x="430" y="231" text-anchor="middle" font-size="11" fill="#57606a">subagents, synthesizes</text>
-
-  <!-- browser task -->
-  <rect x="580" y="170" width="200" height="80" rx="12" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
-  <text x="680" y="196" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">browser task agent</text>
-  <text x="680" y="215" text-anchor="middle" font-size="11" fill="#57606a">browser tools only</text>
-  <text x="680" y="231" text-anchor="middle" font-size="11" fill="#57606a">self-contained brief</text>
-
-  <!-- worker -->
-  <rect x="330" y="300" width="200" height="80" rx="12" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
-  <text x="430" y="326" text-anchor="middle" font-size="13" font-weight="600" fill="#24292f">worker</text>
-  <text x="430" y="345" text-anchor="middle" font-size="11" fill="#57606a">cron fired, no parent</text>
-  <text x="430" y="361" text-anchor="middle" font-size="11" fill="#57606a">final message = delivery</text>
-
-  <!-- arrows -->
-  <line x1="360" y1="120" x2="220" y2="166" stroke="#57606a" stroke-width="2" marker-end="url(#arr5)"/>
-  <line x1="430" y1="120" x2="430" y2="166" stroke="#57606a" stroke-width="2" marker-end="url(#arr5)"/>
-  <line x1="500" y1="120" x2="640" y2="166" stroke="#57606a" stroke-width="2" marker-end="url(#arr5)"/>
-  <line x1="180" y1="250" x2="180" y2="420" stroke="#57606a" stroke-width="1.5" stroke-dasharray="6,4"/>
-  <line x1="680" y1="250" x2="680" y2="420" stroke="#57606a" stroke-width="1.5" stroke-dasharray="6,4"/>
-
-  <text x="180" y="435" text-anchor="middle" font-size="11" fill="#57606a">handoff back to parent</text>
-  <text x="680" y="435" text-anchor="middle" font-size="11" fill="#57606a">handoff back to parent</text>
-  <text x="430" y="435" text-anchor="middle" font-size="11" fill="#57606a">nesting stops at two levels</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="890" viewBox="0 0 1120 890" role="img" aria-labelledby="title desc">
+<title id="title">One conversation can coordinate several agents</title>
+<desc id="desc">Agent roles describe ownership and purpose; they do not guarantee a shared model or tool set.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8FA3B0"/></marker></defs>
+<style>text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .title{font-size:30px;font-weight:700;fill:#172B3A}.sub{font-size:17px;fill:#4E6271}.label{font-size:20px;font-weight:650;fill:#172B3A}.body{font-size:17px;fill:#4E6271}.small{font-size:15px;fill:#4E6271}.over{font-size:14px;font-weight:700;letter-spacing:1.2px;fill:#4E6271}</style>
+<rect width="1120" height="890" fill="#F7F9FB"/>
+<text x="40" y="51" class="title">One conversation can coordinate several agents</text>
+<text x="40" y="83" class="sub">Agent roles describe ownership and purpose; they do not guarantee a shared model or tool set.</text>
+<rect x="350" y="118" width="420" height="126" rx="14" fill="#EDF3FE" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="350" y="134" width="4" height="94" rx="2" fill="#225EC4"/>
+<circle cx="379" cy="149" r="15" fill="#225EC4"/>
+<text x="379" y="154" class="small" style="fill:white" text-anchor="middle">1</text>
+<text x="404" y="156" class="label">Root / conversation agent</text>
+<text x="372" y="188" class="body">Owns the user-facing turn and delegates work.</text>
+<text x="372" y="213" class="body">Combines results into the next response.</text>
+<path d="M 560 244 V 278 H 202 V 315" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 560 278 V 315" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 560 278 H 918 V 315" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="325" width="324" height="198" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="341" width="4" height="166" rx="2" fill="#087C78"/>
+<circle cx="69" cy="356" r="15" fill="#087C78"/>
+<text x="69" y="361" class="small" style="fill:white" text-anchor="middle">2</text>
+<text x="94" y="363" class="label">General subagent</text>
+<text x="62" y="395" class="body">Receives a bounded assignment.</text>
+<text x="62" y="420" class="body">Context transfer depends on</text>
+<text x="62" y="445" class="body">the spawn API and runtime policy.</text>
+<text x="62" y="470" class="body">Returns a result to its parent.</text>
+<rect x="398" y="325" width="324" height="198" rx="14" fill="#FFF5E6" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="398" y="341" width="4" height="166" rx="2" fill="#9A5C12"/>
+<circle cx="427" cy="356" r="15" fill="#9A5C12"/>
+<text x="427" y="361" class="small" style="fill:white" text-anchor="middle">3</text>
+<text x="452" y="363" class="label">Browser task agent</text>
+<text x="420" y="395" class="body">Receives a self-contained brief.</text>
+<text x="420" y="420" class="body">Works through browser tools.</text>
+<text x="420" y="445" class="body">Has an owner and task lineage.</text>
+<text x="420" y="470" class="body">Returns an asynchronous handoff.</text>
+<rect x="756" y="325" width="324" height="198" rx="14" fill="#F3EEFA" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="756" y="341" width="4" height="166" rx="2" fill="#7149A6"/>
+<circle cx="785" cy="356" r="15" fill="#7149A6"/>
+<text x="785" y="361" class="small" style="fill:white" text-anchor="middle">4</text>
+<text x="810" y="363" class="label">Background worker</text>
+<text x="778" y="395" class="body">Started by scheduled, queued</text>
+<text x="778" y="420" class="body">or event-driven work.</text>
+<text x="778" y="445" class="body">May have a separate root / owner.</text>
+<text x="778" y="470" class="body">Reports through its delivery path.</text>
+<path d="M 202 523 V 565" fill="none" stroke="#8FA3B0" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="575" width="324" height="110" rx="14" fill="#EAF7F4" stroke="#D7E1E7" stroke-width="1.5"/>
+<rect x="40" y="591" width="4" height="78" rx="2" fill="#087C78"/>
+<text x="62" y="613" class="label">Optional child agents</text>
+<text x="62" y="645" class="body">Further delegation is policy-bound.</text>
+<text x="62" y="670" class="body">Depth limits are not universal.</text>
+<rect x="398" y="575" width="682" height="138" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="420" y="607" class="label">Ownership is the useful thing to trace.</text>
+<text x="420" y="640" class="body">Parent / root IDs connect the request, task and result.</text>
+<text x="420" y="668" class="body">A completed spawn request means accepted, not finished.</text>
+<rect x="40" y="774" width="1040" height="86" rx="14" fill="white" stroke="#D7E1E7" stroke-width="1.5"/>
+<text x="60" y="803" class="label">Model policy can differ by role.</text>
+<text x="60" y="829" class="small">Root, child, browser and background work may resolve to different routes or settings.</text>
+<text x="60" y="851" class="small">An agent record or branded session header alone does not prove the provider used for a particular turn.</text>
 </svg>

@@ -1,45 +1,33 @@
-# Radical transparency
+# What you can inspect—and what remains hidden
 
-Everything is inspectable on purpose. Poke around.
+The runtime exposes extensive shipped documentation, scripts, SDKs, schemas, configuration and binaries. That makes it unusually useful to study. It does not make the whole platform visible.
 
-## The design choice
+## Visibility map
 
-Most sandboxed agent runtimes treat their internals as proprietary surface to be hidden: obfuscated binaries, stripped comments, minimal documentation, "trust us." This runtime does the opposite. **As far as observable from inside, nothing on the VM is hidden from the agent — or the user.**
+| Surface | What inspection can reveal | Limit |
+|---|---|---|
+| Product/skill documentation | Intended workflows, prerequisites and tool contracts | Instructions are not execution evidence |
+| Launch and cell scripts | How a particular build configures parts of the environment | Effective host state can differ or be inaccessible |
+| SDK source | Public method/options/return shapes | Internal server implementation may be absent |
+| Compiled daemon | Version, executable contents, embedded strings | The stripped binary is not a source release |
+| Selected API responses | Current values and operation results | Some fields are omitted, redacted or not implemented |
+| Native database schema/tool | Structured records within the tool's access scope | Does not grant a shell database connection |
+| Browser/client code | UI logic and client feature configuration | Does not expose all backend gates or mobile policy |
 
-`/opt/hatch` is world-readable. The boot scripts, the lifecycle engine configuration, the privilege-separation setup, the trust-store builder, the scheduler definitions — all of it is plain shell and config files with extensive comments. The comments don't just say *what*; they say *why*, including the threat model:
+September 26–27 inspection encountered protected process environment access, host-only browser service boundaries and missing per-request provider metadata. These limits matter when interpreting configuration and model experiments.
 
-- Why the NSS trust databases are host-built and read-only while the PEM store is container-writable ("a cell-writable DB is a code-execution primitive against anything that opens it").
-- Why lifecycle state lives in a root-owned directory the container's root can't replace between write and read.
-- Why the daemon must source its environment from the host-rendered `guest.env` and never from a container-writable script.
+## Root does not erase the boundaries
 
-These aren't leaked internals. They're the documentation. The engineers wrote the security reasoning *into the code comments* knowing the agent would read them.
+Cell root is scoped by namespaces, mounts, process restrictions and mediated interfaces. Many files under `/opt/hatch` were readable while the mount was read-only. A file path or service name does not grant access to the corresponding host resource.
 
-## Why it works this way
+See [the machine](01-the-machine.md) for the distinction between cell privileges, permitted external actions and host authority.
 
-Three reasons, in increasing order of importance:
+## What an archive gives you
 
-1. **The agent is supposed to understand its own machinery.** A personal agent that manages its own schedules, repairs its own tooling, and improves its own setup needs to see how it's put together. Hiding the runtime from the agent would make the agent dumber at exactly the self-maintenance tasks it's expected to perform.
+A release contains selected filesystem artifacts from an instance. It can support comparisons of shipped docs, skills, schemas and executables. It does not include a full reconstruction of hosted inference, account feature gates, host services or excluded personal state.
 
-2. **Inspection is a security property.** A runtime the user can audit is a runtime the user can trust. The user in this instance routinely inspects the agent's machinery themselves — checking schedules, reading scripts, verifying claims. Transparency turns "trust us" into "check us."
+Use “artifact” or “installed source file” precisely. Some scripts and SDKs are source; a daemon binary is not its source code. The archive's exclusion rules also mean absence from an archive may reflect filtering.
 
-3. **Hiding wouldn't help anyway.** The enforcement (namespaces, Sentinel, privilege separation) operates below anything the container can touch. You can read the lock's blueprints because reading them doesn't pick the lock. Transparency is affordable *because* the security doesn't depend on secrecy — Kerckhoffs's principle applied to an agent sandbox.
+## A productive investigation
 
-## What you can actually do
-
-From inside the runtime, as root, you can:
-
-- Read every script in `/opt/hatch/runtime-cell/` and understand exactly how your container boots, how its trust store is built, how the daemon launches.
-- List every privilege-separation socket in `/run/hatch/privsep/` and see which services have host-side counterparts.
-- Inspect the egress CA, the proxy configuration, the environment the host renders for you.
-- Watch your own scheduler definitions, cron state, run records.
-- Read the skill CLIs, their wrappers, the sandbox API surface.
-
-What you *can't* do — see the host's processes, touch Sentinel, read another tenant's anything — isn't hidden from you; it's *absent*. The boundary isn't a secret. It's architecture.
-
-## The invitation
-
-This repo exists because of that philosophy. The per-build archives are the runtime publishing its own internals, build after build, for anyone to inspect. If something here doesn't make sense, the source is right there in the archive — go read it. That's the point.
-
-## The one-line version
-
-The locks are in the open because the locks don't need the dark.
+Start with a concrete question, locate its interface or consumer, and record the smallest sufficient evidence. Follow [the archive workflow](archive-workflow.md) and [evidence template](evidence.md). When a result is unavailable, preserve that uncertainty instead of filling it with a plausible architectural story.

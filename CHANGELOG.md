@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-28 - Runtime field guide
+
+- Rebuilt the entry point around reader questions, with architecture, request flow, component, configuration, model-route, API, capability and feature-flag references.
+- Replaced all five diagrams and added request lifecycle, configuration layers and trust boundaries.
+- Corrected daemon placement, cell-root/host distinctions, memory-only-as-files claims, browser session assumptions and model identity/context overclaims.
+- Added dated evidence levels, source locators and unresolved questions; private account state stays out of the repository.
+- Added a standard-library manifest comparison CLI and practical archive guide, validated with fixtures and two real release manifests.
+- Left runtime archive generation and live settings unchanged.
+
 ## 2026-09-25 - The book rebuild
 
 Mike's call: the repo was a mess — information scattered, and the further-reading page just pointed at Meta's articles instead of using them. Rebuilt as a coherent book in two parts.

@@ -2,6 +2,8 @@
 
 A real Chromium the agent drives — and the most heavily armored tool in the runtime, because the web is where untrusted content lives.
 
+This chapter summarizes the published browser design linked in [sources](sources.md). The final section records operational limits; it does not claim a fresh audit of every browser control.
+
 ## What it is
 
 Muse has a real, up-to-date Chromium-based browser running behind a virtualization layer. It isn't a text scraper or a simplified reader: the agent navigates actual pages, fills real forms, clicks through checkouts, and handles JavaScript-heavy sites. The user can watch what it's doing in the browser and **take over at any time** — and while the user is in control, or while credentials are being filled, the agent is paused and can't act at all.
@@ -52,9 +54,11 @@ Full treatment in [08-paying-for-things](08-paying-for-things.md).
 
 ![Browser sessions: spawn vs steer](../assets/browser-lineage.svg)
 
-## The session problem
+## Task ownership and authentication state
 
-One honest operational wrinkle, observed from inside: the browser holds its logins in a persistent profile tied to a long-lived browser-task lineage. A fresh task starts with a blank cookie jar — sessions don't transfer. This is why X/Twitter work, for example, runs through one persistent lineage rather than fresh tasks. It's a usability consequence of the isolation: the thing that keeps sessions safe (they live in the broker's profile, not somewhere the agent can copy) also makes them non-portable.
+Track the owning agent, browser task and browser session/profile separately. Installed guidance favors continuing an existing task with `browser.steer_task` when it is waiting for input or completing an ongoing assignment. A new task is not a universal guarantee of a fresh cookie jar; shared state and login persistence depend on the service and lineage.
+
+The earlier blanket claim that every new task starts logged out was too strong. Establish session behavior with a scoped observation, and do not confuse Muse's managed browser with an external research browser used to inspect the Muse website.
 
 ## The one-line version
 

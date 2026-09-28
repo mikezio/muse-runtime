@@ -1,99 +1,70 @@
-# The big picture
+# How Muse fits together
 
-How the pieces of a Muse runtime fit together — from Meta's inference tier down to the container the agent calls its computer.
+Muse combines model inference, an agent runtime, an isolated Linux environment, durable state, and services that connect it to the outside world. Calling all of these “the agent” makes it hard to understand what a setting or permission actually changes.
 
-## The full stack
+This guide separates them. It combines the repository's architecture research with dated runtime observations. The main diagram distinguishes the published deployment boundaries from the logical request flow. See [evidence and limitations](evidence.md).
 
-Most explanations of an AI agent start with the model and stop there. The runtime is everything around the model that makes it a *personal assistant* instead of a chatbot. Read top-down: each layer is dumber and more concrete than the one above it.
+## Start with five pieces
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  Meta inference tier                                     │
-│  the model: reads, reasons, decides. stateless.          │
-│  reached through a proxy socket; weights never enter     │
-│  the VM.                                                 │
-└────────────────────────┬────────────────────────────────┘
-                         │ tool calls / tool results
-┌────────────────────────▼────────────────────────────────┐
-│  the runtime (host side)                                 │
-│  spawnd · hatch daemon · scheduler · Sentinel             │
-│  executes tools, runs cron jobs, enforces policy,        │
-│  brokers every crossing between agent and world.         │
-│  the agent cannot act except through here.               │
-└────────────────────────┬────────────────────────────────┘
-                         │ executes inside the cell
-┌────────────────────────▼────────────────────────────────┐
-│  the VM (systemd-nspawn container, "htch-runtime")        │
-│  the agent's computer: shell, files, browser, skills.    │
-│  the agent is root here — namespaced root, uid 0 mapped  │
-│  to an unprivileged host UID. total power inside,        │
-│  zero power outside.                                      │
-└────────────────────────┬────────────────────────────────┘
-                         │ all egress via Sentinel
-┌────────────────────────▼────────────────────────────────┐
-│  the world                                                │
-│  the user's chat apps, accounts, the internet.           │
-│  reached only through Sentinel's MITM proxy,             │
-│  privilege-separated sockets, and approval gates.       │
-└─────────────────────────────────────────────────────────┘
-```
+![Muse architecture: clients, runtime, inference, isolated tools, and mediated services](../assets/architecture.svg)
 
-The single most important thing to internalize: **the agent runs outside the VM, and the VM runs inside the runtime.** The model thinks on Meta's servers; its hands are in the container; the runtime decides what the hands may touch. Details in [01-the-machine](01-the-machine.md), [02-the-agent-outside](02-the-agent-outside.md), and [03-sentinel](03-sentinel.md).
+| Piece | What it does | Distinction |
+|---|---|---|
+| **Client** | Web/mobile chat, settings, approvals, rendered artifacts | Presents the system; does not run model inference locally |
+| **Agent runtime** | Assembles context, calls inference, dispatches tools, tracks sessions/tasks, delivers results | More than a prompt or a model |
+| **Inference service** | Takes context and produces assistant output or tool calls | Remote from the user's Linux cell |
+| **Execution cell** | Runs shell commands and user software; exposes files and bundled tooling | Cell root is not host administrator access |
+| **Mediated services and state** | Browser broker, credentials, connectors, device commands, databases, scheduling and storage | Not all accessible as ordinary files from a shell |
 
-![Architecture](../assets/architecture.svg)
+Meta's launch architecture places the Hatch harness inside the runtime cell and the security-sensitive services outside that cell, within the personal VM. Model inference is remote. See [cell and host](01-the-machine.md) for the deployment distinction.
 
-## The agent's-eye view
+An **agent** is a role plus context and execution state managed by the runtime. A root agent, browser task, and background worker can have different instructions, tools, and model policies. The model performs inference for those roles; the runtime supplies the filesystem interfaces, memory retrieval, permissions and task lifecycle.
 
-From inside, the agent experiences a simpler world — the one the rest of this repo describes:
+## Follow one request
 
-```
-                        ┌─────────────────────────┐
-                        │        the user          │
-                        │  chat · voice · whatsapp │
-                        └────────────┬────────────┘
-                                     │
-                        ┌────────────▼────────────┐
-                        │        the agent         │
-                        │  model + tools + files   │
-                        └─┬───────┬───────┬───────┘
-                          │       │       │
-              ┌───────────▼┐ ┌────▼─────┐ │ ┌──────────────▼──┐
-              │ scheduler  │ │ memory   │ │ │ capabilities    │
-              │ cron jobs  │ │ files    │ │ │ skills · browser│
-              │ heartbeat  │ │ dreams   │ │ │ connectors      │
-              └───────────┬┘ └────┬─────┘ │ └──────────────┬──┘
-                          │       │       │                │
-                          └───────▼───────▼────────────────┘
-                                  │
-                        ┌─────────▼──────────┐
-                        │  background workers │
-                        │  wake · do · write  │
-                        │  · report · sleep   │
-                        └────────────────────┘
-```
+![A request from chat through inference and tools to a final reply](../assets/request-lifecycle.svg)
 
-## The core loop
+For example: “Read this document and make a chart.”
 
-1. **Something wakes the agent.** A user message, a scheduled job firing, or a background task finishing. Between activations there is no thinking — waking is the runtime starting a new inference turn with fresh context.
-2. **It reads its files.** Identity, memory, standing instructions, the relevant skill docs. This is "remembering."
-3. **It acts through tools.** Shell commands, browser tasks, skill CLIs, file writes. It never touches the outside world except through a tool call the runtime executes.
-4. **It writes down what happened.** Memory files, logs, state files, run records. This is what the next wake-up will read.
-5. **It goes quiet.** Continuity is an illusion maintained by good notes.
+1. A client submits the request into a conversation/session.
+2. The runtime assembles available conversation, instructions, relevant memory and tool definitions. The exact selection is not fully exposed.
+3. An inference request produces text, a tool call, or both.
+4. The runtime routes the call. Reading a local file, browsing a website, and calling a connector use different execution paths and permissions.
+5. A result comes back: file contents, structured data, a task receipt, or an error. A receipt for asynchronous work is not the finished result.
+6. Further inference can use that result. This loop can repeat or delegate work.
+7. The runtime delivers the reply or artifact and retains the appropriate session/task state.
 
-## The three time scales
+The inference service is remote from the cell. The broader agent system spans these pieces; saying “the entire agent runs outside the VM” is too imprecise.
 
-- **Conversation time** (seconds to minutes): the user is talking, the agent responds, tools run inline.
-- **Scheduled time** (minutes to days): cron jobs fire — morning briefings, polls, checks, cleanups. Each run is a fresh activation with the full context available.
-- **Overnight time** (daily): consolidation jobs rewrite memory, derive alignment summaries, generate ideas, review what worked. The agent "learns" the way a journal-keeper learns: by re-reading the day.
+## What can you change?
 
-## The three kinds of state
+| Layer | Examples | Reference |
+|---|---|---|
+| User files | Persona notes, workspace code, custom skills | [Filesystem](10-filesystem.md), [skills](13-skills.md) |
+| Runtime preferences | Root/subagent reasoning effort | [Configuration](configuration.md) |
+| Model selection | Auto, named routes, aliases | [Model routes](model-routes.md) |
+| Connected capabilities | Account links, per-action permissions, paired devices | [Capability atlas](capabilities.md) |
+| Client presentation | Some local display/debug preferences | [Feature flags](feature-flags.md) |
+| Platform policy | Server gates, launch environment, host service access | Observable in part; not ordinary user settings |
 
-- **Standing state**: files the user or the agent edits deliberately (`USER.md`, `MEMORY.md`, skill docs, preferences). Changes rarely, meant to last.
-- **Working state**: lock files, visit state, counters, geofence snapshots. Changes constantly, machine-managed, often JSON.
-- **Derived state**: nightly outputs — alignment syntheses, idea lists, feed posts. Recomputed from the other two; safe to delete and regenerate.
+Editing a file does not prove a running process loaded it. Selecting a model route does not prove the upstream checkpoint identity. A tool definition does not prove the account can execute it.
 
-## Why this design
+## Where does state live?
 
-A language model is stateless. Every capability people associate with "a personal assistant that knows me" — remembering preferences, noticing patterns, following routines — has to be built out of files plus a scheduler plus the discipline to read and write them. The runtime is that scaffolding: a mind on Meta's servers, a computer in a container, and an overlord at the boundary making sure the mind can only move the hands it's allowed to move.
+- **Files:** workspace projects, standing Markdown notes, configuration and generated outputs.
+- **Application state:** sessions, agents, requests, browser tasks, usage, memory indexes and provenance exposed through selected runtime tools.
+- **Managed service state:** browser profiles, connector authorization, credentials and device associations.
+- **Server-side configuration:** evaluated feature gates and model routing policy.
 
-The rest of this repo walks through each piece.
+Archives capture selected filesystem contents. They cannot reconstruct all of this state or reproduce the hosted service by themselves.
+
+## Choose your next step
+
+- **Understand isolation:** [The machine](01-the-machine.md) and [remote inference](02-the-agent-outside.md).
+- **Identify a component:** [Component reference](components.md).
+- **Understand configuration:** [Configuration layers](configuration.md).
+- **Find capabilities:** [Capability atlas](capabilities.md).
+- **Inspect an API result:** [Daemon and API surfaces](runtime-api.md).
+- **Investigate a new build:** [Archive workflow](archive-workflow.md).
+
+The [documentation index](README.md) links the complete topic chapters.

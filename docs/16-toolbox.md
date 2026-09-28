@@ -2,6 +2,8 @@
 
 Skills give the agent *knowledge*. Tools give it *hands*. A tool is a function the model can call: run a shell command, read a file, steer a browser task, spawn a subagent. The model never touches the outside world except through a tool call - that is the entire security boundary in one sentence.
 
+Availability varies by account, permissions and device state. This is a conceptual tool map; see the [capability atlas](capabilities.md) for what was executed versus merely documented.
+
 ## The core set
 
 **Shell & files** - execute commands, read/write/edit files, list directories. The computer the agent lives on is a real Linux VM with a persistent filesystem, so this is where scripts run, logs land and builds happen.
@@ -12,7 +14,7 @@ Skills give the agent *knowledge*. Tools give it *hands*. A tool is a function t
 
 **Scheduler** - create, update, list, inspect and remove cron jobs; run one immediately; read run history. Hooks get the same treatment for event-driven automations.
 
-**Chat** - manage conversations: list chats, create side chats, send messages between them. Side chats are separate persistent threads with their own context.
+**Chat** - manage conversations: list chats, create side chats, send messages between them. Side chats are separate persistent threads, but not every setting is thread-local: the observed model selector affected existing chats and cleared working context.
 
 **Artifacts** - build durable deliverables: documents, pages, decks, spreadsheets, web apps. Creating an artifact is a background build with its own lifecycle, not a file write.
 
@@ -30,7 +32,7 @@ Skills give the agent *knowledge*. Tools give it *hands*. A tool is a function t
 
 ## Memory & tracking tools
 
-**Memory** - semantic search over memory files, snippet reads and provenance explanations ("where did this fact come from, what did it replace"). The agent must consult this before answering from history.
+**Memory** - retrieval across supported memory surfaces, snippet reads and provenance explanations ("where did this fact come from, what did it replace"). The agent must consult this before answering from history.
 
 **Tracking / goals** - durable user goals and concrete commitments (reservations, deliveries, trips): create, update, log progress, close when done. Goals get workspaces; the agent reads a goal's notes before acting on it.
 
@@ -48,7 +50,7 @@ Skills give the agent *knowledge*. Tools give it *hands*. A tool is a function t
 
 ## How tools stay safe
 
-- **Schemas, not strings.** Every tool declares its parameters; the model fills them in. There is no "run arbitrary code" tool - the shell is the closest thing and it runs as an unprivileged user in the agent's own VM.
+- **Structured interfaces and constrained execution.** Tools declare parameters. Shell tools can execute arbitrary code inside the cell; the inspected shell was UID 0 within that namespace. This does not confer host privileges.
 - **Approvals are native.** Sensitive calls trigger a user-facing approval card the agent cannot dismiss, forge, or predict.
 - **Deferred loading.** Tool namespaces load on demand; the model sees a function's full schema only when it needs it. This keeps the context lean and the authority explicit.
 - **Every call is logged.** Tool calls and their outputs are recorded, which is what makes the honesty rules enforceable: "I did X" can be checked against what actually ran.

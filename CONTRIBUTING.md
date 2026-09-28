@@ -30,3 +30,15 @@ runtime does that the archive doesn't show.
 ## Submitting
 
 Attach the zip to a [new release](https://github.com/mikezio/muse-runtime/releases/new) named `runtime-archive-YYYY-MM-DD` and open an issue linking it, or open a PR adding the manifest under `snapshot/variants/<your-label>/` with a link to where the zip is hosted. Use a generic label (like `instance-2026-09`), not your name. Different runtime variations are the point of the archive: if your file tree or skills differ from what's already here, that's exactly what we want.
+
+## Contributing research or documentation
+
+Use the [evidence template](docs/evidence.md) and [archive workflow](docs/archive-workflow.md). Record the build/date, exact source path or scoped operation, result and limitations. Distinguish installed, compiled, accepted, enabled and successfully executed. Model changes can clear working context; do not run them merely to fill in a catalog.
+
+Contribute sanitized findings rather than raw account payloads. Exclude personal messages, memory, identifiers, device inventories, credentials and browser authentication state. Review file contents as well as names: a manifest scan alone cannot establish that an archive is safe to publish.
+
+For the manifest comparison utility, run:
+
+```sh
+python3 -m unittest discover -s tools -p 'test_compare_manifests.py' -v
+```

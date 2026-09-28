@@ -4,6 +4,8 @@ The agent is not thinking between conversations. The scheduler is what makes it 
 
 ![The scheduler loop](../assets/scheduler-loop.svg)
 
+The detailed heartbeat checklist below describes this instance's documented automation, not a universal Muse schedule or guaranteed product behavior. No jobs were changed during the documentation update.
+
 ## Cron jobs
 
 Scheduled work is managed through native cron tooling (create, list, update, remove, run-now, history). A job definition has:

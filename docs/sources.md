@@ -1,6 +1,6 @@
 # Sources
 
-Everything in this repo is built from two kinds of material: **Meta's own publications** about Muse, and **direct observation from inside a live runtime** (whose snapshots are archived as releases). This page lists the former; the observation side is the archive itself.
+Everything in this repo is built from two kinds of material: **Meta's own publications** about Muse, and **direct observation from inside a live runtime** (whose snapshots are archived as releases). This page lists the publications. The [evidence guide](evidence.md) records observation provenance and limits; archives capture filesystem artifacts but cannot reproduce all live API/account state.
 
 Meta's materials describe the system at launch and say so explicitly. Where live-instance observations in this repo differ from Meta's published description, the docs note the difference rather than picking a side.
 
