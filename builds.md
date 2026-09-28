@@ -75,3 +75,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `1eefe22acda` zip sha256: `462b6398aede5a390e7e8034a105d904372d626b2cf86e3bb05eb5ab63408e0a` (monolithic 1.2 GB upload stalled with zero bytes landed on GitHub; six ~200 MB parts part-00..part-05 instead; part sizes sum to exactly the local zip size)
 | `82da44d37c3` | 2026-09-28T02:23:22Z | 2026-09-28 EDT | see release `build-82da44d37c3` |
 | `16bddaccfa2` | 2026-09-28T04:24:52Z | 2026-09-28 EDT | see release `build-16bddaccfa2` |
+| `34136f0a759` | 2026-09-28T06:19:31Z | 2026-09-28 EDT | see release `build-34136f0a759` |
