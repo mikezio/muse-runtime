@@ -5206,6 +5206,8 @@ home/.hatch-db-change-signals/spaces.catalog.1790605847982.390
 home/.hatch-db-change-signals/spaces.catalog.1790609449273.489
 home/.hatch-db-change-signals/spaces.catalog.1790613083034.660
 home/.hatch-db-change-signals/spaces.catalog.1790620276503.163
+home/.hatch-db-change-signals/spaces.catalog.1790623956415.95
+home/.hatch-db-change-signals/spaces.catalog.1790627456339.271
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -9680,6 +9682,7 @@ opt/skills/spaces/ts-runtime/cvm/src/ast-rewrite.test.ts
 opt/skills/spaces/ts-runtime/cvm/src/ast-rewrite.ts
 opt/skills/spaces/ts-runtime/cvm/src/build-cvm-client.test.ts
 opt/skills/spaces/ts-runtime/cvm/src/build-cvm-client.ts
+opt/skills/spaces/ts-runtime/cvm/src/check-static-scripts.ts
 opt/skills/spaces/ts-runtime/cvm/src/css-rewrite.test.ts
 opt/skills/spaces/ts-runtime/cvm/src/css-rewrite.ts
 opt/skills/spaces/ts-runtime/cvm/src/download-links.ts
@@ -9687,6 +9690,7 @@ opt/skills/spaces/ts-runtime/cvm/src/fragment-links.ts
 opt/skills/spaces/ts-runtime/cvm/src/html-rewrite.test.ts
 opt/skills/spaces/ts-runtime/cvm/src/html-rewrite.ts
 opt/skills/spaces/ts-runtime/cvm/src/prelude.ts
+opt/skills/spaces/ts-runtime/cvm/src/script-scan.ts
 opt/skills/spaces/ts-runtime/cvm/src/tunnel-url.test.ts
 opt/skills/spaces/ts-runtime/cvm/src/tunnel-url.ts
 opt/skills/spaces/ts-runtime/cvm/src/unsupported-document.ts
