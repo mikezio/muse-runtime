@@ -2,3 +2,4 @@ snapshot/runtime-archive-*
 
 __pycache__/
 *.pyc
+.archive-runtime.lock
