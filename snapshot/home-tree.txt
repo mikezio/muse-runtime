@@ -5199,6 +5199,7 @@ home/.hatch-db-change-signals/spaces.catalog.1790580662302.3
 home/.hatch-db-change-signals/spaces.catalog.1790584274265.3
 home/.hatch-db-change-signals/spaces.catalog.1790588192900.8
 home/.hatch-db-change-signals/spaces.catalog.1790591511812.3
+home/.hatch-db-change-signals/spaces.catalog.1790595052444.8
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -6448,9 +6449,10 @@ home/docs
 home/docs/artifacts.md
 home/docs/browser.md
 home/docs/calls-texts-notifications.md
-home/docs/channel-availability.md
 home/docs/channels
-home/docs/channels/whatsapp.md
+home/docs/chat-connections
+home/docs/chat-connections.md
+home/docs/chat-connections/whatsapp.md
 home/docs/client-surfaces.md
 home/docs/connectors.md
 home/docs/data-handling.md

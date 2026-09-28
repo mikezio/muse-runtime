@@ -79,3 +79,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `16bddaccfa2` | 2026-09-28T04:24:52Z | 2026-09-28 EDT | see release `build-16bddaccfa2` |
 | `34136f0a759` | 2026-09-28T06:19:31Z | 2026-09-28 EDT | see release `build-34136f0a759` |
 | `89ec2feef66` | 2026-09-28T06:23:02Z | 2026-09-28 EDT | see release `build-89ec2feef66` |
+- `5c8050fc67` zip sha256: `4e5c7bae5aedbdb417e26a5dd67fbbc85c28a5cbb7d11d188ab9954472a76fec` (twelve ~100 MB parts p100m-aa..p100m-al, same pattern as 34136f0a759/89ec2feef66; manifest clean; part sizes sum to exactly the local zip size of 1186961227 bytes)
+| `5c8050fc67` | 2026-09-28T09:59:17Z | 2026-09-28 EDT | see release `build-5c8050fc67` |
