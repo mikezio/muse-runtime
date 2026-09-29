@@ -95,3 +95,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `af173b0f79` zip sha256: `7220496f91530274ca9fd89a3912217c5c2427580302ee0029d328a12d928e87` (17366 files, 1309528671 bytes; manifest clean; monolithic zip upload stalled ~13 min with zero bytes landed, killed and uploaded thirteen ~100 MB parts p100m-00..p100m-12 instead; part sizes sum to exactly the local zip size)
 | `ed356ed358` | 2026-09-29T13:32:36Z | 2026-09-29 EDT | see release `build-ed356ed358` |
 | `27d509bb08` | 2026-09-29T14:18:42Z | 2026-09-29 EDT | see release `build-27d509bb08` |
+| `b52c8ada52` | 2026-09-29T18:32:39Z | 2026-09-29 EDT | see release `build-b52c8ada52` |

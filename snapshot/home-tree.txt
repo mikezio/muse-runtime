@@ -5231,6 +5231,8 @@ home/.hatch-db-change-signals/spaces.catalog.1790695864065.345
 home/.hatch-db-change-signals/spaces.catalog.1790699591315.151
 home/.hatch-db-change-signals/spaces.catalog.1790703065831.114
 home/.hatch-db-change-signals/spaces.catalog.1790706658320.283
+home/.hatch-db-change-signals/spaces.catalog.1790710283525.76
+home/.hatch-db-change-signals/spaces.catalog.1790713872884.266
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -7698,6 +7700,21 @@ opt/skills/artifacts/document/SKILL.md
 opt/skills/artifacts/document/references
 opt/skills/artifacts/document/references/editing.md
 opt/skills/artifacts/document/references/visual.md
+opt/skills/artifacts/map-runtime
+opt/skills/artifacts/map-runtime/.gitignore
+opt/skills/artifacts/map-runtime/.npmrc
+opt/skills/artifacts/map-runtime/README.md
+opt/skills/artifacts/map-runtime/build.mjs
+opt/skills/artifacts/map-runtime/bun.lock
+opt/skills/artifacts/map-runtime/bunfig.toml
+opt/skills/artifacts/map-runtime/dist
+opt/skills/artifacts/map-runtime/dist/hatch-maps.css
+opt/skills/artifacts/map-runtime/dist/hatch-maps.js
+opt/skills/artifacts/map-runtime/dist/map_helpers.js
+opt/skills/artifacts/map-runtime/package.json
+opt/skills/artifacts/map-runtime/src
+opt/skills/artifacts/map-runtime/src/index.tsx
+opt/skills/artifacts/map-runtime/tsconfig.json
 opt/skills/artifacts/markdown
 opt/skills/artifacts/markdown/SKILL.md
 opt/skills/artifacts/pdf
@@ -7719,6 +7736,7 @@ opt/skills/artifacts/presentation/references/workflow.md
 opt/skills/artifacts/references
 opt/skills/artifacts/references/charts.md
 opt/skills/artifacts/references/live-data.md
+opt/skills/artifacts/references/maps-recipes.md
 opt/skills/artifacts/references/maps.md
 opt/skills/artifacts/references/markdown.md
 opt/skills/artifacts/references/prose.md
@@ -7730,6 +7748,8 @@ opt/skills/artifacts/scripts/browser_audit_runtime.mjs
 opt/skills/artifacts/scripts/build_pptx.py
 opt/skills/artifacts/scripts/deck_asset_scope.mjs
 opt/skills/artifacts/scripts/embed_deck_fonts.mjs
+opt/skills/artifacts/scripts/map_helpers.mjs
+opt/skills/artifacts/scripts/map_urls.mjs
 opt/skills/artifacts/scripts/pdf_geometry_gate.mjs
 opt/skills/artifacts/scripts/pdf_geometry_probe.mjs
 opt/skills/artifacts/scripts/pdf_image_resolution.mjs
