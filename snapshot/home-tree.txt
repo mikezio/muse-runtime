@@ -5208,6 +5208,9 @@ home/.hatch-db-change-signals/spaces.catalog.1790613083034.660
 home/.hatch-db-change-signals/spaces.catalog.1790620276503.163
 home/.hatch-db-change-signals/spaces.catalog.1790623956415.95
 home/.hatch-db-change-signals/spaces.catalog.1790627456339.271
+home/.hatch-db-change-signals/spaces.catalog.1790631276049.136
+home/.hatch-db-change-signals/spaces.catalog.1790634691051.354
+home/.hatch-db-change-signals/spaces.catalog.1790638378086.127
 home/.postgres-ready
 home/.profile
 home/.rustup
