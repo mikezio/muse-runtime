@@ -88,3 +88,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `b5fc85534c` | 2026-09-28T22:43:21Z | 2026-09-28 EDT | see release `build-b5fc85534c` |
 - `baf0a304aa` zip sha256: `bee7699f5b72bca15c0c064b6fca8239c0e20ee53dac8f5e289229f7a8cb184e` (17363 files, 1308508537 bytes; manifest clean, no personal-data hits; monolithic zip upload stalled >18 min with zero bytes landed, killed and uploaded thirteen ~100 MB parts p100m-aa..p100m-am instead; part sizes sum to exactly the local zip size)
 | `baf0a304aa` | 2026-09-29T05:26:23Z | 2026-09-29 EDT | see release `build-baf0a304aa` |
+| `610ce13ff2` | 2026-09-29T07:00:12Z | 2026-09-29 EDT | see release `build-610ce13ff2` |
