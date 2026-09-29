@@ -90,4 +90,6 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `baf0a304aa` | 2026-09-29T05:26:23Z | 2026-09-29 EDT | see release `build-baf0a304aa` |
 | `610ce13ff2` | 2026-09-29T07:00:12Z | 2026-09-29 EDT | see release `build-610ce13ff2` |
 | `af173b0f79` | 2026-09-29T09:03:47Z | 2026-09-29 EDT | see release `build-af173b0f79` |
+| `db4b4add0f` | 2026-09-29T11:14:18Z | 2026-09-29 EDT | see release `build-db4b4add0f` |
+- `db4b4add0f` zip sha256: `b5c62ca88fe755eb848faec43bbbab814da8f506a0d13da5266a5267f8c4c252` (17368 files, 1308898698 bytes; manifest clean, no personal-data hits; monolithic zip upload stalls, thirteen ~100 MB parts p100m-aa..p100m-am, part sizes sum to exactly the local zip size; two parts verified byte-identical on re-download)
 - `af173b0f79` zip sha256: `7220496f91530274ca9fd89a3912217c5c2427580302ee0029d328a12d928e87` (17366 files, 1309528671 bytes; manifest clean; monolithic zip upload stalled ~13 min with zero bytes landed, killed and uploaded thirteen ~100 MB parts p100m-00..p100m-12 instead; part sizes sum to exactly the local zip size)
