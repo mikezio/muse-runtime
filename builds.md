@@ -85,3 +85,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `3a8c7f3991` | 2026-09-28T18:34:00Z | 2026-09-28 EDT | see release `build-3a8c7f3991` |
 | `9344a6fdedf` | 2026-09-28T20:44:22Z | 2026-09-28 EDT | see release `build-9344a6fded` (tag uses 9 chars: earlier 18:29-EDT-run created the release with a truncated tag before the 10-char rule was enforced; no duplicate tag created) |
 - `9344a6fdedf` zip sha256: `b954bb4109acb2523a3758c8ce6cdd5d74786ccced973afbc4385e3f6e74388e` (17239 files, 1189821105 bytes; manifest clean; release already existed with manifest+exclusions from the truncated-tag run. monolithic zip upload failed twice with unexpected EOF, switched to twelve ~100 MB parts p100m-aa..p100m-al, same pattern as 34136f0a759/5c8050fc67; part sizes sum to exactly the local zip size)
+| `b5fc85534c` | 2026-09-28T22:43:21Z | 2026-09-28 EDT | see release `build-b5fc85534c` |

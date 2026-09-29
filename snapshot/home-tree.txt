@@ -5211,6 +5211,10 @@ home/.hatch-db-change-signals/spaces.catalog.1790627456339.271
 home/.hatch-db-change-signals/spaces.catalog.1790631276049.136
 home/.hatch-db-change-signals/spaces.catalog.1790634691051.354
 home/.hatch-db-change-signals/spaces.catalog.1790638378086.127
+home/.hatch-db-change-signals/spaces.catalog.1790640651754.15
+home/.hatch-db-change-signals/spaces.catalog.1790641845525.65
+home/.hatch-db-change-signals/spaces.catalog.1790645453017.182
+home/.hatch-db-change-signals/spaces.catalog.1790649225735.249
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -5400,6 +5404,7 @@ home/assets/avatar
 home/assets/avatar/reference
 home/assets/avatar/reference/coop-avatar-image-variants.json
 home/assets/avatar/reference/coop-avatar-states.json
+home/assets/avatar/reference/custom-wakeword-avatar-states.json
 home/assets/avatar/reference/hatch.jpg
 home/assets/avatar/reference/hatch.mp4
 home/assets/avatar/reference/hatch_making_something.mp4
@@ -6481,6 +6486,7 @@ home/docs/files-and-library.md
 home/docs/goals.md
 home/docs/ideas.md
 home/docs/media.md
+home/docs/memory.md
 home/docs/muse.md
 home/docs/payments-and-purchases.md
 home/docs/referrals.md
