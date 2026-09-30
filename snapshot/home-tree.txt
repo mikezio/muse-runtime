@@ -5237,6 +5237,14 @@ home/.hatch-db-change-signals/spaces.catalog.1790717487792.60
 home/.hatch-db-change-signals/spaces.catalog.1790721059544.363
 home/.hatch-db-change-signals/spaces.catalog.1790724657371.1123
 home/.hatch-db-change-signals/spaces.catalog.1790728265656.1373
+home/.hatch-db-change-signals/spaces.catalog.1790732226338.1174
+home/.hatch-db-change-signals/spaces.catalog.1790735461060.1639
+home/.hatch-db-change-signals/spaces.catalog.1790739067629.2036
+home/.hatch-db-change-signals/spaces.catalog.1790742661683.2204
+home/.hatch-db-change-signals/spaces.catalog.1790746257216.2341
+home/.hatch-db-change-signals/spaces.catalog.1790749854423.2428
+home/.hatch-db-change-signals/spaces.catalog.1790753459158.2546
+home/.hatch-db-change-signals/spaces.catalog.1790757047473.2665
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -7603,7 +7611,6 @@ opt/bin/hatch-multicall
 opt/bin/hatch-rescue
 opt/bin/hatch-rescue-systemctl
 opt/bin/hatch-rescuectl
-opt/bin/hatch-shopping-present
 opt/bin/hatch-slide-style
 opt/bin/hatch-vault
 opt/bin/hatch-ws-client
@@ -9690,6 +9697,7 @@ opt/skills/meta-ads/references/analysis.md
 opt/skills/meta-ads/references/campaign-budget.md
 opt/skills/meta-ads/references/campaign-creation.md
 opt/skills/meta-ads/references/campaign-creative.md
+opt/skills/meta-ads/references/campaign-delivery-compatibility.md
 opt/skills/meta-ads/references/campaign-execution.md
 opt/skills/meta-ads/references/campaign-guided.md
 opt/skills/meta-ads/references/campaign-handoff.md
