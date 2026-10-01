@@ -5258,6 +5258,13 @@ home/.hatch-db-change-signals/spaces.catalog.1790789529444.20
 home/.hatch-db-change-signals/spaces.catalog.1790793195772.165
 home/.hatch-db-change-signals/spaces.catalog.1790796765221.283
 home/.hatch-db-change-signals/spaces.catalog.1790797659829.341
+home/.hatch-db-change-signals/spaces.catalog.1790801489492.143
+home/.hatch-db-change-signals/spaces.catalog.1790803860331.323
+home/.hatch-db-change-signals/spaces.catalog.1790807465269.115
+home/.hatch-db-change-signals/spaces.catalog.1790811080618.206
+home/.hatch-db-change-signals/spaces.catalog.1790814659584.328
+home/.hatch-db-change-signals/spaces.catalog.1790818274951.454
+home/.hatch-db-change-signals/spaces.catalog.1790821857682.140
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -5447,6 +5454,7 @@ home/assets/artifacts
 home/assets/artifacts/icons
 home/assets/avatar
 home/assets/avatar/reference
+home/assets/avatar/reference/advanced-avatar-motion-specs.json
 home/assets/avatar/reference/coop-avatar-image-variants.json
 home/assets/avatar/reference/coop-avatar-states.json
 home/assets/avatar/reference/custom-wakeword-avatar-states.json
