@@ -105,3 +105,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `8b308cd0bb` zip sha256: `baf83b85c59be86d5a0aa95dd1afec99a95cb326fe96f91d5960bc66b2b1440c` (17441 files, 1527941443 bytes; manifest clean, no personal-data hits; monolithic zip upload stalls at this size, fifteen ~100 MB parts p100m-00..p100m-14 instead; part sizes sum to exactly the local zip size)
 | `712e72d913` | 2026-09-30T23:29:09Z | 2026-09-30 EDT | see release `build-712e72d913` |
 - `712e72d913` zip sha256: `735dd0e10e88158fb05da4516421461d97b737d1ba465cd6658e326468630a63` (17449 files, 1529846909 bytes; manifest clean, no personal-data hits; monolithic zip upload stalls at this size, fifteen ~100 MB parts p100m-aa..p100m-ao instead; part sizes sum to exactly the local zip size)
+| `78b0b45cde` | 2026-10-01T02:13:46Z | 2026-10-01 EDT | see release `build-78b0b45cde` |
+- `78b0b45cde` zip sha256: `b948ad4021bf21e385a746b75357f037177bff0b1591a7c7ed664d73d2d20cd9` (17451 files, 1529959718 bytes; manifest clean, no personal-data hits; monolithic zip upload stalls at this size, fifteen ~100 MB parts p100m-aa..p100m-ao instead; part sizes sum to exactly the local zip size)
