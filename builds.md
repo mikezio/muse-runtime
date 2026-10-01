@@ -117,3 +117,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `7224aaae38` zip sha256: `a4e0309cdcc6da13fdcc3e52e56484e948c6971aae5bf5724a08e2fce3f21640` (17454 files, 1541422286 bytes; manifest clean, no personal-data hits; monolithic zip upload succeeded this time)
 | `e2c23bddfb` | 2026-10-01T18:18:37Z | 2026-10-01 EDT | see release `build-e2c23bddfb` |
 - `e2c23bddfb` zip sha256: `114088bf9bc70de0eb95589a8c2a565618167448c2757ed48100dc406c3cf58c` (17454 files, 1542236374 bytes; manifest clean, no personal-data hits; monolithic zip upload stalled at this size, fifteen ~100 MB parts p100m-00..p100m-14 instead; part sizes sum to exactly the local zip size)
+| `aca82f2542` | 2026-10-01T20:21:34Z | 2026-10-01 EDT | see release `build-aca82f2542` |
