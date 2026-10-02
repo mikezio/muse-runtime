@@ -5142,8 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1790479419578.4
-home/.hatch-db-change-signals/spaces.catalog.1790490231614.4
 home/.hatch-db-change-signals/spaces.catalog.1790497400682.4
 home/.hatch-db-change-signals/spaces.catalog.1790508232187.4
 home/.hatch-db-change-signals/spaces.catalog.1790514793798.4
@@ -5270,6 +5268,8 @@ home/.hatch-db-change-signals/spaces.catalog.1790901050958.410
 home/.hatch-db-change-signals/spaces.catalog.1790904899462.74
 home/.hatch-db-change-signals/spaces.catalog.1790908249986.308
 home/.hatch-db-change-signals/spaces.catalog.1790911842716.554
+home/.hatch-db-change-signals/spaces.catalog.1790915607901.187
+home/.hatch-db-change-signals/spaces.catalog.1790919387067.312
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -7633,6 +7633,7 @@ opt/bin/figma
 opt/bin/flexport-mcp
 opt/bin/flightaware
 opt/bin/function-health
+opt/bin/genui-asset-bundle
 opt/bin/genui-display-render
 opt/bin/geocode
 opt/bin/ghl
@@ -7677,6 +7678,7 @@ opt/bin/media-library
 opt/bin/mercury-mcp
 opt/bin/meta-ads-cli
 opt/bin/meta-catalog-search
+opt/bin/moltbook
 opt/bin/muse-mail
 opt/bin/native-comms-cli
 opt/bin/notion-cli
