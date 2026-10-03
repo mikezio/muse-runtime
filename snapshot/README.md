@@ -13,3 +13,7 @@ This directory is regenerated from a live Muse instance on a schedule. Check `ru
 ## How it's generated
 
 `tools/snapshot.sh` walks the home directory with `find`, prunes personal subtrees, strips caches/venvs/locks/cookies and writes the tree. Nothing leaves the machine except directory names. The refresh runs weekly via the instance's own scheduler and pushes here when the tree changes.
+
+## Local retention policy (set 2026-10-02 by heartbeat)
+
+Hourly build archiving was keeping every local copy (~1.2-1.5 GB each) and hit 90 GB / 98% disk on 2026-10-02, breaking the archive build ("No space left on device"). Policy going forward: keep local copies of the **newest 4 builds** plus any build whose upload to the releases page never completed (its local copy is the only copy). Older builds that are published on [GitHub Releases](https://github.com/mikezio/muse-runtime/releases) can be pruned locally at any time — they are recoverable by re-download; `builds.md` records each build's release tag and zip sha256. First prune: 2026-10-02 freed 66.6 GB (351 files); kept newest 4 plus `115d4d07d5` (unpublished) and `83f77f7f30` (failed-build fragments).
