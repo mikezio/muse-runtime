@@ -149,3 +149,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `56ea674fc0` zip sha256: `752006d735765a2c26e11dcd7a9acb51c90e8fe560f27b4328b5db2c2ac72499` (17456 files, 1.5G; manifest clean, no personal-data hits; fifteen ~100 MB parts p100m-00..p100m-14 instead of monolithic zip; concatenated parts sha256 match the zip exactly)
 - `9c97d123ff` zip sha256: `d537538a6e532675faaf1eafc0ee27a2016888a1737e08c3f5870dfa04a21231` (17456 files, 1.5G; manifest clean, no personal-data hits; fifteen ~100 MB parts p100m-00..p100m-14 instead of monolithic zip; concatenated parts sha256 match the zip exactly)
 | `9c97d123ff` | 2026-10-03T12:28:48Z | 2026-10-03 EDT | see release `build-9c97d123ff` |
+- `b7c5d689d9` zip sha256: `20e756e8d0186329b88042472941da84f849facda16ec4fb57a633a5e11555b8` (17456 files, 1.5G; manifest clean, no personal-data hits; fifteen ~100 MB parts p100m-aa..ao instead of monolithic zip; concatenated parts sha256 match the zip exactly)
+| `b7c5d689d9` | 2026-10-03T15:20:07Z | 2026-10-03 EDT | see release `build-b7c5d689d9` |
