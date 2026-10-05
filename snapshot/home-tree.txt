@@ -5142,9 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1790728265656.1373
-home/.hatch-db-change-signals/spaces.catalog.1790732226338.1174
-home/.hatch-db-change-signals/spaces.catalog.1790735461060.1639
 home/.hatch-db-change-signals/spaces.catalog.1790739067629.2036
 home/.hatch-db-change-signals/spaces.catalog.1790742661683.2204
 home/.hatch-db-change-signals/spaces.catalog.1790746257216.2341
@@ -5270,6 +5267,9 @@ home/.hatch-db-change-signals/spaces.catalog.1791145941756.1727
 home/.hatch-db-change-signals/spaces.catalog.1791149801032.160
 home/.hatch-db-change-signals/spaces.catalog.1791153078262.361
 home/.hatch-db-change-signals/spaces.catalog.1791156669804.539
+home/.hatch-db-change-signals/spaces.catalog.1791160512806.58
+home/.hatch-db-change-signals/spaces.catalog.1791161792473.146
+home/.hatch-db-change-signals/spaces.catalog.1791163884910.300
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -19128,8 +19128,6 @@ opt/skills/vercel/manifest.yaml
 opt/skills/voice-calls
 opt/skills/voice-calls/SKILL.md
 opt/skills/voice-calls/voice_source.json
-opt/skills/voice-design
-opt/skills/voice-design/SKILL.md
 opt/skills/voice-selector
 opt/skills/voice-selector/SKILL.md
 opt/skills/voice-selector/voice_source.json
