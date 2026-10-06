@@ -185,3 +185,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `99c8eb41f3` zip sha256: `759cdefc72b8bc8b9ade7c6a760c4f458bb6938da893d4402bb60a5a6645e8a7` (17455 files, 1.6G; manifest clean, no personal-data hits; monolithic upload clean)
 | `e6ced0b136` | 2026-10-06T15:44:59Z | 2026-10-06 EDT | see release `build-e6ced0b136` |
 - `e6ced0b136` zip sha256: `25d6031d35817360e0a80e7bf830a1c7f0f01bf2f53d2ab2956580924acae5ae` (17455 files, 1.5G; manifest clean, no personal-data hits; fifteen ~100 MB parts p100m-00..p100m-14 instead of monolithic zip — monolithic upload failed with a GitHub stream error; concatenated parts sha256 match the zip exactly)
+| `16f6e81b2ce` | 2026-10-06T17:29:49Z | 2026-10-06 EDT | see release `build-16f6e81b2ce` |
+- `16f6e81b2ce` zip sha256: `56f91f55f6286bc3105aa95174940dfded3b7e43814b9bc8ace4542cdaa349c5` (17455 files, 1.5G; filename scan clean; fifteen ~100 MB parts p100m-aa..p100m-ao instead of monolithic zip — monolithic upload stalled with zero progress for ~24 min and was killed, same as builds f3c534f692 and e6ced0b136; concatenated parts sha256 match the zip exactly)
