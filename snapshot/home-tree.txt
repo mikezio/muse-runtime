@@ -5142,11 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1790821857682.140
-home/.hatch-db-change-signals/spaces.catalog.1790825662366.259
-home/.hatch-db-change-signals/spaces.catalog.1790829042063.417
-home/.hatch-db-change-signals/spaces.catalog.1790832699523.105
-home/.hatch-db-change-signals/spaces.catalog.1790836249813.268
 home/.hatch-db-change-signals/spaces.catalog.1790839939224.411
 home/.hatch-db-change-signals/spaces.catalog.1790843751275.135
 home/.hatch-db-change-signals/spaces.catalog.1790845001405.257
@@ -5270,6 +5265,11 @@ home/.hatch-db-change-signals/spaces.catalog.1791243063734.707
 home/.hatch-db-change-signals/spaces.catalog.1791246687843.919
 home/.hatch-db-change-signals/spaces.catalog.1791250305190.1033
 home/.hatch-db-change-signals/spaces.catalog.1791253877953.1206
+home/.hatch-db-change-signals/spaces.catalog.1791257697180.713
+home/.hatch-db-change-signals/spaces.catalog.1791261080291.975
+home/.hatch-db-change-signals/spaces.catalog.1791264681722.1171
+home/.hatch-db-change-signals/spaces.catalog.1791268269646.1267
+home/.hatch-db-change-signals/spaces.catalog.1791271875643.1389
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -7672,7 +7672,6 @@ opt/bin/linear
 opt/bin/local-search
 opt/bin/lovable
 opt/bin/magnific-mcp
-opt/bin/mcp-cli
 opt/bin/media-generation
 opt/bin/media-library
 opt/bin/mercury-mcp
