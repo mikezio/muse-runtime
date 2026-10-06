@@ -5142,8 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1790839939224.411
-home/.hatch-db-change-signals/spaces.catalog.1790843751275.135
 home/.hatch-db-change-signals/spaces.catalog.1790845001405.257
 home/.hatch-db-change-signals/spaces.catalog.1790847044526.350
 home/.hatch-db-change-signals/spaces.catalog.1790850872031.27
@@ -5270,6 +5268,8 @@ home/.hatch-db-change-signals/spaces.catalog.1791261080291.975
 home/.hatch-db-change-signals/spaces.catalog.1791264681722.1171
 home/.hatch-db-change-signals/spaces.catalog.1791268269646.1267
 home/.hatch-db-change-signals/spaces.catalog.1791271875643.1389
+home/.hatch-db-change-signals/spaces.catalog.1791275871441.186
+home/.hatch-db-change-signals/spaces.catalog.1791279098402.325
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -7690,6 +7690,7 @@ opt/bin/outlook-contacts
 opt/bin/outlook-mail
 opt/bin/peloton
 opt/bin/philips-hue
+opt/bin/pickup-briefing-animation
 opt/bin/places
 opt/bin/plaid
 opt/bin/printify
