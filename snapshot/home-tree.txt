@@ -5142,9 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1790904899462.74
-home/.hatch-db-change-signals/spaces.catalog.1790908249986.308
-home/.hatch-db-change-signals/spaces.catalog.1790911842716.554
 home/.hatch-db-change-signals/spaces.catalog.1790915607901.187
 home/.hatch-db-change-signals/spaces.catalog.1790919387067.312
 home/.hatch-db-change-signals/spaces.catalog.1790922908263.108
@@ -5270,6 +5267,9 @@ home/.hatch-db-change-signals/spaces.catalog.1791337762675.312
 home/.hatch-db-change-signals/spaces.catalog.1791340450332.4
 home/.hatch-db-change-signals/spaces.catalog.1791344147581.260
 home/.hatch-db-change-signals/spaces.catalog.1791347804621.535
+home/.hatch-db-change-signals/spaces.catalog.1791351295623.10
+home/.hatch-db-change-signals/spaces.catalog.1791354672423.211
+home/.hatch-db-change-signals/spaces.catalog.1791358291758.337
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -5468,6 +5468,7 @@ home/assets/avatar/reference/hatch.mp4
 home/assets/avatar/reference/hatch_making_something.mp4
 home/assets/avatar/reference/hatch_milestone_level_up.mp4
 home/assets/avatar/reference/hatch_waking.mp4
+home/assets/avatar/reference/hatch_working-7x12.mp4
 home/assets/avatar/reference/hatch_working.mp4
 home/assets/avatar/reference/status-video-specs.json
 home/assets/blocklist
@@ -7610,15 +7611,12 @@ opt/bin
 opt/bin/aftership
 opt/bin/asana
 opt/bin/authdc
-opt/bin/beehiiv-mcp
 opt/bin/bfl-mcp
 opt/bin/box-cli
 opt/bin/browser-broker
 opt/bin/browser-service
 opt/bin/calendly
 opt/bin/canva
-opt/bin/coinbase-mcp
-opt/bin/deepl-mcp
 opt/bin/descript-mcp
 opt/bin/device-data
 opt/bin/dropbox
@@ -7639,7 +7637,6 @@ opt/bin/geocode
 opt/bin/ghl
 opt/bin/github
 opt/bin/granola-cli
-opt/bin/gumroad-mcp
 opt/bin/hatch
 opt/bin/hatch-browser-lease-helper
 opt/bin/hatch-connector-output
@@ -7667,14 +7664,11 @@ opt/bin/instagram-cli
 opt/bin/instagram-messages-cli
 opt/bin/intercom-mcp
 opt/bin/klaviyo
-opt/bin/krea-mcp
 opt/bin/linear
 opt/bin/local-search
 opt/bin/lovable
-opt/bin/magnific-mcp
 opt/bin/media-generation
 opt/bin/media-library
-opt/bin/mercury-mcp
 opt/bin/meta-ads-cli
 opt/bin/meta-ai
 opt/bin/meta-catalog-search
@@ -7684,7 +7678,6 @@ opt/bin/notion-cli
 opt/bin/nutrition-cli
 opt/bin/onepassword
 opt/bin/opentable
-opt/bin/otter-mcp
 opt/bin/outlook-calendar
 opt/bin/outlook-contacts
 opt/bin/outlook-mail
@@ -7700,7 +7693,6 @@ opt/bin/readai-mcp
 opt/bin/rememberthemilk-mcp
 opt/bin/remote-storage
 opt/bin/replit
-opt/bin/robinhood-mcp
 opt/bin/runway-mcp
 opt/bin/save-to-spotify
 opt/bin/share
@@ -9790,6 +9782,7 @@ opt/skills/shopping/references
 opt/skills/shopping/references/backends.md
 opt/skills/shopping/references/browser-checkout.md
 opt/skills/shopping/references/shopify-ucp.md
+opt/skills/shopping/references/social-shopping-links.md
 opt/skills/skill-creator
 opt/skills/skill-creator/SKILL.md
 opt/skills/skill-creator/bin
