@@ -5142,8 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1790973081418.446
-home/.hatch-db-change-signals/spaces.catalog.1790976643447.651
 home/.hatch-db-change-signals/spaces.catalog.1790980511446.186
 home/.hatch-db-change-signals/spaces.catalog.1790983993593.466
 home/.hatch-db-change-signals/spaces.catalog.1790987450111.740
@@ -5270,6 +5268,8 @@ home/.hatch-db-change-signals/spaces.catalog.1791412347331.1296
 home/.hatch-db-change-signals/spaces.catalog.1791416065797.129
 home/.hatch-db-change-signals/spaces.catalog.1791419520491.351
 home/.hatch-db-change-signals/spaces.catalog.1791423096176.542
+home/.hatch-db-change-signals/spaces.catalog.1791426875808.258
+home/.hatch-db-change-signals/spaces.catalog.1791430284121.759
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -7618,7 +7618,6 @@ opt/bin/browser-broker
 opt/bin/browser-service
 opt/bin/calendly
 opt/bin/canva
-opt/bin/descript-mcp
 opt/bin/device-data
 opt/bin/dropbox
 opt/bin/duffel
@@ -7638,6 +7637,7 @@ opt/bin/geocode
 opt/bin/ghl
 opt/bin/github
 opt/bin/granola-cli
+opt/bin/hasdata-mcp
 opt/bin/hatch
 opt/bin/hatch-browser-lease-helper
 opt/bin/hatch-connector-output
@@ -7715,7 +7715,6 @@ opt/bin/threads-messages-cli
 opt/bin/ticketmaster
 opt/bin/todoist
 opt/bin/tts
-opt/bin/typeform-mcp
 opt/bin/upwork-mcp
 opt/bin/vercel
 opt/bin/wearables-display

@@ -206,3 +206,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `df18821260` | 2026-10-07T20:27:12Z | 2026-10-07 EDT | see release `build-df18821260` |
 - `df18821260` zip sha256: `c9abe673d1405c20ea2fa25bc4de6d7f4058f4da1a0a78ebd5c5f1f25b606e18` (17398 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; fifteen ~100 MB parts p100m-aa..p100m-ao uploaded to the release instead of the monolithic zip — concatenated parts sha256 match the zip exactly)
 | `d063baed68` | 2026-10-07T22:11:09Z | 2026-10-07 EDT | see release `build-d063baed68` |
+| `336425023b` | 2026-10-08T01:44:34Z | 2026-10-08 EDT | release NOT created — GitHub API unreachable from VM this run (graphql context deadline exceeded on gh release list/view); local archive retained in snapshot/, upload deferred to a later run with working network |
+- `336425023b` zip sha256: `550c58d75e6a055d19ac861e082ae478bd72b4c7b8423818f3ab1f2289fb56ea` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest personal-data scan clean — no mike/mzio/passwd/shadow hits)
