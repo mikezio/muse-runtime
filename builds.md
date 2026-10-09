@@ -229,3 +229,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `b25683e243` zip sha256: `80b6f7ae09131efe8feb07cb763762aa6b6f0c8e8138b8f6c95cbf0401f9de30` (1476781163 bytes)
 | `2de5c3b889` | 2026-10-09T06:24:22Z | 2026-10-09 EDT | release `build-2de5c3b889` created; manifest + exclusions + 1.4G zip upload queued this run |
 | `4db8f26109` | 2026-10-09T08:28:25Z | 2026-10-09 EDT | release `build-4db8f26109` created; manifest + exclusions uploaded; zip upload exit 0 on first attempt but asset missing from release (same stall pattern as 21533d58f0); retry in progress this run, local archive retained in snapshot/ until upload verified |
+| `580e20ebc4` | 2026-10-09T09:49:53Z | 2026-10-09 EDT | release `build-580e20ebc4` exists (created by earlier run 10:37 EDT; manifest + exclusions uploaded); zip upload retried this run, local archive retained in snapshot/ until upload verified |
