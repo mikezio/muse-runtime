@@ -227,3 +227,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `0f3744c487` | 2026-10-09T02:04:05Z | 2026-10-09 EDT | release `build-0f3744c487` created (manifest + exclusions uploaded; zip upload in progress this run) |
 | `b25683e243` | 2026-10-09T04:16:53Z | 2026-10-09 EDT | release `build-b25683e243` exists (created by earlier run 02:37 EDT; manifest + exclusions uploaded); archive assets already present locally from that run (redundant rebuild skipped this run); zip upload retried this run, local archive retained in snapshot/ until upload verified |
 - `b25683e243` zip sha256: `80b6f7ae09131efe8feb07cb763762aa6b6f0c8e8138b8f6c95cbf0401f9de30` (1476781163 bytes)
+| `2de5c3b889` | 2026-10-09T06:24:22Z | 2026-10-09 EDT | release `build-2de5c3b889` created; manifest + exclusions + 1.4G zip upload queued this run |
