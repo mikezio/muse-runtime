@@ -5142,9 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1791066697352.370
-home/.hatch-db-change-signals/spaces.catalog.1791070267849.557
-home/.hatch-db-change-signals/spaces.catalog.1791073947033.127
 home/.hatch-db-change-signals/spaces.catalog.1791079231418.351
 home/.hatch-db-change-signals/spaces.catalog.1791081061940.525
 home/.hatch-db-change-signals/spaces.catalog.1791084684670.769
@@ -5270,6 +5267,9 @@ home/.hatch-db-change-signals/spaces.catalog.1791522803336.166
 home/.hatch-db-change-signals/spaces.catalog.1791523873621.286
 home/.hatch-db-change-signals/spaces.catalog.1791527652471.13
 home/.hatch-db-change-signals/spaces.catalog.1791531096155.178
+home/.hatch-db-change-signals/spaces.catalog.1791536006680.16
+home/.hatch-db-change-signals/spaces.catalog.1791539594568.303
+home/.hatch-db-change-signals/spaces.catalog.1791541863281.491
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -5460,9 +5460,15 @@ home/assets/artifacts/icons
 home/assets/avatar
 home/assets/avatar/reference
 home/assets/avatar/reference/advanced-avatar-motion-specs.json
+home/assets/avatar/reference/call-portrait-defaults.json
+home/assets/avatar/reference/call-portrait-specs.json
 home/assets/avatar/reference/coop-avatar-image-variants.json
 home/assets/avatar/reference/coop-avatar-states.json
 home/assets/avatar/reference/custom-wakeword-avatar-states.json
+home/assets/avatar/reference/hatch-call-dark-reference.jpg.b64
+home/assets/avatar/reference/hatch-call-dark-reference.png
+home/assets/avatar/reference/hatch-call-light-reference.jpg.b64
+home/assets/avatar/reference/hatch-call-light-reference.png
 home/assets/avatar/reference/hatch.jpg
 home/assets/avatar/reference/hatch.mp4
 home/assets/avatar/reference/hatch_making_something.mp4
