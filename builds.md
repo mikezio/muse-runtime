@@ -232,3 +232,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `580e20ebc4` | 2026-10-09T09:49:53Z | 2026-10-09 EDT | release `build-580e20ebc4` exists (created by earlier run 10:37 EDT; manifest + exclusions uploaded); zip upload retried this run, local archive retained in snapshot/ until upload verified |
 | `497a4794b4` | 2026-10-09T15:12:39Z | 2026-10-09 EDT | release `build-497a4794b4` created; manifest + exclusions + zip uploaded (exit 0) this run |
 | `06191b3e25` | 2026-10-09T18:34:23Z | 2026-10-09 EDT | release `build-06191b3e25` created; manifest + exclusions + zip upload queued this run |
+| `34001c0d79` | 2026-10-09T21:11:18Z | 2026-10-09 EDT | release `build-34001c0d79` created; manifest + exclusions uploaded (exit 0); zip upload in progress this run |

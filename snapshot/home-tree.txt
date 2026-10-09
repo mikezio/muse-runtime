@@ -5142,8 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1791117105429.272
-home/.hatch-db-change-signals/spaces.catalog.1791120683627.400
 home/.hatch-db-change-signals/spaces.catalog.1791124292995.607
 home/.hatch-db-change-signals/spaces.catalog.1791127879415.753
 home/.hatch-db-change-signals/spaces.catalog.1791131478715.961
@@ -5270,6 +5268,8 @@ home/.hatch-db-change-signals/spaces.catalog.1791570679060.235
 home/.hatch-db-change-signals/spaces.catalog.1791574313857.440
 home/.hatch-db-change-signals/spaces.catalog.1791577878403.644
 home/.hatch-db-change-signals/spaces.catalog.1791581637146.204
+home/.hatch-db-change-signals/spaces.catalog.1791582886557.79
+home/.hatch-db-change-signals/spaces.catalog.1791586542694.316
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -19215,6 +19215,8 @@ opt/skills/spotify
 opt/skills/spotify/SKILL.md
 opt/skills/spotify/connector_auth_config.yaml
 opt/skills/spotify/manifest.yaml
+opt/skills/spotify/references
+opt/skills/spotify/references/wearable-playback.md
 opt/skills/stripe
 opt/skills/stripe/SKILL.md
 opt/skills/stripe/connector_auth_config.yaml
