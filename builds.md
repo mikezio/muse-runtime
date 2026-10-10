@@ -233,3 +233,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `497a4794b4` | 2026-10-09T15:12:39Z | 2026-10-09 EDT | release `build-497a4794b4` created; manifest + exclusions + zip uploaded (exit 0) this run |
 | `06191b3e25` | 2026-10-09T18:34:23Z | 2026-10-09 EDT | release `build-06191b3e25` created; manifest + exclusions + zip upload queued this run |
 | `34001c0d79` | 2026-10-09T21:11:18Z | 2026-10-09 EDT | release `build-34001c0d79` created; manifest + exclusions uploaded (exit 0); zip upload in progress this run |
+| `075d6865cb` | 2026-10-10T02:17:38Z | 2026-10-10 EDT | release `build-075d6865cb` created; manifest + exclusions + zip upload queued this run |
+- `075d6865cb` zip sha256: `2fe23da010b3d3e86b73acf2cac0f348de580b10515dd6664a5ed2d9acb77baa` (1.4G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest personal-data scan clean — no mike/mzio/passwd/shadow hits)

@@ -5142,12 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1791124292995.607
-home/.hatch-db-change-signals/spaces.catalog.1791127879415.753
-home/.hatch-db-change-signals/spaces.catalog.1791131478715.961
-home/.hatch-db-change-signals/spaces.catalog.1791135129047.1093
-home/.hatch-db-change-signals/spaces.catalog.1791138684924.1373
-home/.hatch-db-change-signals/spaces.catalog.1791142283893.1524
 home/.hatch-db-change-signals/spaces.catalog.1791145941756.1727
 home/.hatch-db-change-signals/spaces.catalog.1791149801032.160
 home/.hatch-db-change-signals/spaces.catalog.1791153078262.361
@@ -5270,6 +5264,12 @@ home/.hatch-db-change-signals/spaces.catalog.1791577878403.644
 home/.hatch-db-change-signals/spaces.catalog.1791581637146.204
 home/.hatch-db-change-signals/spaces.catalog.1791582886557.79
 home/.hatch-db-change-signals/spaces.catalog.1791586542694.316
+home/.hatch-db-change-signals/spaces.catalog.1791589323009.24
+home/.hatch-db-change-signals/spaces.catalog.1791592690494.217
+home/.hatch-db-change-signals/spaces.catalog.1791597383502.393
+home/.hatch-db-change-signals/spaces.catalog.1791599665025.57
+home/.hatch-db-change-signals/spaces.catalog.1791603153150.324
+home/.hatch-db-change-signals/spaces.catalog.1791606868876.635
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -5476,6 +5476,7 @@ home/assets/avatar/reference/hatch_milestone_level_up.mp4
 home/assets/avatar/reference/hatch_waking.mp4
 home/assets/avatar/reference/hatch_working-7x12.mp4
 home/assets/avatar/reference/hatch_working.mp4
+home/assets/avatar/reference/starfire-glasses.webp
 home/assets/avatar/reference/status-video-specs.json
 home/assets/blocklist
 home/assets/blocklist/manifest.json
@@ -7631,7 +7632,6 @@ opt/bin/etsy-cli
 opt/bin/evernote
 opt/bin/facebook-cli
 opt/bin/feature-request
-opt/bin/fever-mcp
 opt/bin/figma
 opt/bin/flightaware
 opt/bin/function-health
