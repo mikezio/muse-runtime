@@ -2,6 +2,8 @@
 
 An unofficial guide to how Muse's agent system fits together, with diagrams, practical references, and sanitized per-build runtime archives.
 
+**New here? Start with [What's new](updates.md)** — the latest repo changes and runtime builds, newest first.
+
 **Start here: [How Muse fits together](docs/00-big-picture.md)**
 
 ![Muse architecture: layers, state and execution](assets/architecture.svg)
@@ -20,7 +22,7 @@ An unofficial guide to how Muse's agent system fits together, with diagrams, pra
 | Inspect daemon APIs and database surfaces | [Runtime API guide](docs/runtime-api.md) |
 | Understand feature flags and rollout | [Feature flags](docs/feature-flags.md) |
 | Understand memory, agents and browsing | [Memory](docs/12-memory.md), [agents](docs/15-agents.md), [browser](docs/06-browser.md) |
-| Compare runtime updates | [Archive workflow](docs/archive-workflow.md), [build index](builds.md) |
+| Compare runtime updates | [What's new](updates.md), [archive workflow](docs/archive-workflow.md), [build index](builds.md) |
 
 The [full documentation index](docs/README.md) includes the security, privacy, scheduling, skills and model-background chapters.
 
