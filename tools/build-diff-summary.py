@@ -257,9 +257,9 @@ def main():
         for name in sorted(skills):
             files = skills[name]
             if files == [f"opt/hatch/skills/{name}/SKILL.md"]:
-                items.append((files[0], f"`{name}` — SKILL.md updated"))
+                items.append((files[0], f"`{name}`: SKILL.md updated"))
             else:
-                items.append((files[0], f"`{name}` — {len(files)} file(s): "
+                items.append((files[0], f"`{name}`: {len(files)} file(s): "
                              + ", ".join(f"`{f.split('/')[-1]}`"
                                           for f in sorted(files)[:4])))
         section(f"Shipped skills ({len(skills)} changed)",

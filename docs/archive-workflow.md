@@ -5,7 +5,7 @@ compare shipped tools, skill instructions, schemas and binaries between builds.
 Start with the small manifests. Download a full archive only when a changed file
 is relevant to the question you are investigating.
 
-These archives capture a **live instance**, including some installed additions.
+These archives capture a running runtime, including some installed additions.
 A file appearing in an archive does not establish that Meta shipped it, that it
 was enabled for the account, or that the running daemon used it.
 

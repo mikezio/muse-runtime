@@ -36,7 +36,7 @@ For example: “Read this document and make a chart.”
 
 The inference service is remote from the cell. The broader agent system spans these pieces; saying “the entire agent runs outside the VM” is too imprecise.
 
-## What can you change?
+## What you can change
 
 | Layer | Examples | Reference |
 |---|---|---|
@@ -49,7 +49,7 @@ The inference service is remote from the cell. The broader agent system spans th
 
 Editing a file does not prove a running process loaded it. Selecting a model route does not prove the upstream checkpoint identity. A tool definition does not prove the account can execute it.
 
-## Where does state live?
+## Where state lives
 
 - **Files:** workspace projects, standing Markdown notes, configuration and generated outputs.
 - **Application state:** sessions, agents, requests, browser tasks, usage, memory indexes and provenance exposed through selected runtime tools.

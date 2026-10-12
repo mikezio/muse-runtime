@@ -44,7 +44,7 @@ A shipped skill or schema does not establish account entitlement, a connected se
 
 ## The built-in catalog
 
-Shipped with the product, living outside the workspace. Grouped by domain (names as observed on a live instance; the catalog grows over time):
+Shipped with the product, living outside the workspace. Grouped by domain (names as observed on a running runtime; the catalog grows over time):
 
 **Communication** - `gmail`, `outlook-mail`, `muse-mail`, `messenger`, `instagram-messages`, `threads-messages`, `voice-calls`
 **Calendars & productivity** - `google-calendar`, `outlook-calendar`, `google-tasks`, `google-contacts`, `outlook-contacts`, `notion`, `google-docs`, `google-sheets`, `google-slides`, `google-forms`, `calendly`, `granola`

@@ -15,7 +15,7 @@ Native root status reported `meta/muse-spark`, display name “Muse Spark”, pr
 
 A root created during a Muse Special test retained `azure/muse-special` in its agent row after Auto was restored. A subsequently observed child recorded `ipnext/avocado-5.16-v4`. A stored row is therefore not sufficient proof of the model used for each reply.
 
-## What is “Avocado”?
+## The “Avocado” route labels
 
 Avocado is a family of internal model-route labels found in configuration catalogs, selected routes, and agent records. The inspected Auto path was associated with `ipnext/avocado-5.16-v4`. Nothing in the observations provides a complete mapping from every Avocado suffix to a public model release, architecture, benchmark or capability tier.
 

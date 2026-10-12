@@ -3,7 +3,7 @@
 
 Reads CHANGELOG.md (hand-written prose entries) and builds.md (auto-appended
 release rows) and writes updates.md, newest first, with dated badges and
-what-changed detail bullets — the same feed shape as the muse watch dashboard.
+what-changed detail bullets, in the same feed shape as the muse watch dashboard.
 
 Run from anywhere:  python3 tools/build-updates.py
 Idempotent: same inputs produce byte-identical output.
@@ -105,7 +105,7 @@ def trim_body(body, limit=12):
 def render_changelog(e):
     badge = badge_for(e["title"])
     anchor = github_anchor("## %s - %s" % (e["day"], e["title"]))
-    out = ["## %s · **%s** — %s\n" % (e["day"], badge, e["title"])]
+    out = ["## %s · **%s**: %s\n" % (e["day"], badge, e["title"])]
     bullets, truncated = trim_body(e["body"])
     for b in bullets:
         s = b.strip()
@@ -128,9 +128,9 @@ def short_archive_text(archive):
 
 def render_build(e):
     rel = ("[Release](%s)" % e["link"]) if e["link"] else "no release page"
-    lines = ["## %s · **NEW BUILD** — runtime build `%s`\n" % (e["day"], e["commit"]),
+    lines = ["## %s · **NEW BUILD**: runtime build `%s`\n" % (e["day"], e["commit"]),
              "- Built %s, detected %s." % (e["built_at"], e["day"]),
-             "- %s — %s." % (rel, short_archive_text(e["archive"]))]
+             "- %s: %s." % (rel, short_archive_text(e["archive"]))]
     if e.get("note"):
         n = re.sub(r"\s+", " ", e["note"])
         if len(n) > 220:
@@ -150,7 +150,7 @@ def main():
     out = [
         "# What's new\n",
         "_Last updated: %s (ET). Generated from [CHANGELOG.md](CHANGELOG.md) "
-        "and [builds.md](builds.md) — newest first. "
+        "and [builds.md](builds.md), newest first. "
         "The full release history lives in builds.md._\n" % today,
     ]
     shown_builds = 0

@@ -1,4 +1,4 @@
-# What you can inspect—and what remains hidden
+# What you can inspect, and what remains hidden
 
 The runtime exposes extensive shipped documentation, scripts, SDKs, schemas, configuration and binaries. That makes it unusually useful to study. It does not make the whole platform visible.
 

@@ -43,7 +43,7 @@ The names `spawnd`, `hatch`, `hatch-execd`, `hatch-authd` and `hatch-safety` occ
 
 The security model described in the original [Meta source list](sources.md) includes namespace isolation, syscall/capability restrictions, credentials mediated outside the agent's ordinary execution context, and policy checks. An observed capability set varied from one published example. This repository is not an isolation audit and cannot prove the absence of escape paths.
 
-## What these boundaries do—and do not—establish
+## What these boundaries establish, and what they do not
 
 Cell root alone does not establish a host compromise. Conversely, isolation does not make every agent action harmless. A program can damage accessible files; an authorized connector can expose or modify data; actions on a website can have consequences. Sentinel and other controls are additional defenses, not proof that harmful outcomes are impossible.
 

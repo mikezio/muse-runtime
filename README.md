@@ -1,8 +1,8 @@
 # Muse runtime: a field guide
 
-An unofficial guide to how Muse's agent system fits together, with diagrams, practical references, and sanitized per-build runtime archives.
+An unofficial guide to how Muse's agent system fits together, with diagrams, practical references, and per-build runtime archives.
 
-**New here? Start with [What's new](updates.md)** — the latest repo changes and runtime builds, newest first.
+**New here: start with [What's new](updates.md)**, the latest repo changes and runtime builds, newest first.
 
 **Start here: [How Muse fits together](docs/00-big-picture.md)**
 
@@ -34,14 +34,14 @@ The broader agent spans these components. An archive of the cell's files is usef
 
 ## Diagrams
 
-- [System architecture](assets/architecture.svg) — responsibilities and connections.
-- [Request lifecycle](assets/request-lifecycle.svg) — message, context, inference, tools and delivery.
-- [Outbound authorization](assets/trust-boundaries.svg) — a concrete allow/deny/approval flow.
-- [Configuration layers](assets/configuration-layers.svg) — files, reasoning, routing, client flags and platform policy.
-- [Agent roles](assets/agent-tree.svg) — ownership, delegation and independent model policies.
-- [Browser lifecycle](assets/browser-lineage.svg) — task ownership, session state and continuations.
-- [Memory system](assets/memory-pipeline.svg) — files, structured records, retrieval and provenance.
-- [Background work](assets/scheduler-loop.svg) — triggers, dispatch, execution and verified delivery.
+- [System architecture](assets/architecture.svg): responsibilities and connections.
+- [Request lifecycle](assets/request-lifecycle.svg): message, context, inference, tools and delivery.
+- [Outbound authorization](assets/trust-boundaries.svg): a concrete allow/deny/approval flow.
+- [Configuration layers](assets/configuration-layers.svg): files, reasoning, routing, client flags and platform policy.
+- [Agent roles](assets/agent-tree.svg): ownership, delegation and independent model policies.
+- [Browser lifecycle](assets/browser-lineage.svg): task ownership, session state and continuations.
+- [Memory system](assets/memory-pipeline.svg): files, structured records, retrieval and provenance.
+- [Background work](assets/scheduler-loop.svg): triggers, dispatch, execution and verified delivery.
 
 [Diagram notation, evidence and editable source](docs/diagrams.md).
 

@@ -1,4 +1,4 @@
-# Configuration: which layer are you changing?
+# Configuration: which layer you are changing
 
 There is no single file that controls every aspect of Muse.
 
