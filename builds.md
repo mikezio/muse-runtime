@@ -242,3 +242,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `5ba69e5276` | 2026-10-12T20:55:53Z | 2026-10-12 EDT | release `build-5ba69e5276` created; manifest + exclusions + 1.4G zip uploaded (exit 0) this run |
 | `7183955fda` | 2026-10-13T09:33:30Z | 2026-10-13 EDT | release `build-7183955fda` created; manifest + exclusions + 1.5G zip uploaded (exit 0, assets verified on release) this run |
 - `7183955fda` zip sha256: `1885e1ee29f7469588d27bb90aabadd326c9e25c3ef4412050404f54cf4b0e21` (1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly)
+| `b353db1ee6` | 2026-10-13T11:46:57Z | 2026-10-13 EDT | [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b353db1ee6) |
+- `b353db1ee6` zip sha256: `96fff28bd2d810e8da48c2fd64df49cd6d39321ae515b4a14f3e13a861b8b977` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio/passwd/shadow hits)

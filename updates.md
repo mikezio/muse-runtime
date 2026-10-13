@@ -8,6 +8,12 @@ _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-7183955fda): release `build-7183955fda` created; manifest + exclusions + 1.5G zip uploaded (exit 0, assets verified on release) this run.
 - `7183955fda` zip sha256: `1885e1ee29f7469588d27bb90aabadd326c9e25c3ef4412050404f54cf4b0e21` (1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly)
 
+## 2026-10-13 · **NEW BUILD**: runtime build `b353db1ee6`
+
+- Built 2026-10-13T11:46:57Z, detected 2026-10-13.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b353db1ee6): [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b353db1ee6).
+- `b353db1ee6` zip sha256: `96fff28bd2d810e8da48c2fd64df49cd6d39321ae515b4a14f3e13a861b8b977` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
+
 ## 2026-10-12 · **NEW BUILD**: runtime build `5ba69e5276`
 
 - Built 2026-10-12T20:55:53Z, detected 2026-10-12.
@@ -167,12 +173,6 @@ _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-07T14:55:58Z, detected 2026-10-07.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-a06b011269): see release `build-a06b011269`.
 - `a06b011269` zip sha256: `b37b00511d36046a3a49306b3c5fa83172e193659a56ed2b3f2db92920eea6e0` (17398 files, 1.5G; filename scan clean; manifest personal-data scan clean; only node_modules files with token/secret in thei…
-
-## 2026-10-07 · **NEW BUILD**: runtime build `df18821260`
-
-- Built 2026-10-07T20:27:12Z, detected 2026-10-07.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-df18821260): see release `build-df18821260`.
-- `df18821260` zip sha256: `c9abe673d1405c20ea2fa25bc4de6d7f4058f4da1a0a78ebd5c5f1f25b606e18` (17398 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; fifteen ~100…
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
