@@ -1,6 +1,6 @@
 # What's new
 
-_Last updated: 2026-10-12 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and [builds.md](builds.md), newest first. The full release history lives in builds.md._
+_Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and [builds.md](builds.md), newest first. The full release history lives in builds.md._
 
 ## 2026-10-12 · **NEW BUILD**: runtime build `5ba69e5276`
 
