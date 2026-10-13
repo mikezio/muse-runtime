@@ -32,6 +32,12 @@ _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-08fbc9ad96).
 - `08fbc9ad96` zip sha256: `c9b99ad4fcf8fd87d47b4b12ddd40867fe005bf25a42fff30e74b5cdbec094e6` (1.5G; chunked upload 15/15 parts verified on release; archive script scan initially hit the relocated dynamic_credentials.py…
 
+## 2026-10-13 · **NEW BUILD**: runtime build `a6404cd2a2`
+
+- Built 2026-10-13T19:46:04Z, detected 2026-10-13.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-a6404cd2a2).
+- `a6404cd2a2` zip sha256: `67c2daaa3a0e357c117a3cf7d99cbb9f505b949708200579fb251d80ad5b9bd9` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
+
 ## 2026-10-12 · **NEW BUILD**: runtime build `5ba69e5276`
 
 - Built 2026-10-12T20:55:53Z, detected 2026-10-12.
@@ -167,12 +173,6 @@ _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-07T05:09:32Z, detected 2026-10-07.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b07b138c86): see release `build-b07b138c86`.
 - `b07b138c86` zip sha256: `d66d8b5d4caae10137d849f372d79b008b59702dc3f8eb3850b1f1ac417e9aa2` (17397 files, 1.4G; manifest clean, no personal-data hits; fifteen ~100 MB parts p100m-00..p100m-14 instead of monolithic zip…
-
-## 2026-10-07 · **NEW BUILD**: runtime build `3ce7bb6229`
-
-- Built 2026-10-07T07:22:58Z, detected 2026-10-07.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-3ce7bb6229): see release `build-3ce7bb6229`.
-- `3ce7bb6229` zip sha256: `09f9c65294c0b8df19dd0fe3331ce1569dbf03a97177ca69a93d5559ce176c17` (17397 files, 1.4G; manifest clean, no personal-data hits; fifteen ~100 MB parts p100m-aa..p100m-ao instead of monolithic zip…
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
