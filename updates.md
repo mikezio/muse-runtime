@@ -2,6 +2,12 @@
 
 _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and [builds.md](builds.md), newest first. The full release history lives in builds.md._
 
+## 2026-10-13 · **NEW BUILD**: runtime build `7183955fda`
+
+- Built 2026-10-13T09:33:30Z, detected 2026-10-13.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-7183955fda): release `build-7183955fda` created; manifest + exclusions + 1.5G zip uploaded (exit 0, assets verified on release) this run.
+- `7183955fda` zip sha256: `1885e1ee29f7469588d27bb90aabadd326c9e25c3ef4412050404f54cf4b0e21` (1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly)
+
 ## 2026-10-12 · **NEW BUILD**: runtime build `5ba69e5276`
 
 - Built 2026-10-12T20:55:53Z, detected 2026-10-12.
@@ -167,11 +173,6 @@ _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-07T20:27:12Z, detected 2026-10-07.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-df18821260): see release `build-df18821260`.
 - `df18821260` zip sha256: `c9abe673d1405c20ea2fa25bc4de6d7f4058f4da1a0a78ebd5c5f1f25b606e18` (17398 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; fifteen ~100…
-
-## 2026-10-07 · **NEW BUILD**: runtime build `d063baed68`
-
-- Built 2026-10-07T22:11:09Z, detected 2026-10-07.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-d063baed68): see release `build-d063baed68`.
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
