@@ -9,6 +9,17 @@ These archives capture a running runtime, including some installed additions.
 A file appearing in an archive does not establish that Meta shipped it, that it
 was enabled for the account, or that the running daemon used it.
 
+## Quickstart (five minutes)
+
+1. Pick two builds in [builds.md](../builds.md): one from before and one from
+   after the change you care about.
+2. Download just their `*.manifest.txt` release assets (commands below).
+3. Run `python3 tools/compare-manifests.py OLD.manifest.txt NEW.manifest.txt`
+   to list added, removed and changed files.
+4. Only then reach for a full `*.zip` (or `*.zip.part-*`) asset for the files
+   the diff flagged, or read a curated example in
+   [snapshot/files/](../snapshot/files/) without downloading anything.
+
 ## What each artifact tells you
 
 | Artifact | What it contains | Useful for |
