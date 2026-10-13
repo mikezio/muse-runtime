@@ -2,6 +2,11 @@
 
 _Last updated: 2026-10-12 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and [builds.md](builds.md), newest first. The full release history lives in builds.md._
 
+## 2026-10-12 · **NEW BUILD**: runtime build `5ba69e5276`
+
+- Built 2026-10-12T20:55:53Z, detected 2026-10-12.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5ba69e5276): release `build-5ba69e5276` created; manifest + exclusions + 1.4G zip uploaded (exit 0) this run.
+
 ## 2026-10-11 · **NEW BUILD**: runtime build `5ac8cb8387`
 
 - Built 2026-10-11T10:03:17Z, detected 2026-10-11.
@@ -167,12 +172,6 @@ _Last updated: 2026-10-12 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 
 - Built 2026-10-07T22:11:09Z, detected 2026-10-07.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-d063baed68): see release `build-d063baed68`.
-
-## 2026-10-06 · **NEW BUILD**: runtime build `b28c5b0249`
-
-- Built 2026-10-06T04:43:16Z, detected 2026-10-06.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b28c5b0249): see release `build-b28c5b0249`.
-- `b28c5b0249` zip sha256: `2a22495e786d41e5ab0564a0f005d3c49d07688e6cc7f1cdc5b5af195693ed06` (17454 files, 1.5G; manifest clean, no personal-data hits; monolithic upload clean)
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 

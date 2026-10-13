@@ -239,3 +239,4 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `29ff824780` zip sha256: `eb291063813363f1e18f96924bd1c2d771a5d28dc13f357d4fc66eb39c3d581d` (1.4G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly)
 | `5ac8cb8387` | 2026-10-11T10:03:17Z | 2026-10-11 EDT | release `build-5ac8cb8387` created; manifest + exclusions + 1.4G zip uploaded (exit 0, assets verified on release) this run |
 - `5ac8cb8387` zip sha256: `2bc6d102d346df47a5a6a87ac1d69f72ac8870fd672224c2ac800d106f5fc46f` (1.4G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly)
+| `5ba69e5276` | 2026-10-12T20:55:53Z | 2026-10-12 EDT | release `build-5ba69e5276` created; manifest + exclusions + 1.4G zip uploaded (exit 0) this run |
