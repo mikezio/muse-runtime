@@ -11,13 +11,13 @@ _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 ## 2026-10-13 · **NEW BUILD**: runtime build `b353db1ee6`
 
 - Built 2026-10-13T11:46:57Z, detected 2026-10-13.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b353db1ee6): [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b353db1ee6).
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b353db1ee6).
 - `b353db1ee6` zip sha256: `96fff28bd2d810e8da48c2fd64df49cd6d39321ae515b4a14f3e13a861b8b977` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
 
 ## 2026-10-13 · **NEW BUILD**: runtime build `fe6b7aa74b`
 
 - Built 2026-10-13T12:05:58Z, detected 2026-10-13.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-fe6b7aa74b): [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-fe6b7aa74b).
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-fe6b7aa74b).
 - `fe6b7aa74b` zip sha256: `eb14da1cc1c76a64cef3e01d425c84165b9eb3ced6d24cbbf4db738922db9f3c` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
 
 ## 2026-10-12 · **NEW BUILD**: runtime build `5ba69e5276`

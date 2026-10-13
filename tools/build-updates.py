@@ -127,10 +127,16 @@ def short_archive_text(archive):
 
 
 def render_build(e):
-    rel = ("[Release](%s)" % e["link"]) if e["link"] else "no release page"
+    archive = short_archive_text(e["archive"])
+    if archive.strip().startswith("[Release]("):
+        # the archive cell already links the release page; don't double it
+        prefix = ""
+    else:
+        rel = ("[Release](%s)" % e["link"]) if e["link"] else "no release page"
+        prefix = "%s: " % rel
     lines = ["## %s · **NEW BUILD**: runtime build `%s`\n" % (e["day"], e["commit"]),
              "- Built %s, detected %s." % (e["built_at"], e["day"]),
-             "- %s: %s." % (rel, short_archive_text(e["archive"]))]
+             "- %s%s." % (prefix, archive)]
     if e.get("note"):
         n = re.sub(r"\s+", " ", e["note"])
         if len(n) > 220:
