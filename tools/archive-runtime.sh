@@ -154,6 +154,10 @@ fi
 # verified benign (reviewed source, no secrets). Keep it short and exact.
 ALLOWLIST=(
   ./opt/skills/skill-creator/bin/dynamic_credentials.py
+  # Same reviewed helper also ships with the custom-connector-setup skill;
+  # verified 2026-10-13: byte-identical to the skill-creator copy except the
+  # import docstring line, surrogate-only code, no secrets.
+  ./opt/workflow-skills/custom-connector-setup/bin/dynamic_credentials.py
   # ~/docs/memory.md is product documentation about the memory feature
   # (no personal content); whitelisted 2026-09-28 after a scanner false positive.
   ./home/docs/memory.md
