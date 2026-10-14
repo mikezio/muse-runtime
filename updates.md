@@ -14,6 +14,12 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-a133d60349).
 - `a133d60349` zip sha256: `71ca5677060901c3fe8a40af8c306ddd74867d98bed79727c298407972cd2f0a` (1.5G; chunked upload 16/16 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
 
+## 2026-10-14 · **NEW BUILD**: runtime build `56a65ffb0b`
+
+- Built 2026-10-14T06:18:34Z, detected 2026-10-14.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-56a65ffb0b).
+- `56a65ffb0b` zip sha256: `acd53033cc7e94174aef16408150dfb8b5e13e12e64af2fa06127b720aad10a4` (1.5G; chunked upload 16/16 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
+
 ## 2026-10-13 · **NEW BUILD**: runtime build `7183955fda`
 
 - Built 2026-10-13T09:33:30Z, detected 2026-10-13.
@@ -167,12 +173,6 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-08T17:33:38Z, detected 2026-10-08.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-21533d58f0): release `build-21533d58f0` created (manifest + exclusions uploaded); 1.5G zip upload exit 0 but asset missing from release after ~26 min; retried, local archive retained in snapshot/; verify + upload on next run.
 - `21533d58f0` zip sha256: `39f7269dde5b708dc415914eeb1a2b87fe44d00f570fd662acdc6542d88c6d30` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest per…
-
-## 2026-10-08 · **NEW BUILD**: runtime build `684373965f`
-
-- Built 2026-10-08T19:56:45Z, detected 2026-10-08.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-684373965f): release `build-684373965f` created (page exists); zip upload queued this run.
-- `684373965f` zip sha256: `dbe07e28e75e9ad6ee45f07d727e32b9a42e75906319b71771450397b7a779f3` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest per…
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
