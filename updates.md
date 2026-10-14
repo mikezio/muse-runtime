@@ -50,6 +50,11 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-519a362c8d).
 - `519a362c8d` zip sha256: `d63b756938f42c302ec9464bc263d433c69e940e54a2b67a84539678f509dbf3` (1.5G; chunked upload 16/16 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
 
+## 2026-10-14 · **NEW BUILD**: runtime build `3e4a6689d3`
+
+- Built 2026-10-14T18:41:53Z, detected 2026-10-14.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-3e4a6689d3).
+
 ## 2026-10-13 · **NEW BUILD**: runtime build `f5920ce1a0`
 
 - Built 2026-10-13T01:39:32Z, detected 2026-10-13.
@@ -173,11 +178,6 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-09T04:16:53Z, detected 2026-10-09.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b25683e243): release `build-b25683e243` exists (created by earlier run 02:37 EDT; manifest + exclusions uploaded); archive assets already present locally from that run (redundant rebuild skipped this run); zip upload retried this ….
 - `b25683e243` zip sha256: `80b6f7ae09131efe8feb07cb763762aa6b6f0c8e8138b8f6c95cbf0401f9de30` (1476781163 bytes)
-
-## 2026-10-09 · **NEW BUILD**: runtime build `2de5c3b889`
-
-- Built 2026-10-09T06:24:22Z, detected 2026-10-09.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-2de5c3b889): release `build-2de5c3b889` created; manifest + exclusions + 1.4G zip upload queued this run.
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
