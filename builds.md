@@ -283,5 +283,8 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `6867ad2c26` | 2026-10-14T10:13:16Z | 2026-10-14 EDT | [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-6867ad2c26) |
 - `6867ad2c26` zip sha256: `28af23c7098b321b9267eb503c81a46462acaa03541a4ce9630eef6d696772df` (1.5G; chunked upload 16/16 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio/passwd/shadow hits)
 | `b507f21a59` | 2026-10-14T10:35:25Z | 2026-10-14 EDT | [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b507f21a59) |
+- `b507f21a59`: 16/16 chunked zip parts on release verified 2026-10-14 14:51 EDT via `gh release view --json assets` (15×104857600 + 24297967 = 1597161967 bytes ≈ 1.5G; manifest + exclusions present). Local zip already purged, so no local sha256 to record; evidence is the release-side asset inventory.
 | `d16ac497f5` | 2026-10-14T13:53:56Z | 2026-10-14 EDT | [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-d16ac497f5) |
 - `d16ac497f5` zip sha256: `959d3d02a2f1e54ff14822d420e1e161bdb914cccbb194fe2d4db57004cff2b` (1.5G; chunked upload 16/16 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio/passwd/shadow hits)
+| `519a362c8d` | 2026-10-14T15:48:27Z | 2026-10-14 EDT | [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-519a362c8d) |
+- `519a362c8d` zip sha256: `d63b756938f42c302ec9464bc263d433c69e940e54a2b67a84539678f509dbf3` (1.5G; chunked upload 16/16 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio/passwd/shadow hits)

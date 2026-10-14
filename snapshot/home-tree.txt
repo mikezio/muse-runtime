@@ -5142,10 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1791539594568.303
-home/.hatch-db-change-signals/spaces.catalog.1791541863281.491
-home/.hatch-db-change-signals/spaces.catalog.1791545665165.66
-home/.hatch-db-change-signals/spaces.catalog.1791549120544.292
 home/.hatch-db-change-signals/spaces.catalog.1791552683103.473
 home/.hatch-db-change-signals/spaces.catalog.1791556322345.248
 home/.hatch-db-change-signals/spaces.catalog.1791559896736.580
@@ -5270,6 +5266,10 @@ home/.hatch-db-change-signals/spaces.catalog.1791981109866.13
 home/.hatch-db-change-signals/spaces.catalog.1791984674645.225
 home/.hatch-db-change-signals/spaces.catalog.1791988268637.80
 home/.hatch-db-change-signals/spaces.catalog.1791991894809.388
+home/.hatch-db-change-signals/spaces.catalog.1791995483231.60
+home/.hatch-db-change-signals/spaces.catalog.1791999124011.208
+home/.hatch-db-change-signals/spaces.catalog.1792003274260.494
+home/.hatch-db-change-signals/spaces.catalog.1792006320618.41
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -5454,6 +5454,14 @@ home/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/zsh/site-functions
 home/.rustup/update-hashes
 home/.rustup/update-hashes/stable-x86_64-unknown-linux-gnu
 home/.zshenv
+home/AGENTS.md.bak-20261014
+home/HEARTBEAT.md.bak-20261014
+home/IDENTITY.md.bak-20261014
+home/MEMORY.md.bak-20261014
+home/PROACTIVE_PREFERENCES.md.bak-20261014
+home/SOUL.md.bak-20261014
+home/TOOLS.md.bak-20261014
+home/USER.md.bak-20261014
 home/assets
 home/assets/artifacts
 home/assets/artifacts/icons
@@ -21724,7 +21732,6 @@ opt/workflow-skills/shopping/SKILL.md
 opt/workflow-skills/shopping/references
 opt/workflow-skills/shopping/references/browser-checkout.md
 opt/workflow-skills/shopping/references/groceries.md
-opt/workflow-skills/shopping/references/product-sources.md
 opt/workflow-skills/shopping/references/social-shopping-links.md
 opt/workflow-skills/shopping/skill.yaml
 opt/workflow-skills/social-content-performance
