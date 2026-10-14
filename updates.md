@@ -20,6 +20,12 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-56a65ffb0b).
 - `56a65ffb0b` zip sha256: `acd53033cc7e94174aef16408150dfb8b5e13e12e64af2fa06127b720aad10a4` (1.5G; chunked upload 16/16 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
 
+## 2026-10-14 · **NEW BUILD**: runtime build `d7770ee7b3`
+
+- Built 2026-10-14T06:45:14Z, detected 2026-10-14.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-d7770ee7b3).
+- `d7770ee7b3` zip sha256: `4e3899e29fea3e81555a3522e1d0e61104a452613512ef8a600bb60cb2b6133c` (1.5G; chunked upload 16/16 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
+
 ## 2026-10-13 · **NEW BUILD**: runtime build `7183955fda`
 
 - Built 2026-10-13T09:33:30Z, detected 2026-10-13.
@@ -167,12 +173,6 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-08T15:11:48Z, detected 2026-10-08.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b0a7dd2527): release `build-b0a7dd2527` created (page exists) but asset upload failed this run (403 Forbidden on uploads.github.com, twice; release-page API works, upload endpoint does not); local archive retained in snapshot/, up….
 - `b0a7dd2527` zip sha256: `10061590117804ed1be142da016cca1cd59bb8fc3e9dfe12231370503ddd7843` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest per…
-
-## 2026-10-08 · **NEW BUILD**: runtime build `21533d58f0`
-
-- Built 2026-10-08T17:33:38Z, detected 2026-10-08.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-21533d58f0): release `build-21533d58f0` created (manifest + exclusions uploaded); 1.5G zip upload exit 0 but asset missing from release after ~26 min; retried, local archive retained in snapshot/; verify + upload on next run.
-- `21533d58f0` zip sha256: `39f7269dde5b708dc415914eeb1a2b87fe44d00f570fd662acdc6542d88c6d30` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest per…
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
