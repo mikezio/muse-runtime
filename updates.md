@@ -1,6 +1,12 @@
 # What's new
 
-_Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and [builds.md](builds.md), newest first. The full release history lives in builds.md._
+_Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and [builds.md](builds.md), newest first. The full release history lives in builds.md._
+
+## 2026-10-14 · **NEW BUILD**: runtime build `f5843da50b`
+
+- Built 2026-10-14T03:15:37Z, detected 2026-10-14.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-f5843da50b).
+- `f5843da50b` zip sha256: `49a2ab56a09c4b8c05f3851bba6fdf8ee33ec3230d3114f7b09ab90042b3eec7` (1.5G; release + 16/16 chunked zip parts verified on release; archive script exit 0, manifest personal-data scan clean; no mi…
 
 ## 2026-10-13 · **NEW BUILD**: runtime build `7183955fda`
 
@@ -167,12 +173,6 @@ _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-06T23:47:00Z, detected 2026-10-07.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-ac424c7ab5): see release `build-ac424c7ab5`.
 - `ac424c7ab5` zip sha256: `17f5320329b73f42ceb841ad8097a8adb60be0ed8b24b517a4f4ebe419f14b2e` (17404 files, 1.5G; manifest clean, no personal-data hits; fifteen ~100 MB parts p100m-aa..p100m-ao instead of monolithic zip…
-
-## 2026-10-07 · **NEW BUILD**: runtime build `2c1519b0c5`
-
-- Built 2026-10-07T02:44:32Z, detected 2026-10-07.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-2c1519b0c5): see release `build-2c1519b0c5`.
-- `2c1519b0c5` zip sha256: `0f3b6673e7519de93dfc0be73304c882a8fba0ee673e4a0447e762a9b34fc48a` (17404 files, 1.5G; filename scan clean; manifest personal-data scan clean; only node_modules files with token/secret in thei…
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
