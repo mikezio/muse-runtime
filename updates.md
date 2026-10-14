@@ -43,6 +43,18 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-f5920ce1a0).
 - `f5920ce1a0` zip sha256: `2f124687a8af841857119c49261f4ff8832f659e4abdf48616359be526d542c2` (1.5G; release created 2026-10-13 01:39Z with manifest + exclusions only — zip stalled on egress and the row was never record…
 
+## 2026-10-13 · **NEW BUILD**: runtime build `a1253a8788`
+
+- Built 2026-10-13T05:39:38Z, detected 2026-10-13.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-a1253a8788).
+- `a1253a8788` zip sha256: `fd2e7333381c66767b6b08703007230be7ed07b70b869c1d18f799aaf8b9a529` (1.5G, 17591 files; release created 2026-10-13 09:37Z with manifest + exclusions only — zip stalled on egress and the row was…
+
+## 2026-10-13 · **NEW BUILD**: runtime build `bee17e6ff0`
+
+- Built 2026-10-13T08:04:11Z, detected 2026-10-13.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-bee17e6ff0).
+- `bee17e6ff0` zip sha256: `0c337cbabb5721985edd80663007d6d28c71a70aec8e5450e0a4b68e83cee12e` (1.5G, 17591 files; release created 2026-10-13 10:37Z with manifest + exclusions only — zip stalled on egress and the row was…
+
 ## 2026-10-13 · **NEW BUILD**: runtime build `7183955fda`
 
 - Built 2026-10-13T09:33:30Z, detected 2026-10-13.
@@ -84,6 +96,36 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-13T22:18:23Z, detected 2026-10-13.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-e673ca8c3c).
 - `e673ca8c3c` zip sha256: `ead662746b63a35eba7e5de44b7809573440977c059999464557552168486ccc` (1.5G; release + 15/15 chunked zip parts verified on release; archive script exit 0, manifest personal-data scan clean; no mi…
+
+## 2026-10-12 · **NEW BUILD**: runtime build `5e0180d149`
+
+- Built 2026-10-12T02:49:58Z, detected 2026-10-12.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5e0180d149).
+- `5e0180d149` zip sha256: `b67e33dee1e58910444afca0cec68bd342ec43c3177d5fedd50007d0ab33b2a3` (1.5G, 17591 files; release created 2026-10-12 05:37Z with manifest + exclusions only — zip stalled on egress and the row was…
+
+## 2026-10-12 · **NEW BUILD**: runtime build `4afddad4ff`
+
+- Built 2026-10-12T06:05:17Z, detected 2026-10-12.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-4afddad4ff).
+- `4afddad4ff` zip sha256: `27926de0889e3401081da3e9582fcaa6015403ef4cdabb07455252350e7af2dc` (1.5G, 17591 files; release created 2026-10-12 08:37Z with manifest + exclusions only — zip stalled on egress and the row was…
+
+## 2026-10-12 · **NEW BUILD**: runtime build `2911b7238e`
+
+- Built 2026-10-12T08:19:45Z, detected 2026-10-12.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-2911b7238e).
+- `2911b7238e` zip sha256: `43ba125d0c8a5f3eab363e33873c985165622a7a701e4be5fd425d750a0414bb` (1.5G, 17591 files; release created 2026-10-12 12:37Z with manifest + exclusions only — zip stalled on egress and the row was…
+
+## 2026-10-12 · **NEW BUILD**: runtime build `61a9cc60f6`
+
+- Built 2026-10-12T13:00:18Z, detected 2026-10-12.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-61a9cc60f6).
+- `61a9cc60f6` zip sha256: `b611328dde3cb61ca22fa721abaf1f5e6dc9a2f16dd78ac9010016c0633bf647` (1.5G, 17591 files; release created 2026-10-12 16:37Z with manifest + exclusions only — zip stalled on egress and the row was…
+
+## 2026-10-12 · **NEW BUILD**: runtime build `e8a1328f0c`
+
+- Built 2026-10-12T15:34:48Z, detected 2026-10-12.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-e8a1328f0c).
+- `e8a1328f0c` zip sha256: `606c3c642f708bc81095af6154b383b60c6875c8a0caa365551bd67fd1ecfad6` (1.5G, 17591 files; release created 2026-10-12 20:37Z with manifest + exclusions only — zip stalled on egress and the row was…
 
 ## 2026-10-12 · **NEW BUILD**: runtime build `5ba69e5276`
 
@@ -133,45 +175,6 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 
 - Built 2026-10-09T09:49:53Z, detected 2026-10-09.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-580e20ebc4): release `build-580e20ebc4` exists (created by earlier run 10:37 EDT; manifest + exclusions uploaded); zip upload retried this run, local archive retained in snapshot/ until upload verified.
-
-## 2026-10-09 · **NEW BUILD**: runtime build `497a4794b4`
-
-- Built 2026-10-09T15:12:39Z, detected 2026-10-09.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-497a4794b4): release `build-497a4794b4` created; manifest + exclusions + zip uploaded (exit 0) this run.
-
-## 2026-10-09 · **NEW BUILD**: runtime build `06191b3e25`
-
-- Built 2026-10-09T18:34:23Z, detected 2026-10-09.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-06191b3e25): release `build-06191b3e25` created; manifest + exclusions + zip upload queued this run.
-
-## 2026-10-09 · **NEW BUILD**: runtime build `34001c0d79`
-
-- Built 2026-10-09T21:11:18Z, detected 2026-10-09.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-34001c0d79): release `build-34001c0d79` created; manifest + exclusions uploaded (exit 0); zip upload in progress this run.
-
-## 2026-10-08 · **NEW BUILD**: runtime build `336425023b`
-
-- Built 2026-10-08T01:44:34Z, detected 2026-10-08.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-336425023b): release NOT created; GitHub API unreachable from VM this run (graphql context deadline exceeded on gh release list/view); local archive retained in snapshot/, upload deferred to a later run with working network.
-- `336425023b` zip sha256: `550c58d75e6a055d19ac861e082ae478bd72b4c7b8423818f3ab1f2289fb56ea` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest per…
-
-## 2026-10-08 · **NEW BUILD**: runtime build `ff1d6c5f74`
-
-- Built 2026-10-08T04:23:22Z, detected 2026-10-08.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-ff1d6c5f74): release NOT created; GitHub API unreachable from VM this run (gh token invalid, GraphQL Forbidden); local archive retained in snapshot/, upload deferred to a later run with working network. Commit fb0f688 LOCAL ONLY; ….
-- `ff1d6c5f74` zip sha256: `5e1672e0929f4dabcf266afa5ce9207ed9ab5853946859d8459122bd083bd895` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest per…
-
-## 2026-10-08 · **NEW BUILD**: runtime build `ac4dcaf525`
-
-- Built 2026-10-08T06:14:10Z, detected 2026-10-08.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-ac4dcaf525): release NOT created; GitHub API unreachable from VM this run (GraphQL Forbidden on gh release list); local archive retained in snapshot/, upload deferred to a later run with working network.
-- `ac4dcaf525` zip sha256: `f37d4aed042e6aeaef5fe83a7d7a71b75a8c57940d916a6c2430da0ee39bee2e` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest per…
-
-## 2026-10-08 · **NEW BUILD**: runtime build `d15a580998`
-
-- Built 2026-10-08T07:41:03Z, detected 2026-10-08.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-d15a580998): see release `build-d15a580998`.
-- `d15a580998` zip sha256: `1860c24dd6495243f18719398e615a250172d295d6ee088961d99e467851b296` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest per…
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
