@@ -32,11 +32,11 @@ _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-08fbc9ad96).
 - `08fbc9ad96` zip sha256: `c9b99ad4fcf8fd87d47b4b12ddd40867fe005bf25a42fff30e74b5cdbec094e6` (1.5G; chunked upload 15/15 parts verified on release; archive script scan initially hit the relocated dynamic_credentials.py…
 
-## 2026-10-13 · **NEW BUILD**: runtime build `a6404cd2a2`
+## 2026-10-13 · **NEW BUILD**: runtime build `4f12cbe54f`
 
-- Built 2026-10-13T19:46:04Z, detected 2026-10-13.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-a6404cd2a2).
-- `a6404cd2a2` zip sha256: `67c2daaa3a0e357c117a3cf7d99cbb9f505b949708200579fb251d80ad5b9bd9` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
+- Built 2026-10-13T21:41:29Z, detected 2026-10-13.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-4f12cbe54f).
+- `4f12cbe54f` zip sha256: `724c5c64992845fa4ab40907188e1199144db92fba2849fbcbb595ce40e18337` (1.5G; release + 15/15 chunked zip parts created by the ~20:32 EDT run, which never recorded the row; this run verified all 1…
 
 ## 2026-10-12 · **NEW BUILD**: runtime build `5ba69e5276`
 
