@@ -32,6 +32,11 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-6867ad2c26).
 - `6867ad2c26` zip sha256: `28af23c7098b321b9267eb503c81a46462acaa03541a4ce9630eef6d696772df` (1.5G; chunked upload 16/16 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
 
+## 2026-10-14 · **NEW BUILD**: runtime build `b507f21a59`
+
+- Built 2026-10-14T10:35:25Z, detected 2026-10-14.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b507f21a59).
+
 ## 2026-10-13 · **NEW BUILD**: runtime build `f5920ce1a0`
 
 - Built 2026-10-13T01:39:32Z, detected 2026-10-13.
@@ -167,12 +172,6 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-08T07:41:03Z, detected 2026-10-08.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-d15a580998): see release `build-d15a580998`.
 - `d15a580998` zip sha256: `1860c24dd6495243f18719398e615a250172d295d6ee088961d99e467851b296` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest per…
-
-## 2026-10-08 · **NEW BUILD**: runtime build `cc7cc90c54`
-
-- Built 2026-10-08T10:53:56Z, detected 2026-10-08.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-cc7cc90c54): release `build-cc7cc90c54` created (page exists) but asset upload failed this run (gh exit 1 after ~25 min on the 1.5G monolithic zip, same stall pattern as prior builds); local archive retained in snapshot/, upload d….
-- `cc7cc90c54` zip sha256: `cd888befca87826b94273df5cdc7082fcc8f32b2fa05ae8eef9d1dfa3df96a96` (17397 files, 1.5G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest per…
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
