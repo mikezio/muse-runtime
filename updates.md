@@ -38,6 +38,12 @@ _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-4f12cbe54f).
 - `4f12cbe54f` zip sha256: `724c5c64992845fa4ab40907188e1199144db92fba2849fbcbb595ce40e18337` (1.5G; release + 15/15 chunked zip parts created by the ~20:32 EDT run, which never recorded the row; this run verified all 1…
 
+## 2026-10-13 · **NEW BUILD**: runtime build `e673ca8c3c`
+
+- Built 2026-10-13T22:18:23Z, detected 2026-10-13.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-e673ca8c3c).
+- `e673ca8c3c` zip sha256: `ead662746b63a35eba7e5de44b7809573440977c059999464557552168486ccc` (1.5G; release + 15/15 chunked zip parts verified on release; archive script exit 0, manifest personal-data scan clean; no mi…
+
 ## 2026-10-12 · **NEW BUILD**: runtime build `5ba69e5276`
 
 - Built 2026-10-12T20:55:53Z, detected 2026-10-12.
@@ -167,12 +173,6 @@ _Last updated: 2026-10-13 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-07T02:44:32Z, detected 2026-10-07.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-2c1519b0c5): see release `build-2c1519b0c5`.
 - `2c1519b0c5` zip sha256: `0f3b6673e7519de93dfc0be73304c882a8fba0ee673e4a0447e762a9b34fc48a` (17404 files, 1.5G; filename scan clean; manifest personal-data scan clean; only node_modules files with token/secret in thei…
-
-## 2026-10-07 · **NEW BUILD**: runtime build `b07b138c86`
-
-- Built 2026-10-07T05:09:32Z, detected 2026-10-07.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b07b138c86): see release `build-b07b138c86`.
-- `b07b138c86` zip sha256: `d66d8b5d4caae10137d849f372d79b008b59702dc3f8eb3850b1f1ac417e9aa2` (17397 files, 1.4G; manifest clean, no personal-data hits; fifteen ~100 MB parts p100m-00..p100m-14 instead of monolithic zip…
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
