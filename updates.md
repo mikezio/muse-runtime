@@ -8,6 +8,12 @@ _Last updated: 2026-10-15 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-ccfc5fa9ec): see release `build-ccfc5fa9ec`.
 - `ccfc5fa9ec` zip sha256: `92d7bbc4efdbff21917edc3cabb6885a2f1b20bed28dc318cd34b472bc9cea49` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
 
+## 2026-10-15 · **NEW BUILD**: runtime build `4f010fe3dc`
+
+- Built 2026-10-15T03:35:43Z, detected 2026-10-15.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-4f010fe3dc): see release `build-4f010fe3dc`.
+- `4f010fe3dc` zip sha256: `0230feac62bb74581fb7646b126eea2bc03335c57cc99d9b7c88e4891cd8704d` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
+
 ## 2026-10-14 · **NEW BUILD**: runtime build `f5843da50b`
 
 - Built 2026-10-14T03:15:37Z, detected 2026-10-14.
@@ -172,12 +178,6 @@ _Last updated: 2026-10-15 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-10T02:17:38Z, detected 2026-10-10.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-075d6865cb): release `build-075d6865cb` created; manifest + exclusions + zip upload queued this run.
 - `075d6865cb` zip sha256: `2fe23da010b3d3e86b73acf2cac0f348de580b10515dd6664a5ed2d9acb77baa` (1.4G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest personal-data sc…
-
-## 2026-10-10 · **NEW BUILD**: runtime build `29ff824780`
-
-- Built 2026-10-10T20:35:08Z, detected 2026-10-10.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-29ff824780): release `build-29ff824780` created; manifest + exclusions + 1.4G zip uploaded (exit 0) this run.
-- `29ff824780` zip sha256: `eb291063813363f1e18f96924bd1c2d771a5d28dc13f357d4fc66eb39c3d581d` (1.4G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly)
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
