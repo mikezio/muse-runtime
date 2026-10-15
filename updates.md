@@ -1,6 +1,12 @@
 # What's new
 
-_Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and [builds.md](builds.md), newest first. The full release history lives in builds.md._
+_Last updated: 2026-10-15 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and [builds.md](builds.md), newest first. The full release history lives in builds.md._
+
+## 2026-10-15 · **NEW BUILD**: runtime build `ccfc5fa9ec`
+
+- Built 2026-10-15T01:22:25Z, detected 2026-10-15.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-ccfc5fa9ec): see release `build-ccfc5fa9ec`.
+- `ccfc5fa9ec` zip sha256: `92d7bbc4efdbff21917edc3cabb6885a2f1b20bed28dc318cd34b472bc9cea49` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
 
 ## 2026-10-14 · **NEW BUILD**: runtime build `f5843da50b`
 
@@ -172,11 +178,6 @@ _Last updated: 2026-10-14 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-10T20:35:08Z, detected 2026-10-10.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-29ff824780): release `build-29ff824780` created; manifest + exclusions + 1.4G zip uploaded (exit 0) this run.
 - `29ff824780` zip sha256: `eb291063813363f1e18f96924bd1c2d771a5d28dc13f357d4fc66eb39c3d581d` (1.4G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly)
-
-## 2026-10-09 · **NEW BUILD**: runtime build `0f3744c487`
-
-- Built 2026-10-09T02:04:05Z, detected 2026-10-09.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-0f3744c487): release `build-0f3744c487` created (manifest + exclusions uploaded; zip upload in progress this run).
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
