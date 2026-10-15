@@ -303,3 +303,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `b4bc885b2e` zip sha256: `644e75da02e2425251fb655409c6434f93e9c9d25c707ecfc75dadd9e2262afb` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio/passwd/shadow hits)
 | `68f30130d0` | 2026-10-15T18:34:41Z | 2026-10-15 EDT | see release `build-68f30130d0` |
 - `68f30130d0` zip sha256: `0892c83640fba8423a33ab92ceb3238039e065ce05442337671c159737b7f815` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio/passwd/shadow hits)
+| `ad9d6a3ee0` | 2026-10-15T19:51:07Z | 2026-10-15 EDT | see release `build-ad9d6a3ee0` |
+- `ad9d6a3ee0` zip sha256: `0c0bd12012c453e624f831471d894ab8680369597c9a0529b0d6259e2619ed11` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio/passwd/shadow hits)
