@@ -14,6 +14,12 @@ _Last updated: 2026-10-15 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-4f010fe3dc): see release `build-4f010fe3dc`.
 - `4f010fe3dc` zip sha256: `0230feac62bb74581fb7646b126eea2bc03335c57cc99d9b7c88e4891cd8704d` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
 
+## 2026-10-15 · **NEW BUILD**: runtime build `71a013d0a3`
+
+- Built 2026-10-15T05:22:43Z, detected 2026-10-15.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-71a013d0a3): see release `build-71a013d0a3`.
+- `71a013d0a3` zip sha256: `177350423090f23103ecf68aa1c43fbffd66cb40c53a7b5df1fa5b3820d99399` (1.5G; chunked upload 15/15 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio…
+
 ## 2026-10-14 · **NEW BUILD**: runtime build `f5843da50b`
 
 - Built 2026-10-14T03:15:37Z, detected 2026-10-14.
@@ -172,12 +178,6 @@ _Last updated: 2026-10-15 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-11T10:03:17Z, detected 2026-10-11.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5ac8cb8387): release `build-5ac8cb8387` created; manifest + exclusions + 1.4G zip uploaded (exit 0, assets verified on release) this run.
 - `5ac8cb8387` zip sha256: `2bc6d102d346df47a5a6a87ac1d69f72ac8870fd672224c2ac800d106f5fc46f` (1.4G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly)
-
-## 2026-10-10 · **NEW BUILD**: runtime build `075d6865cb`
-
-- Built 2026-10-10T02:17:38Z, detected 2026-10-10.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-075d6865cb): release `build-075d6865cb` created; manifest + exclusions + zip upload queued this run.
-- `075d6865cb` zip sha256: `2fe23da010b3d3e86b73acf2cac0f348de580b10515dd6664a5ed2d9acb77baa` (1.4G; archive script exits non-zero on tar errors or scan hits and this archive completed cleanly; manifest personal-data sc…
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
