@@ -58,6 +58,11 @@ def badge_for(title):
 ROW_RE = re.compile(
     r"^\|\s*`([0-9a-f]{10})`\s*\|\s*([0-9T:\-Z]+)\s*\|\s*([0-9\-]+)[^|]*\|\s*(.*?)\s*\|?\s*$")
 
+# Note lines that are pure run-log boilerplate (zip sha256 + upload/scan
+# verification) add nothing for visitors; the hash and the verification
+# detail live in builds.md. Substantive notes (repairs, what-changed) are kept.
+BOILERPLATE_NOTE_RE = re.compile(r"^`?[0-9a-f]{10}`?\s+zip sha256:")
+
 
 def parse_builds():
     entries = []
@@ -137,7 +142,7 @@ def render_build(e):
     lines = ["## %s · **NEW BUILD**: runtime build `%s`\n" % (e["day"], e["commit"]),
              "- Built %s, detected %s." % (e["built_at"], e["day"]),
              "- %s%s." % (prefix, archive)]
-    if e.get("note"):
+    if e.get("note") and not BOILERPLATE_NOTE_RE.match(e["note"]):
         n = re.sub(r"\s+", " ", e["note"])
         if len(n) > 220:
             n = n[:217] + "…"
