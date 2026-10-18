@@ -330,3 +330,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `cd99f2e76d` zip sha256: `5431feac4b3e4001c33f989af4c51e4ffdea907997c1f368bc79364e859c0830` (1750508502 bytes; chunked upload 17/17 parts verified on release; archive script exit 0, manifest personal-data scan clean; no mike/mzio/passwd/shadow hits; local parts deleted after verify)
 | `cfa4ab70d6` | 2026-10-18T00:40:50Z | 2026-10-18 EDT | see release `build-cfa4ab70d6` |
 - `cfa4ab70d6` zip sha256: `20e668abd0b1921379db326d966eaf106ed12933509f558c4c30c37c28dbac56` (1751004970 bytes; chunked upload 17/17 parts verified on release, part sizes sum to local zip; what-changed notes on release; git commit 212cbf3 pushed)
+| `90791a36f8` | 2026-10-18T04:26:57Z | 2026-10-18 EDT | see release `build-90791a36f8` |
+- `90791a36f8` zip sha256: `4a2522cfe27f179bda3db7cbd958c7418dd6d20852ace90ecb1a88dbb8da91ad` (1751021666 bytes; chunked upload 17/17 parts verified on release; what-changed notes on release; local parts deleted after verify)
