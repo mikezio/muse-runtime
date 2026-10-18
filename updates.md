@@ -17,6 +17,11 @@ _Last updated: 2026-10-18 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-18T05:37:33Z, detected 2026-10-18.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-cace28c471): see release `build-cace28c471`.
 
+## 2026-10-18 · **NEW BUILD**: runtime build `3303ee8d62`
+
+- Built 2026-10-18T08:18:46Z, detected 2026-10-18.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-3303ee8d62): see release `build-3303ee8d62`.
+
 ## 2026-10-17 · **NEW BUILD**: runtime build `e09891f9d9`
 
 - Built 2026-10-17T00:43:02Z, detected 2026-10-17.
@@ -147,11 +152,6 @@ _Last updated: 2026-10-18 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-14T10:35:25Z, detected 2026-10-14.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b507f21a59).
 - `b507f21a59`: 16/16 chunked zip parts on release verified 2026-10-14 14:51 EDT via `gh release view --json assets` (15×104857600 + 24297967 = 1597161967 bytes ≈ 1.5G; manifest + exclusions present). Local zip already …
-
-## 2026-10-14 · **NEW BUILD**: runtime build `d16ac497f5`
-
-- Built 2026-10-14T13:53:56Z, detected 2026-10-14.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-d16ac497f5).
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
