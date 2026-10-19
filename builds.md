@@ -367,3 +367,6 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 
 | `8d6f38fcb6` | 2026-10-19T04:03:33Z | 2026-10-19 EDT | see release `build-8d6f38fcb6` |
 - `8d6f38fcb6` zip sha256: `cdcd6102df4fb8d7ebe6f38212a303a49c5717f39bb9fff41364f54a86014984` (1751472795 bytes; chunked upload 17/17 parts verified on release; archive script exit 0, manifest personal-data scan clean; what-changed notes on release)
+
+| `67ced200e6` | 2026-10-19T05:20:57Z | 2026-10-19 EDT | see release `build-67ced200e6` |
+- `67ced200e6` zip sha256: `fef6faea10f2dd8425ab8198b672a0a4fc6922cd0ac77d4492e0812a06171702` (1751474384 bytes; chunked upload 17/17 parts verified on release; archive script exit 0, manifest personal-data scan clean; what-changed notes on release)
