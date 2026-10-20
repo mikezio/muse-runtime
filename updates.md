@@ -32,10 +32,15 @@ _Last updated: 2026-10-20 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-20T06:59:12Z, detected 2026-10-20.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-1d39f11dc5).
 
+## 2026-10-20 · **NEW BUILD**: runtime build `5811edc446`
+
+- Built 2026-10-20T07:11:31Z, detected 2026-10-20.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5811edc446).
+
 ## 2026-10-19 · **NEW BUILD**: runtime build `801e25284d`
 
 - Built 2026-10-19T20:46:28Z, detected 2026-10-19.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-801e25284d): see release `build-801e25284d` | `10ba995fed7` | 2026-09-24T04:05:12Z | 2026-09-24 | n/a (predates per-build archiving).
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-801e25284d): see release `build-801e25284d`.
 - 2026-09-25 ~21:07 EDT: release `build-679b103d9f6` repaired; the 1.2 GB zip could not be uploaded whole (4 attempts, `gh` and `curl`, all severed mid-transfer with "unexpected EOF" after 2.5–45 min through the egress …
 
 ## 2026-10-19 · **NEW BUILD**: runtime build `ae43885198`
@@ -147,11 +152,6 @@ _Last updated: 2026-10-20 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 
 - Built 2026-10-18T10:24:11Z, detected 2026-10-18.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-6421718da2): see release `build-6421718da2`.
-
-## 2026-10-18 · **NEW BUILD**: runtime build `a35d064db0`
-
-- Built 2026-10-18T15:01:54Z, detected 2026-10-18.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-a35d064db0): see release `build-a35d064db0`.
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
