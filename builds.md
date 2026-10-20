@@ -9,6 +9,7 @@ Filesystem snapshots of the Muse runtime, published as [GitHub Releases](https:/
 | Build | Built (UTC) | Detected (as recorded) | Archive |
 |---|---|---|---|
 | `801e25284d` | 2026-10-19T20:46:28Z | 2026-10-19 20:50 EDT | see release `build-801e25284d` |
+| `6a6bf271c4` | 2026-10-20T18:20:05Z | 2026-10-20 17:54 EDT | see release `build-6a6bf271c4` |
 | `10ba995fed7` | 2026-09-24T04:05:12Z | 2026-09-24 | n/a (predates per-build archiving) |
 | `b78e5ff2c40` | 2026-09-24T07:33:52Z | 2026-09-24 | n/a (predates per-build archiving) |
 | `a59dd3004f9` | 2026-09-24T08:20:45Z | 2026-09-24 | n/a (predates per-build archiving) |
