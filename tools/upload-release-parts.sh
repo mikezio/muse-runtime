@@ -63,6 +63,8 @@ log "local parts deleted"
 
 # evidence in builds.md
 BUILDSDIR="$(cd "$(dirname "$0")/.." && pwd)"
+# ensure the file ends with a newline so the appended evidence starts on its own line
+[ -z "$(tail -c 1 "$BUILDSDIR/builds.md")" ] || printf '\n' >> "$BUILDSDIR/builds.md"
 printf -- '- `%s` zip uploaded as %d split parts (%s bytes) on %s; parts reassemble with `cat %s.part-* > %s`.\n' \
   "$TAG" "${#PARTS[@]}" "$ZIPSIZE" "$(date -u +%FT%TZ)" "$ZIPBASE" "$ZIPBASE" >> "$BUILDSDIR/builds.md"
 log "done"
