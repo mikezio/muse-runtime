@@ -392,3 +392,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 | `0c8e9d2d08` | 2026-10-19T20:15:20Z | 2026-10-19 EDT | see release `build-0c8e9d2d08` |
 - `0c8e9d2d08` zip sha256: `fb79aa7dd1e35c6df2490f20aeb5259978c9d43b8eff808ed1c322c095cddaa3` (1752456115 bytes; chunked upload 17/17 parts verified on release; archive script exit 0, manifest personal-data scan clean; what-changed notes on release)
 | `098bf5c481` | 2026-10-19T22:31:23Z | 2026-10-19 EDT | [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-098bf5c4814) |
+| `115589f45b` | 2026-10-19T23:39:43Z | 2026-10-19 EDT | [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-115589f45b) |
+- `115589f45b` zip sha256: `9160f4f4002ba96515585f1ee088c75d0efe2ad0c3f5a0e4016c4285da7e4902` (1752941410 bytes; chunked upload 17/17 parts verified on release; archive script exit 0, manifest personal-data scan clean; what-changed notes on release)
