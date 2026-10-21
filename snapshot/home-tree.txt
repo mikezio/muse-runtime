@@ -5142,11 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1792175001616.67
-home/.hatch-db-change-signals/spaces.catalog.1792175851078.109
-home/.hatch-db-change-signals/spaces.catalog.1792179345784.101
-home/.hatch-db-change-signals/spaces.catalog.1792182677744.345
-home/.hatch-db-change-signals/spaces.catalog.1792186266531.234
 home/.hatch-db-change-signals/spaces.catalog.1792189857118.662
 home/.hatch-db-change-signals/spaces.catalog.1792193463430.793
 home/.hatch-db-change-signals/spaces.catalog.1792197114236.974
@@ -5270,6 +5265,11 @@ home/.hatch-db-change-signals/spaces.catalog.1792593089015.114
 home/.hatch-db-change-signals/spaces.catalog.1792596655549.673
 home/.hatch-db-change-signals/spaces.catalog.1792600322604.264
 home/.hatch-db-change-signals/spaces.catalog.1792603916152.471
+home/.hatch-db-change-signals/spaces.catalog.1792607497054.160
+home/.hatch-db-change-signals/spaces.catalog.1792611077829.335
+home/.hatch-db-change-signals/spaces.catalog.1792614704688.508
+home/.hatch-db-change-signals/spaces.catalog.1792614759701.544
+home/.hatch-db-change-signals/spaces.catalog.1792616114707.717
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -20068,6 +20068,7 @@ opt/workflow-skills/generate_podcast/save-to-spotify/vendor/save-to-spotify/READ
 opt/workflow-skills/generate_podcast/save-to-spotify/vendor/save-to-spotify/SOURCE.toml
 opt/workflow-skills/generate_podcast/scripts
 opt/workflow-skills/generate_podcast/scripts/podcast-helper
+opt/workflow-skills/generate_podcast/scripts/podcast_telemetry.py
 opt/workflow-skills/generate_podcast/skill.yaml
 opt/workflow-skills/goals
 opt/workflow-skills/goals/SKILL.md
