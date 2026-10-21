@@ -100,6 +100,8 @@ EXCLUDES_HOME=(
   # --- caches, logs, build junk ---
   ./.cache ./.npm ./logs ./*.log
   ./.Xauthority ./.xsession-errors
+  # --- empty unreadable nobody-owned staging dir (2026-10-21; breaks tar) ---
+  ./.stagged-uploads
   ./node_modules ./venv ./.venv ./__pycache__ ./*.pyc
   # --- databases, key/secret-like names (backstop; scan below also checks) ---
   ./*.sqlite* ./*.db
@@ -124,7 +126,11 @@ run_tar() {
   args+=(--exclude="./$(basename "$STAGE")*" --exclude="./$ARCHIVE_BASENAME*")
   args+=(-C "$src" .)
   set +e
-  tar "${args[@]}" 2>"$STAGE/tar-errors.log" | tar -xf - -C "$dest" 2>>"$STAGE/tar-errors.log"
+  # --no-same-owner on the extract side: /home/hatch is overlay-mounted
+  # (upperdir=/run/hatch/overlay/upper), which rejects chown even as root,
+  # so ownership preservation fails the whole stage (observed 2026-10-21).
+  # Snapshot fidelity is content-based (sha256 manifest), not owner-based.
+  tar "${args[@]}" 2>"$STAGE/tar-errors.log" | tar --no-same-owner -xf - -C "$dest" 2>>"$STAGE/tar-errors.log"
   local rc=${PIPESTATUS[0]}
   set -e
   if (( rc >= 2 )); then
