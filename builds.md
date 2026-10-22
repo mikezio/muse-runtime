@@ -455,3 +455,5 @@ Builds `cbf4585c898`, `d96cc26a11d`, `0decec9a6b1`, `61c470cfc94`, `8d0554d8f9e`
 - `064233055c` zip sha256: `2e5375fb4d5644aa3e848cb24bb65ce95c3d54a7f8a2fd2c26e11c5bef5e8377` (1789703704 bytes; chunked upload 18/18 parts verified on release; archive script exit 0, manifest personal-data scan clean; what-changed notes on release)
 | `5367b57283` | 2026-10-22T08:46:40Z | 2026-10-22 EDT | see release `build-5367b57283` |
 - `5367b57283` zip sha256: `f23e68ea2ec3afb8b3ff83c0321f596a33c5f63ed3be87ce2727ed46693a9aab` (1789780769 bytes; chunked upload 18/18 parts verified on release; archive script exit 0, manifest personal-data scan clean; what-changed notes on release)
+| `1b3b809b8b` | 2026-10-22T11:27:56Z | 2026-10-22 EDT | see release `build-1b3b809b8b` |
+- `1b3b809b8b` zip sha256: `c7ea65b235d1d77723b51ef03f5095a6c0176fc3a5a3fa2d377dc6bf8e794d6e` (1789780666 bytes; chunked upload 18/18 parts verified on release; archive script exit 0, manifest personal-data scan clean; what-changed notes on release)
