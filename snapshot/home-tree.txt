@@ -5142,8 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1792243892105.243
-home/.hatch-db-change-signals/spaces.catalog.1792247474583.121
 home/.hatch-db-change-signals/spaces.catalog.1792251059669.465
 home/.hatch-db-change-signals/spaces.catalog.1792254666945.584
 home/.hatch-db-change-signals/spaces.catalog.1792258267571.687
@@ -5270,6 +5268,8 @@ home/.hatch-db-change-signals/spaces.catalog.1792643581913.158
 home/.hatch-db-change-signals/spaces.catalog.1792647100688.332
 home/.hatch-db-change-signals/spaces.catalog.1792650915054.25
 home/.hatch-db-change-signals/spaces.catalog.1792654280474.213
+home/.hatch-db-change-signals/spaces.catalog.1792657903420.111
+home/.hatch-db-change-signals/spaces.catalog.1792661529624.2
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -8524,6 +8524,10 @@ opt/connectors/notion
 opt/connectors/notion/CONNECTOR.md
 opt/connectors/notion/connector.yaml
 opt/connectors/notion/manifest.yaml
+opt/connectors/onepassword
+opt/connectors/onepassword/CONNECTOR.md
+opt/connectors/onepassword/connector.yaml
+opt/connectors/onepassword/manifest.yaml
 opt/connectors/opentable
 opt/connectors/opentable/CONNECTOR.md
 opt/connectors/opentable/connector.yaml
