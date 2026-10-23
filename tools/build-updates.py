@@ -91,7 +91,21 @@ def parse_builds():
             pending_note.append(line[2:].strip())
     if pending_note and entries:
         entries[-1]["note"] = " ".join(pending_note).strip()
-    return entries
+    # A build can appear twice in builds.md (a stray short row near the top
+    # plus the canonical row with its evidence note). Keep one entry per
+    # commit: prefer the row whose archive cell links the release page,
+    # otherwise the later row.
+    best = {}
+    for i, e in enumerate(entries):
+        c = e["commit"]
+        if c not in best:
+            best[c] = i
+        else:
+            prev = entries[best[c]]
+            if "[Release](" in e["archive"] or "[Release](" not in prev["archive"]:
+                best[c] = i
+    keep = set(best.values())
+    return [e for i, e in enumerate(entries) if i in keep]
 
 
 def trim_body(body, limit=12):
@@ -153,6 +167,7 @@ def render_build(e):
 def main():
     changelog = parse_changelog()
     builds = parse_builds()
+    builds.sort(key=lambda e: e["built_at"], reverse=True)
     feed = changelog + builds
     feed.sort(key=lambda e: (e["day"], 0 if e["kind"] == "changelog" else 1),
               reverse=True)

@@ -2,6 +2,16 @@
 
 _Last updated: 2026-10-23 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and [builds.md](builds.md), newest first. The full release history lives in builds.md._
 
+## 2026-10-23 · **NEW BUILD**: runtime build `0bf1debf76`
+
+- Built 2026-10-23T07:21:49Z, detected 2026-10-23.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-0bf1debf76): see release `build-0bf1debf76`.
+
+## 2026-10-23 · **NEW BUILD**: runtime build `c6187b72fc`
+
+- Built 2026-10-23T07:11:06Z, detected 2026-10-23.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-c6187b72fc): see release `build-c6187b72fc`.
+
 ## 2026-10-23 · **NEW BUILD**: runtime build `92c304f261`
 
 - Built 2026-10-23T02:07:45Z, detected 2026-10-23.
@@ -12,146 +22,135 @@ _Last updated: 2026-10-23 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 - Built 2026-10-23T02:05:44Z, detected 2026-10-23.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-babff4e47e): see release `build-babff4e47e`.
 
-## 2026-10-23 · **NEW BUILD**: runtime build `c6187b72fc`
+## 2026-10-22 · **NEW BUILD**: runtime build `9a4eb56798`
 
-- Built 2026-10-23T07:11:06Z, detected 2026-10-23.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-c6187b72fc): see release `build-c6187b72fc`.
-
-## 2026-10-23 · **NEW BUILD**: runtime build `0bf1debf76`
-
-- Built 2026-10-23T07:21:49Z, detected 2026-10-23.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-0bf1debf76): see release `build-0bf1debf76`.
-
-## 2026-10-22 · **NEW BUILD**: runtime build `994ca06e2d`
-
-- Built 2026-10-22T00:25:39Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-994ca06e2d): see release `build-994ca06e2d`.
-
-## 2026-10-22 · **NEW BUILD**: runtime build `5990826e25`
-
-- Built 2026-10-22T03:44:10Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5990826e25): see release `build-5990826e25`.
-
-## 2026-10-22 · **NEW BUILD**: runtime build `8b82da8f82`
-
-- Built 2026-10-22T05:06:41Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-8b82da8f82): see release `build-8b82da8f82`.
-
-## 2026-10-22 · **NEW BUILD**: runtime build `064233055c`
-
-- Built 2026-10-22T06:35:12Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-064233055c): see release `build-064233055c`.
-
-## 2026-10-22 · **NEW BUILD**: runtime build `5367b57283`
-
-- Built 2026-10-22T08:46:40Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5367b57283): see release `build-5367b57283`.
-
-## 2026-10-22 · **NEW BUILD**: runtime build `1b3b809b8b`
-
-- Built 2026-10-22T11:27:56Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-1b3b809b8b): see release `build-1b3b809b8b`.
-
-## 2026-10-22 · **NEW BUILD**: runtime build `5f4bb5f79f`
-
-- Built 2026-10-22T13:09:27Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5f4bb5f79f): see release `build-5f4bb5f79f`.
-
-## 2026-10-22 · **NEW BUILD**: runtime build `89b873f3ec`
-
-- Built 2026-10-22T14:32:08Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-89b873f3ec): see release `build-89b873f3ec`.
-
-## 2026-10-22 · **NEW BUILD**: runtime build `940f1a8368`
-
-- Built 2026-10-22T16:31:47Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-940f1a8368): see release `build-940f1a8368`.
+- Built 2026-10-22T20:30:23Z, detected 2026-10-22.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-9a4eb56798): see release `build-9a4eb56798`.
 
 ## 2026-10-22 · **NEW BUILD**: runtime build `f181c0d811`
 
 - Built 2026-10-22T18:57:22Z, detected 2026-10-22.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-f181c0d811): see release `build-f181c0d811`.
 
-## 2026-10-22 · **NEW BUILD**: runtime build `9a4eb56798`
+## 2026-10-22 · **NEW BUILD**: runtime build `940f1a8368`
 
-- Built 2026-10-22T20:30:23Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-9a4eb56798): see release `build-9a4eb56798`.
+- Built 2026-10-22T16:31:47Z, detected 2026-10-22.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-940f1a8368): see release `build-940f1a8368`.
 
-## 2026-10-21 · **NEW BUILD**: runtime build `88d4d027d8`
+## 2026-10-22 · **NEW BUILD**: runtime build `89b873f3ec`
 
-- Built 2026-10-21T01:46:14Z, detected 2026-10-21.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-88d4d027d8).
+- Built 2026-10-22T14:32:08Z, detected 2026-10-22.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-89b873f3ec): see release `build-89b873f3ec`.
 
-## 2026-10-21 · **NEW BUILD**: runtime build `80ada07dcc`
+## 2026-10-22 · **NEW BUILD**: runtime build `5f4bb5f79f`
 
-- Built 2026-10-21T03:53:45Z, detected 2026-10-21.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-80ada07dcc).
+- Built 2026-10-22T13:09:27Z, detected 2026-10-22.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5f4bb5f79f): see release `build-5f4bb5f79f`.
 
-## 2026-10-21 · **NEW BUILD**: runtime build `7d04916af8`
+## 2026-10-22 · **NEW BUILD**: runtime build `1b3b809b8b`
 
-- Built 2026-10-21T08:34:23Z, detected 2026-10-21.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-7d04916af8).
+- Built 2026-10-22T11:27:56Z, detected 2026-10-22.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-1b3b809b8b): see release `build-1b3b809b8b`.
 
-## 2026-10-21 · **NEW BUILD**: runtime build `1d1c171fb0`
+## 2026-10-22 · **NEW BUILD**: runtime build `5367b57283`
 
-- Built 2026-10-21T10:32:34Z, detected 2026-10-21.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-1d1c171fb0).
+- Built 2026-10-22T08:46:40Z, detected 2026-10-22.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5367b57283): see release `build-5367b57283`.
 
-## 2026-10-21 · **NEW BUILD**: runtime build `486064ea8d`
+## 2026-10-22 · **NEW BUILD**: runtime build `064233055c`
 
-- Built 2026-10-21T11:47:53Z, detected 2026-10-21.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-486064ea8d).
+- Built 2026-10-22T06:35:12Z, detected 2026-10-22.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-064233055c): see release `build-064233055c`.
 
-## 2026-10-21 · **NEW BUILD**: runtime build `deaba5214f`
+## 2026-10-22 · **NEW BUILD**: runtime build `8b82da8f82`
 
-- Built 2026-10-21T13:14:48Z, detected 2026-10-21.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-deaba5214f).
+- Built 2026-10-22T05:06:41Z, detected 2026-10-22.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-8b82da8f82): see release `build-8b82da8f82`.
 
-## 2026-10-21 · **NEW BUILD**: runtime build `e904e1f885`
+## 2026-10-22 · **NEW BUILD**: runtime build `5990826e25`
 
-- Built 2026-10-21T14:54:59Z, detected 2026-10-21.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-e904e1f885).
+- Built 2026-10-22T03:44:10Z, detected 2026-10-22.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5990826e25): see release `build-5990826e25`.
 
-## 2026-10-21 · **NEW BUILD**: runtime build `0279d5bc8b`
+## 2026-10-22 · **NEW BUILD**: runtime build `994ca06e2d`
 
-- Built 2026-10-21T17:47:09Z, detected 2026-10-21.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-0279d5bc8b).
-
-## 2026-10-21 · **NEW BUILD**: runtime build `955c893682`
-
-- Built 2026-10-21T18:38:41Z, detected 2026-10-21.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-955c893682).
+- Built 2026-10-22T00:25:39Z, detected 2026-10-22.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-994ca06e2d): see release `build-994ca06e2d`.
 
 ## 2026-10-21 · **NEW BUILD**: runtime build `8f5a4fa6cb`
 
 - Built 2026-10-21T23:15:42Z, detected 2026-10-21.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-8f5a4fa6cb).
 
+## 2026-10-21 · **NEW BUILD**: runtime build `955c893682`
+
+- Built 2026-10-21T18:38:41Z, detected 2026-10-21.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-955c893682).
+
+## 2026-10-21 · **NEW BUILD**: runtime build `0279d5bc8b`
+
+- Built 2026-10-21T17:47:09Z, detected 2026-10-21.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-0279d5bc8b).
+
+## 2026-10-21 · **NEW BUILD**: runtime build `e904e1f885`
+
+- Built 2026-10-21T14:54:59Z, detected 2026-10-21.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-e904e1f885).
+
+## 2026-10-21 · **NEW BUILD**: runtime build `deaba5214f`
+
+- Built 2026-10-21T13:14:48Z, detected 2026-10-21.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-deaba5214f).
+
+## 2026-10-21 · **NEW BUILD**: runtime build `486064ea8d`
+
+- Built 2026-10-21T11:47:53Z, detected 2026-10-21.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-486064ea8d).
+
+## 2026-10-21 · **NEW BUILD**: runtime build `1d1c171fb0`
+
+- Built 2026-10-21T10:32:34Z, detected 2026-10-21.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-1d1c171fb0).
+
+## 2026-10-21 · **NEW BUILD**: runtime build `7d04916af8`
+
+- Built 2026-10-21T08:34:23Z, detected 2026-10-21.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-7d04916af8).
+
+## 2026-10-21 · **NEW BUILD**: runtime build `80ada07dcc`
+
+- Built 2026-10-21T03:53:45Z, detected 2026-10-21.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-80ada07dcc).
+
+## 2026-10-21 · **NEW BUILD**: runtime build `88d4d027d8`
+
+- Built 2026-10-21T01:46:14Z, detected 2026-10-21.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-88d4d027d8).
+
+## 2026-10-20 · **NEW BUILD**: runtime build `f4e71f55b5`
+
+- Built 2026-10-20T23:18:52Z, detected 2026-10-20.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-f4e71f55b5).
+
+## 2026-10-20 · **NEW BUILD**: runtime build `7521ff50ec`
+
+- Built 2026-10-20T20:09:27Z, detected 2026-10-20.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-7521ff50ec).
+
 ## 2026-10-20 · **NEW BUILD**: runtime build `6a6bf271c4`
 
 - Built 2026-10-20T18:20:05Z, detected 2026-10-20.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-6a6bf271c4): see release `build-6a6bf271c4`.
-- 2026-09-25 ~21:07 EDT: release `build-679b103d9f6` repaired; the 1.2 GB zip could not be uploaded whole (4 attempts, `gh` and `curl`, all severed mid-transfer with "unexpected EOF" after 2.5–45 min through the egress …
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-6a6bf271c4).
 
-## 2026-10-20 · **NEW BUILD**: runtime build `7b97ff7b69`
+## 2026-10-20 · **NEW BUILD**: runtime build `e3eef6add0`
 
-- Built 2026-10-20T01:21:53Z, detected 2026-10-20.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-7b97ff7b69).
+- Built 2026-10-20T11:53:32Z, detected 2026-10-20.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-e3eef6add0).
 
-## 2026-10-20 · **NEW BUILD**: runtime build `c92d6ba285`
+## 2026-10-20 · **NEW BUILD**: runtime build `768f23fe50`
 
-- Built 2026-10-20T01:21:21Z, detected 2026-10-20.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-c92d6ba285).
-
-## 2026-10-20 · **NEW BUILD**: runtime build `f6ab5d2b1c`
-
-- Built 2026-10-20T03:58:48Z, detected 2026-10-20.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-f6ab5d2b1c).
-
-## 2026-10-20 · **NEW BUILD**: runtime build `b72a54c450`
-
-- Built 2026-10-20T04:23:58Z, detected 2026-10-20.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-b72a54c450).
+- Built 2026-10-20T10:22:40Z, detected 2026-10-20.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-768f23fe50).
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
