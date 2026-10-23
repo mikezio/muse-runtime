@@ -5142,11 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1792305050493.231
-home/.hatch-db-change-signals/spaces.catalog.1792308692815.41
-home/.hatch-db-change-signals/spaces.catalog.1792312268097.139
-home/.hatch-db-change-signals/spaces.catalog.1792315910778.141
-home/.hatch-db-change-signals/spaces.catalog.1792319468030.281
 home/.hatch-db-change-signals/spaces.catalog.1792319542349.2
 home/.hatch-db-change-signals/spaces.catalog.1792323071147.78
 home/.hatch-db-change-signals/spaces.catalog.1792326678424.53
@@ -5270,6 +5265,11 @@ home/.hatch-db-change-signals/spaces.catalog.1792702733758.198
 home/.hatch-db-change-signals/spaces.catalog.1792704744895.11
 home/.hatch-db-change-signals/spaces.catalog.1792708354047.202
 home/.hatch-db-change-signals/spaces.catalog.1792711904339.86
+home/.hatch-db-change-signals/spaces.catalog.1792716029704.273
+home/.hatch-db-change-signals/spaces.catalog.1792719155355.428
+home/.hatch-db-change-signals/spaces.catalog.1792722683479.595
+home/.hatch-db-change-signals/spaces.catalog.1792726260971.790
+home/.hatch-db-change-signals/spaces.catalog.1792729889080.32
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -11355,6 +11355,7 @@ opt/skills/spaces/ts-runtime/dist/space-ts-deps/node_modules/@babel/runtime/rege
 opt/skills/spaces/ts-runtime/dist/space-ts-deps/node_modules/@babel/runtime/regenerator/index.js
 opt/skills/spaces/ts-runtime/dist/space-ts-deps/node_modules/@hatch
 opt/skills/spaces/ts-runtime/dist/space-ts-deps/node_modules/@hatch/space-sdk
+opt/skills/spaces/ts-runtime/dist/space-ts-deps/node_modules/@hatch/space-sdk/.bun-tag
 opt/skills/spaces/ts-runtime/dist/space-ts-deps/node_modules/@hatch/space-sdk/dist
 opt/skills/spaces/ts-runtime/dist/space-ts-deps/node_modules/@hatch/space-sdk/dist/build.d.ts
 opt/skills/spaces/ts-runtime/dist/space-ts-deps/node_modules/@hatch/space-sdk/dist/build.d.ts.map
