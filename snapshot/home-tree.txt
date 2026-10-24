@@ -5142,7 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1792384869372.28
 home/.hatch-db-change-signals/spaces.catalog.1792385008248.45
 home/.hatch-db-change-signals/spaces.catalog.1792385062998.64
 home/.hatch-db-change-signals/spaces.catalog.1792385483246.142
@@ -5270,6 +5269,7 @@ home/.hatch-db-change-signals/spaces.catalog.1792794701160.126
 home/.hatch-db-change-signals/spaces.catalog.1792798295970.353
 home/.hatch-db-change-signals/spaces.catalog.1792801907348.171
 home/.hatch-db-change-signals/spaces.catalog.1792805635253.142
+home/.hatch-db-change-signals/spaces.catalog.1792809152416.145
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -8292,6 +8292,7 @@ opt/bin/media-generation
 opt/bin/media-library
 opt/bin/meta-ads-cli
 opt/bin/meta-catalog-search
+opt/bin/moneyforward-me
 opt/bin/muse-mail
 opt/bin/native-comms-cli
 opt/bin/notion-cli
@@ -8528,6 +8529,10 @@ opt/connectors/meta_catalog_search
 opt/connectors/meta_catalog_search/CONNECTOR.md
 opt/connectors/meta_catalog_search/connector.yaml
 opt/connectors/meta_catalog_search/manifest.yaml
+opt/connectors/moneyforward_me
+opt/connectors/moneyforward_me/CONNECTOR.md
+opt/connectors/moneyforward_me/connector.yaml
+opt/connectors/moneyforward_me/manifest.yaml
 opt/connectors/notion
 opt/connectors/notion/CONNECTOR.md
 opt/connectors/notion/connector.yaml
