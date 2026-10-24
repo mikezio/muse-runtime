@@ -5142,7 +5142,6 @@ home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/exha
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/ryu_comparison.rs
 home/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.18/tests/test.rs
 home/.hatch-db-change-signals
-home/.hatch-db-change-signals/spaces.catalog.1792384321342.306
 home/.hatch-db-change-signals/spaces.catalog.1792384423962.11
 home/.hatch-db-change-signals/spaces.catalog.1792384869372.28
 home/.hatch-db-change-signals/spaces.catalog.1792385008248.45
@@ -5270,6 +5269,7 @@ home/.hatch-db-change-signals/spaces.catalog.1792787512655.209
 home/.hatch-db-change-signals/spaces.catalog.1792791144016.240
 home/.hatch-db-change-signals/spaces.catalog.1792794701160.126
 home/.hatch-db-change-signals/spaces.catalog.1792798295970.353
+home/.hatch-db-change-signals/spaces.catalog.1792801907348.171
 home/.postgres-ready
 home/.profile
 home/.rustup
@@ -8365,6 +8365,11 @@ opt/connectors/duffel
 opt/connectors/duffel/CONNECTOR.md
 opt/connectors/duffel/connector.yaml
 opt/connectors/duffel/manifest.yaml
+opt/connectors/duffel/references
+opt/connectors/duffel/references/booking.md
+opt/connectors/duffel/references/fare-check.md
+opt/connectors/duffel/references/manage.md
+opt/connectors/duffel/references/recovery.md
 opt/connectors/evernote
 opt/connectors/evernote/CONNECTOR.md
 opt/connectors/evernote/connector.yaml
@@ -20096,7 +20101,9 @@ opt/workflow-skills/fitness-tracking/skill.yaml
 opt/workflow-skills/flight-booking
 opt/workflow-skills/flight-booking/SKILL.md
 opt/workflow-skills/flight-booking/references
+opt/workflow-skills/flight-booking/references/booking.md
 opt/workflow-skills/flight-booking/references/flights.md
+opt/workflow-skills/flight-booking/references/sources.md
 opt/workflow-skills/flight-booking/skill.yaml
 opt/workflow-skills/flight-tracking
 opt/workflow-skills/flight-tracking/SKILL.md
@@ -20362,6 +20369,9 @@ opt/workflow-skills/muse_db/references/tables/runtime.workflow_legacy_launch_occ
 opt/workflow-skills/muse_db/references/tables/runtime.workflow_phase_runs.md
 opt/workflow-skills/muse_db/references/tables/runtime.workflow_runs.md
 opt/workflow-skills/muse_db/references/tables/runtime.writer_epoch.md
+opt/workflow-skills/muse_db/references/tables/saved.item_links.md
+opt/workflow-skills/muse_db/references/tables/saved.items.md
+opt/workflow-skills/muse_db/references/tables/saved.lists.md
 opt/workflow-skills/muse_db/references/tables/scheduler.cron_mutations.md
 opt/workflow-skills/muse_db/references/tables/scheduler.delivery_outbox.md
 opt/workflow-skills/muse_db/references/tables/scheduler.doctor_run_plans.md
