@@ -2,6 +2,11 @@
 
 _Last updated: 2026-10-24 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and [builds.md](builds.md), newest first. The full release history lives in builds.md._
 
+## 2026-10-24 · **NEW BUILD**: runtime build `8ecc1038eb`
+
+- Built 2026-10-24T15:08:56Z, detected 2026-10-24.
+- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-8ecc1038eb): see release `build-8ecc1038eb`.
+
 ## 2026-10-24 · **NEW BUILD**: runtime build `0ab290286b`
 
 - Built 2026-10-24T13:37:08Z, detected 2026-10-24.
@@ -146,11 +151,6 @@ _Last updated: 2026-10-24 (ET). Generated from [CHANGELOG.md](CHANGELOG.md) and 
 
 - Built 2026-10-22T08:46:40Z, detected 2026-10-22.
 - [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-5367b57283): see release `build-5367b57283`.
-
-## 2026-10-22 · **NEW BUILD**: runtime build `064233055c`
-
-- Built 2026-10-22T06:35:12Z, detected 2026-10-22.
-- [Release](https://github.com/mikezio/muse-runtime/releases/tag/build-064233055c): see release `build-064233055c`.
 
 ## 2026-09-28 · **DOCS**: Technical diagram redraw
 
